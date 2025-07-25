@@ -29,7 +29,7 @@ Spec-Driven Development is a systematic approach to software development that em
 3. Start your first specification:
 
 ```
-/spec-1-init: Create a user authentication system with JWT tokens and role-based access control
+/spec-1-init: description=Create a user authentication system with JWT tokens and role-based access control
 ```
 
 ## Methodology Overview
@@ -127,7 +127,7 @@ Set up project context and architectural guidelines.
 Start a new feature specification with detailed description.
 
 ```
-/spec-1-init: Build a real-time chat system with WebSocket connections, message persistence, and user presence indicators using React and Node.js
+/spec-1-init: description=Build a real-time chat system with WebSocket connections, message persistence, and user presence indicators using React and Node.js
 ```
 
 **Purpose**: Analyzes your project description and creates the specification structure.
@@ -142,10 +142,10 @@ Start a new feature specification with detailed description.
 Generate structured user stories and acceptance criteria.
 
 ```
-/spec-2-requirements
+/spec-2-requirements: feature=chat-system
 ```
 
-**Input**: Feature name (from Step 1)
+**Input**: Feature name (generated from Step 1)
 
 **Purpose**: Creates comprehensive requirements using structured user story templates.
 
@@ -161,7 +161,7 @@ Generate structured user stories and acceptance criteria.
 Create comprehensive technical architecture and implementation plan.
 
 ```
-/spec-3-design
+/spec-3-design: feature=chat-system
 ```
 
 **Prerequisites**: Approved requirements from Step 2
@@ -182,7 +182,7 @@ Create comprehensive technical architecture and implementation plan.
 Break down the design into actionable implementation tasks.
 
 ```
-/spec-4-tasks
+/spec-4-tasks: feature=chat-system
 ```
 
 **Prerequisites**: Approved design from Step 3
@@ -202,7 +202,7 @@ Break down the design into actionable implementation tasks.
 Monitor progress and current workflow state.
 
 ```
-/spec-5-status
+/spec-5-status: feature=chat-system
 ```
 
 **Purpose**: Provides comprehensive status overview.
@@ -288,21 +288,21 @@ sequenceDiagram
     participant Human as Human Reviewer
     
     Note over Dev,Human: Requirements Phase
-    Dev->>GH: /spec-2-requirements
+    Dev->>GH: /spec-2-requirements: feature=feature-name
     GH->>Dev: requirements.md
     Dev->>Human: Review request
     Human->>Human: Edit & validate
     Human->>Dev: Approve (update spec.yaml)
     
     Note over Dev,Human: Design Phase  
-    Dev->>GH: /spec-3-design
+    Dev->>GH: /spec-3-design: feature=feature-name
     GH->>Dev: design.md
     Dev->>Human: Review request
     Human->>Human: Edit & validate
     Human->>Dev: Approve (update spec.yaml)
     
     Note over Dev,Human: Tasks Phase
-    Dev->>GH: /spec-4-tasks
+    Dev->>GH: /spec-4-tasks: feature=feature-name
     GH->>Dev: tasks.md
     Dev->>Human: Review request
     Human->>Human: Edit & validate
@@ -320,7 +320,7 @@ sequenceDiagram
 2. **Detailed Initialization**: Provide comprehensive project descriptions in Step 1
 3. **Thorough Reviews**: Edit generated documents before approval
 4. **No Phase Skipping**: Follow the sequential approval workflow
-5. **Regular Status Checks**: Use `/spec-5-status` to monitor progress
+5. **Regular Status Checks**: Use `/spec-5-status: feature=feature-name` to monitor progress
 6. **Task Updates**: Mark tasks complete as you finish them
 
 ### ❌ Common Pitfalls
@@ -340,25 +340,25 @@ sequenceDiagram
 /spec-0-steering
 
 # 2. Initialize new feature
-/spec-1-init: Create a blog system with markdown support, comments, and tags. Users should be able to create, edit, and publish posts. Include admin moderation features.
+/spec-1-init: description=Create a blog system with markdown support, comments, and tags. Users should be able to create, edit, and publish posts. Include admin moderation features.
 
 # 3. Generate requirements (review output, then approve)
-/spec-2-requirements blog-system
+/spec-2-requirements: feature=blog-system
 # Edit .spec-workflow/specs/blog-system/requirements.md
 # Update spec.yaml: requirements.approved = true
 
 # 4. Generate technical design (review output, then approve) 
-/spec-3-design blog-system
+/spec-3-design: feature=blog-system
 # Edit .spec-workflow/specs/blog-system/design.md
 # Update spec.yaml: design.approved = true
 
 # 5. Generate implementation tasks (review output, then approve)
-/spec-4-tasks blog-system  
+/spec-4-tasks: feature=blog-system
 # Edit .spec-workflow/specs/blog-system/tasks.md
 # Update spec.yaml: tasks.approved = true
 
 # 6. Track progress during implementation
-/spec-5-status blog-system
+/spec-5-status: feature=blog-system
 ```
 
 ### Approval Process
@@ -404,7 +404,7 @@ approvals:
 
 **Template not applied**: Verify `.github/instructions/` files have correct `applyTo` patterns
 
-**Status unclear**: Use `/spec-5-status` to diagnose current state
+**Status unclear**: Use `/spec-5-status: feature=feature-name` to diagnose current state
 
 ### Quality Assurance
 
