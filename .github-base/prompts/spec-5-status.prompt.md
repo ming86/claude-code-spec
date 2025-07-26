@@ -1,7 +1,6 @@
 ---
 description: Spec-Driven Development Step 5 - Show specification status and progress for a feature
 mode: agent
-model: GPT-4.1
 tools: ['changes', 'codebase', 'findTestFiles', 'problems', 'runCommands', 'runTasks', 'search', 'searchResults', 'terminalLastCommand', 'terminalSelection', 'testFailure', 'usages']
 ---
 
