@@ -70,8 +70,10 @@ Reference steering documents if available:
 Follow this comprehensive technical design template structure:
 
 ---
+
 ## 🏗️ TECHNICAL DESIGN TEMPLATE REFERENCE
-*Use this template structure when generating design - this is template content, not prompt instructions*
+
+_Use this template structure when generating design - this is template content, not prompt instructions_
 
 ### Technical Design Template
 
@@ -272,7 +274,8 @@ interface UserService {
 - Document assumptions and constraints clearly
 
 ---
-*End of template reference section*
+
+_End of template reference section_
 
 ### 1. Design Document Structure
 
@@ -437,6 +440,21 @@ This prompt works within the spec-driven development workflow:
 - Include comprehensive architecture and data modeling
 - Address security, performance, and testing considerations
 - Maintain consistency with established project patterns
+
+## Refinement Options
+
+What would you like me to refine or change about this technical design?
+
+- **Adjust architecture**: Modify system components or data flow?
+- **Update technology choices**: Different frameworks or tools?
+- **Refine API design**: Additional endpoints or modified interfaces?
+- **Enhance security considerations**: Additional security measures?
+- **Modify performance approach**: Different caching or optimization strategies?
+- **Update integration points**: Better alignment with existing systems?
+- **Proceed to approval** if design looks good?
+- **Or provide other specific guidance** for refinement?
+
+I can iterate on this in our conversation until you're satisfied.
 
 ## Human Review Process
 

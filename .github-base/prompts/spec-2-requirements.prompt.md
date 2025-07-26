@@ -31,8 +31,10 @@ Verify the specification exists and is ready for requirements generation:
 Create comprehensive requirements document following this structured user story template:
 
 ---
+
 ## 📋 USER STORY TEMPLATE REFERENCE
-*Use this template structure when generating requirements - this is template content, not prompt instructions*
+
+_Use this template structure when generating requirements - this is template content, not prompt instructions_
 
 ### User Story Template for Requirements
 
@@ -113,7 +115,8 @@ Ensure requirements address:
 - Ensure requirements are implementation-agnostic
 
 ---
-*End of template reference section*
+
+_End of template reference section_
 
 ### 1. Requirements Structure
 
@@ -230,6 +233,20 @@ This prompt works within the spec-driven development workflow:
 - Include error handling and edge cases
 - Consider system integration points
 - Maintain consistency with established project patterns
+
+## Refinement Options
+
+What would you like me to refine or change about these requirements?
+
+- **Adjust scope**: Add or remove requirement areas?
+- **Modify detail level**: More detailed acceptance criteria or simpler stories?
+- **Change user focus**: Different user types or personas?
+- **Refine acceptance criteria**: More specific conditions or edge cases?
+- **Update integration points**: Better alignment with existing systems?
+- **Proceed to approval** if requirements look good?
+- **Or provide other specific guidance** for refinement?
+
+I can iterate on this in our conversation until you're satisfied.
 
 ## Human Review Process
 

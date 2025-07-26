@@ -82,8 +82,10 @@ Reference steering documents if available:
 Follow this comprehensive implementation task template structure:
 
 ---
+
 ## ✏️ IMPLEMENTATION TASK TEMPLATE REFERENCE
-*Use this template structure when generating tasks - this is template content, not prompt instructions*
+
+_Use this template structure when generating tasks - this is template content, not prompt instructions_
 
 ### Implementation Task Template
 
@@ -377,7 +379,8 @@ Follow this hierarchical structure for all implementation plans:
 - Enable parallel work where possible
 
 ---
-*End of template reference section*
+
+_End of template reference section_
 
 ### 1. Tasks Document Structure
 
@@ -549,6 +552,21 @@ This prompt works within the spec-driven development workflow:
 - Include comprehensive testing coverage
 - Map tasks back to requirements and design components
 - Maintain consistency with established development practices
+
+## Refinement Options
+
+What would you like me to refine or change about this implementation plan?
+
+- **Adjust phase breakdown**: Modify task grouping or sequencing?
+- **Change task granularity**: Larger or smaller task chunks?
+- **Update technology specifications**: Different tools or frameworks in [brackets]?
+- **Modify time estimates**: Adjust 2-4 hour task sizing?
+- **Enhance testing approach**: More comprehensive test coverage?
+- **Update deployment strategy**: Different deployment or monitoring approach?
+- **Proceed to approval** if implementation plan looks good?
+- **Or provide other specific guidance** for refinement?
+
+I can iterate on this in our conversation until you're satisfied.
 
 ## Human Review Process
 

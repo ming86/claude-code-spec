@@ -365,6 +365,22 @@ sequenceDiagram
 /spec-5-status: feature=blog-system
 ```
 
+## Modifying Existing Specifications
+
+To modify requirements/design/tasks: Edit spec.yaml to set the appropriate phase `approved=false`, then re-run the corresponding prompt.
+
+Example:
+
+```yaml
+approvals:
+  requirements:
+    approved: false  # ← Set to false to allow modification
+```
+
+Then run: `/spec-2-requirements: feature=your-feature-name`
+
+The prompt will detect existing content and ask what you want to refine. You can iterate in the same conversation until satisfied.
+
 ### Approval Process
 
 After each generation step, edit the `spec.yaml` file to approve:
