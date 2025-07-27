@@ -26,9 +26,8 @@ Complete implementation guide for deploying GitHub Copilot enhanced spec-driven 
 ```json
 // Additional settings for enhanced experience
 {
-  "chat.agent.maxRequests": 15,
-  "github.copilot.chat.agent.autoFix": true,
-  "chat.tools.autoApprove": false  // Keep manual approval for safety
+  "chat.agent.maxRequests": 250,
+  "github.copilot.chat.agent.autoFix": true
 }
 ```
 
