@@ -76,3 +76,4 @@ BLOG.md
 .claude/hooks/
 
 docs/kiro/prompt/
+.claude/settings.local.json
