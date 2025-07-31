@@ -209,7 +209,9 @@ Consider:
 
 ```markdown
 ### Custom Steering Files
+
 <!-- Added by /kiro:steering-custom command -->
+
 - `${steeringType}.md`: ${inclusionMode} - ${filePattern} - [Brief description]
 ```
 

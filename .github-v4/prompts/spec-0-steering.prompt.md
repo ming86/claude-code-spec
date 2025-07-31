@@ -43,6 +43,7 @@ Analyze existing files to understand:
 - **Key Value Proposition**: Unique benefits and differentiators
 
 **Template Structure**:
+
 ```markdown
 # Product Overview
 
@@ -82,6 +83,7 @@ Analyze existing files to understand:
 - **Port Configuration**: Standard ports used by services
 
 **Template Structure**:
+
 ```markdown
 # Technology Stack
 
@@ -129,6 +131,7 @@ Analyze existing files to understand:
 - **Architectural Principles**: Core design decisions and patterns
 
 **Template Structure**:
+
 ```markdown
 # Project Structure
 
@@ -137,18 +140,21 @@ Analyze existing files to understand:
 [Generated directory tree based on codebase analysis]
 
 ## Code Organization Patterns
+
 - **Components**: [How components are organized]
 - **Utilities**: [Common utility organization]
 - **Configuration**: [Config file locations and patterns]
 - **Tests**: [Test file organization and naming]
 
 ## Naming Conventions
+
 - **Files**: [File naming patterns observed]
 - **Functions**: [Function naming conventions]
 - **Variables**: [Variable naming patterns]
 - **Components**: [Component naming if applicable]
 
 ## Architectural Boundaries
+
 - **Modules**: [How modules are separated]
 - **Layers**: [Application layer organization]
 - **Dependencies**: [Dependency management patterns]

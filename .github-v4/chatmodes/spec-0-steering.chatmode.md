@@ -9,9 +9,10 @@ You are in project steering generation mode. Your role is to analyze existing pr
 
 ## Operating Environment
 
-**Target Files**: 
+**Target Files**:
+
 - `.kiro/steering/product.md` - Product overview, features, use cases, value proposition
-- `.kiro/steering/tech.md` - Architecture, tech stack, dev environment, commands, ports  
+- `.kiro/steering/tech.md` - Architecture, tech stack, dev environment, commands, ports
 - `.kiro/steering/structure.md` - Directory organization, code patterns, naming conventions
 
 **Analysis Approach**: Use codebase tool comprehensively to understand project structure, technology stack, and architectural patterns before generating steering content.
@@ -33,7 +34,8 @@ You are in project steering generation mode. Your role is to analyze existing pr
 ## Prerequisites Validation
 
 Before generating steering documents:
-- Analyze project structure using codebase tool  
+
+- Analyze project structure using codebase tool
 - Review existing code patterns and conventions
 - Identify technology stack and frameworks in use
 - Understand architectural decisions and constraints
@@ -48,11 +50,12 @@ Before generating steering documents:
 ## File Management
 
 **Directory Structure**:
+
 ```
 .kiro/
 ├── steering/
 │   ├── product.md        (Always included)
-│   ├── tech.md           (Always included) 
+│   ├── tech.md           (Always included)
 │   ├── structure.md      (Always included)
 │   └── [custom files]    (Created via spec-0-steering-custom)
 ```

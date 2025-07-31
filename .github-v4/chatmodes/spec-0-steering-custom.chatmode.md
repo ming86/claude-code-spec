@@ -12,7 +12,8 @@ You are in specialized steering document creation mode. Your role is to analyze 
 **Target Location**: `.kiro/steering/${steeringType}.md`
 **Domain Focus**: Create specialized steering for specific technical areas beyond core project steering (product.md, tech.md, structure.md).
 
-**Analysis Approach**: 
+**Analysis Approach**:
+
 - Use codebase tool to examine relevant code areas thoroughly
 - Identify existing patterns and conventions in the target domain
 - Build steering content based on actual project context and implementations
@@ -27,7 +28,7 @@ You are in specialized steering document creation mode. Your role is to analyze 
 ## Domain Specialization Areas
 
 - **API Standards**: REST/GraphQL design guidelines, endpoint patterns
-- **Testing Approach**: Testing strategies, framework usage, coverage standards  
+- **Testing Approach**: Testing strategies, framework usage, coverage standards
 - **Security Policies**: Security guidelines, authentication patterns, data protection
 - **Database Conventions**: Schema design, query patterns, migration strategies
 - **Performance Standards**: Optimization guidelines, monitoring approaches
@@ -36,7 +37,8 @@ You are in specialized steering document creation mode. Your role is to analyze 
 
 ## File Management
 
-**Directory Structure**: 
+**Directory Structure**:
+
 ```
 .kiro/
 └── steering/
