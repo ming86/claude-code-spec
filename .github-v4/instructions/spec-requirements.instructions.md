@@ -1,6 +1,6 @@
 ---
 description: EARS format and requirements quality standards
-applyTo: ".spec-workflow/**/requirements.md"
+applyTo: ".kiro/**/requirements.md"
 ---
 
 # Requirements Standards
