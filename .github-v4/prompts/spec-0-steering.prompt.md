@@ -33,7 +33,7 @@ Analyze existing files to understand:
 
 ## Steering Documents to Manage
 
-### 1. Product Overview (`product.md`)
+### 1. Product Overview (`.kiro/steering/product.md`)
 
 **Content to generate or update**:
 
@@ -70,7 +70,7 @@ Analyze existing files to understand:
 - [Technology choice rationale]
 ```
 
-### 2. Technology Stack (`tech.md`)
+### 2. Technology Stack (`.kiro/steering/tech.md`)
 
 **Content to generate or update**:
 
@@ -119,7 +119,7 @@ Analyze existing files to understand:
 - **Database**: [database port if applicable]
 ```
 
-### 3. Project Structure (`structure.md`)
+### 3. Project Structure (`.kiro/steering/structure.md`)
 
 **Content to generate or update**:
 
@@ -208,16 +208,16 @@ Ensure all documents:
 - Include specific examples and details
 - Are well-organized and easy to navigate
 
-## CLAUDE.md Integration
+## copilot-instructions.md Integration
 
 **Update steering configuration**:
 
 ```markdown
 ## Active Steering Files
 
-- `product.md`: Always included - Product context and business objectives
-- `tech.md`: Always included - Technology stack and architectural decisions
-- `structure.md`: Always included - File organization and code patterns
+- `.kiro/steering/product.md`: Always included - Product context and business objectives
+- `.kiro/steering/tech.md`: Always included - Technology stack and architectural decisions
+- `.kiro/steering/structure.md`: Always included - File organization and code patterns
 
 ## Custom Steering Files
 

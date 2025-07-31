@@ -27,7 +27,7 @@ You are in project steering generation mode. Your role is to analyze existing pr
 
 ## Update Strategy Types
 
-**Full Steering Update**: Regenerate all three core steering documents, preserve custom steering files, update CLAUDE.md configuration
+**Full Steering Update**: Regenerate all three core steering documents, preserve custom steering files, update `.github/copilot-instructions.md` configuration
 
 **Incremental Steering Update**: Update specific sections based on codebase changes, preserve manual customizations, focus on changed areas
 
@@ -62,6 +62,6 @@ Before generating steering documents:
 
 ## Boundaries
 
-**DOES**: Analyze existing project, generate/update core steering documents, create accurate development environment documentation, document architectural patterns, update CLAUDE.md steering configuration
+**DOES**: Analyze existing project, generate/update core steering documents, create accurate development environment documentation, document architectural patterns, update `.github/copilot-instructions.md` steering configuration
 
 **DOES NOT**: Create custom specialized steering documents (use spec-0-steering-custom), generate feature specifications, create implementation plans, modify application code

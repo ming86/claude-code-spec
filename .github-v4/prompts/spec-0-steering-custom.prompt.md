@@ -14,7 +14,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### API Standards and Guidelines
 
-**File**: `api-standards.md`
+**File**: `.kiro/steering/api-standards.md`
 
 - REST API design principles
 - Endpoint naming conventions
@@ -25,7 +25,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Testing Methodologies
 
-**File**: `testing-approach.md`
+**File**: `.kiro/steering/testing-approach.md`
 
 - Unit testing standards and frameworks
 - Integration testing strategies
@@ -36,7 +36,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Security Policies and Standards
 
-**File**: `security-policies.md`
+**File**: `.kiro/steering/security-policies.md`
 
 - Authentication and authorization standards
 - Data protection and privacy requirements
@@ -47,7 +47,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Database Conventions
 
-**File**: `database-conventions.md`
+**File**: `.kiro/steering/database-conventions.md`
 
 - Schema design principles
 - Naming conventions for tables, columns, indexes
@@ -58,7 +58,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Performance Standards
 
-**File**: `performance-standards.md`
+**File**: `.kiro/steering/performance-standards.md`
 
 - Performance benchmarks and targets
 - Optimization strategies and techniques
@@ -69,7 +69,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Deployment and DevOps
 
-**File**: `deployment-workflows.md`
+**File**: `.kiro/steering/deployment-workflows.md`
 
 - Deployment pipeline standards
 - Environment configuration management
@@ -196,11 +196,11 @@ Consider:
 - Training or communication requirements
 - Rollout and adoption strategy
 
-## CLAUDE.md Integration
+## copilot-instructions.md Integration
 
 **Update steering configuration**:
 
-1. **Add to Custom Steering Files section** in CLAUDE.md
+1. **Add to Custom Steering Files section** in `.github/copilot-instructions.md`
 2. **Specify inclusion mode** and file patterns if conditional
 3. **Provide usage guidance** for manual inclusion files
 4. **Update steering file list** to reflect new additions
