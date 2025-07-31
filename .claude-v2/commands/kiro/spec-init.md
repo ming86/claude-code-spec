@@ -136,52 +136,22 @@ Create comprehensive metadata with codebase integration:
   "project_description": "$ARGUMENTS",
   "created_at": "current_timestamp",
   "updated_at": "current_timestamp",
-  "language": "japanese",
+  "language": "english",
   "phase": "initialized",
-  "methodology": "EARS",
-  "codebase_context": {
-    "technology_stack": "{detected-stack}",
-    "architecture_patterns": ["{detected-patterns}"],
-    "testing_framework": "{detected-testing}",
-    "api_patterns": ["{detected-api-patterns}"]
-  },
-  "complexity_assessment": {
-    "level": "{simple|medium|complex}",
-    "estimated_components": "{count}",
-    "integration_points": ["{detected-integrations}"],
-    "technical_challenges": ["{identified-challenges}"]
-  },
   "approvals": {
     "requirements": {
       "generated": false,
-      "approved": false,
-      "methodology": "EARS"
+      "approved": false
     },
     "design": {
       "generated": false,
-      "approved": false,
-      "research_integrated": false
+      "approved": false
     },
     "tasks": {
       "generated": false,
-      "approved": false,
-      "multi_task_ready": false,
-      "ears_traceable": false
+      "approved": false
     }
-  },
-  "progress": {
-    "requirements": 0,
-    "design": 0,
-    "tasks": 0
-  },
-  "workflow_features": {
-    "ears_methodology": true,
-    "research_integration": true,
-    "multi_task_execution": true,
-    "task_validation": true
-  },
-  "ready_for_implementation": false,
-  "multi_task_execution": false
+  }
 }
 ```
 

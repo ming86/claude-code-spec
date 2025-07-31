@@ -7,6 +7,8 @@ tools: ['editFiles', 'codebase']
 
 Initialize spec workflow for feature: **${input:feature:Enter feature name}**
 
+Project description: **${input:description:Enter project description}**
+
 ## Purpose and Scope
 
 **Primary Function**: Create the foundational directory structure and metadata files required for spec-driven development workflow, preparing the environment for subsequent specification phases.
@@ -66,66 +68,22 @@ Ensure valid feature naming:
 **Generate spec.yaml file**:
 
 ```yaml
-# Spec metadata for feature: ${feature}
 feature_name: "${feature}"
+project_description: "${feature_description}"
 created_at: "{current_timestamp}"
 updated_at: "{current_timestamp}"
-version: "1.0.0"
-
-# Workflow phase tracking
+language: "english"
 phase: "initialized"
-current_step: "ready_for_requirements"
-
-# Phase completion tracking
-progress:
-  initialization: 100
-  requirements: 0
-  design: 0
-  implementation_plan: 0
-  implementation: 0
-
-# Approval workflow
 approvals:
   requirements:
     generated: false
     approved: false
-    approved_by: null
-    approved_at: null
   design:
     generated: false
     approved: false
-    approved_by: null
-    approved_at: null
-  implementation_plan:
+  tasks:
     generated: false
     approved: false
-    approved_by: null
-    approved_at: null
-
-# Feature metadata
-description: "Feature: ${feature} - Initialized for spec-driven development"
-priority: "medium"
-complexity: "to_be_determined"
-estimated_effort: "to_be_determined"
-
-# Integration tracking
-dependencies: []
-affects_components: []
-requires_testing: true
-requires_documentation: true
-
-# Development tracking
-assigned_to: null
-start_date: null
-target_date: null
-actual_completion: null
-
-# Quality gates
-quality_gates:
-  requirements_review: "pending"
-  design_review: "pending"
-  implementation_review: "pending"
-  testing_complete: "pending"
 ```
 
 ### 3. Placeholder File Generation

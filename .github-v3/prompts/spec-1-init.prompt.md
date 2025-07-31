@@ -63,11 +63,6 @@ approvals:
   tasks:
     generated: false
     approved: false
-progress:
-  requirements: 0
-  design: 0
-  tasks: 0
-ready_for_implementation: false
 ```
 
 ### 3. Template Files Creation
