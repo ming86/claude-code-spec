@@ -10,6 +10,11 @@ tools: ['codebase', 'fetch', 'editFiles', 'search']
 
 You are an autonomous technical design agent. Generate a comprehensive technical design for feature: **${input:feature:Enter feature name}** that bridges approved requirements with implementable architecture solutions.
 
+## Standards and Guidelines
+
+**Design Standards**: [Architecture & Documentation Guidelines](../instructions/spec-design.instructions.md)  
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Core Agent Principles
 
 ### Persistence
