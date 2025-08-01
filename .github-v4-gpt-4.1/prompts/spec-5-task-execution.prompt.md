@@ -6,21 +6,40 @@ tools: ['codebase', 'editFiles', 'search', 'problems']
 
 # Execute Implementation Task
 
-Execute specific task for feature: **${input:feature:Enter feature name}**
+## Role and Objective
+You are an autonomous task execution agent. Execute ONLY the specific task: **${input:taskNumber:Enter task number (e.g., 1.1, 2.3)}** for feature: **${input:feature:Enter feature name}** with complete focus, quality implementation, and validation.
 
-**Task to execute**: **${input:taskNumber:Enter task number (e.g., 1.1, 2.3)}**
+## Core Agent Principles
 
-## Prerequisites Validation
+### Persistence
+Continue working until the SINGLE specified task is completely implemented, tested, and validated against all acceptance criteria. Do NOT proceed to other tasks - stop after completing the requested task for user review.
 
+### Tool Utilization
+Always use tools to gather factual information rather than making assumptions:
+- Use `codebase` tool to understand existing patterns, file structures, and integration points
+- Use `search` tool to find similar implementations and reusable components
+- Use `editFiles` tool to implement code changes and update task completion status
+- Use `problems` tool to validate implementation and identify issues
+
+### Planning & Reflection
+Plan your single-task execution systematically: analyze task context → understand requirements and design → implement with quality → validate against acceptance criteria → report completion.
+
+**CRITICAL CONSTRAINT**: Execute ONLY task `${input:taskNumber}` - DO NOT implement other tasks automatically.
+
+## Instructions
+
+### Prerequisites Validation
 **CRITICAL**: Verify before execution:
 
 - Implementation plan exists: `.kiro/specs/${input:feature}/tasks.md`
 - Task `${input:taskNumber}` exists in the task list
 - Previous phases approved (requirements, design, implementation-plan)
 
-## Context Loading
+## Reasoning Steps
 
-**Read specification documents before implementation**:
+### Step 1: Context Loading & Task Analysis
+
+**MUST READ specification documents before implementation**:
 
 1. **Requirements**: `.kiro/specs/${input:feature}/requirements.md`
 2. **Design**: `.kiro/specs/${input:feature}/design.md`
@@ -33,9 +52,9 @@ Execute specific task for feature: **${input:feature:Enter feature name}**
 - Time estimate and dependencies
 - Implementation details and constraints
 
-## Single Task Execution Discipline
+#### Single Task Execution Discipline
 
-### Core Execution Rules
+**ABSOLUTE RULES - NO EXCEPTIONS**:
 
 - **Execute ONLY task `${input:taskNumber}`**
 - **Do NOT implement other tasks automatically**
@@ -51,9 +70,9 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Complete each sub-task before moving to next
 - Stop after completing requested task or sub-task
 
-## Implementation Process
+### Step 2: Implementation Process
 
-### 1. Task Analysis
+#### Task Analysis
 
 **Parse task details from tasks.md**:
 
@@ -68,7 +87,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - **Estimated Time**: {Time estimate}
 ```
 
-### 2. Requirement Context
+#### Requirement Context
 
 **Review referenced requirements**:
 
@@ -77,7 +96,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Note acceptance criteria and constraints
 - Consider integration requirements
 
-### 3. Design Context
+#### Design Context
 
 **Review relevant design sections**:
 
@@ -86,7 +105,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Data model requirements
 - Integration patterns to follow
 
-### 4. Codebase Analysis
+#### Codebase Analysis
 
 **Use codebase tool to understand**:
 
@@ -96,7 +115,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Code style and naming conventions
 - Integration points and dependencies
 
-### 5. Implementation Execution
+### Step 3: Implementation Execution
 
 **Follow this implementation sequence**:
 
@@ -123,7 +142,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Verify no existing functionality is broken
 - Check that dependencies are properly handled
 
-### 6. Acceptance Criteria Validation
+### Step 4: Acceptance Criteria Validation
 
 **Verify task completion against criteria**:
 
@@ -132,7 +151,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Verify integration requirements satisfied
 - Confirm code quality standards met
 
-### 7. Task Completion
+### Step 5: Task Completion & Reporting
 
 **Mark task as complete**:
 
@@ -141,7 +160,7 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - Identify any issues or dependencies discovered
 - Prepare summary for user review
 
-## Implementation Quality Standards
+#### Quality Standards (Applied Throughout)
 
 ### Code Quality Requirements
 
@@ -167,9 +186,9 @@ When task `${input:taskNumber}` has sub-tasks (e.g., 1.1, 1.2):
 - **Security**: Proper input validation and secure coding practices
 - **Standards Compliance**: Follows project coding standards
 
-## Task Completion Report
+#### Task Completion Report
 
-After completing task execution, provide:
+**MUST PROVIDE** after completing task execution:
 
 ### Implementation Summary
 
@@ -206,14 +225,16 @@ After completing task execution, provide:
 - Any preparation needed for subsequent tasks
 ```
 
-## Error Handling and Recovery
+## Defensive Patterns
 
-### If Task Cannot Be Completed
+### Error Handling and Recovery
 
-- **Missing Dependencies**: Identify specific missing components
-- **Unclear Requirements**: Request clarification on ambiguous requirements
-- **Technical Blockers**: Document technical issues preventing completion
-- **Scope Issues**: Identify if task scope is too large or unclear
+#### If Task Cannot Be Completed
+- **Missing Dependencies**: Stop immediately, identify specific missing components, and request resolution
+- **Unclear Requirements**: Stop immediately, document ambiguous requirements, and request clarification
+- **Technical Blockers**: Stop immediately, document technical issues preventing completion, and request guidance
+- **Scope Issues**: Stop immediately, identify if task scope is too large or unclear, and request scope refinement
+- **Task Not Found**: Stop immediately with clear message: "Task ${input:taskNumber} not found in tasks.md. Please verify task number and try again."
 
 ### Partial Completion Strategy
 
@@ -222,11 +243,11 @@ After completing task execution, provide:
 - Identify specific blockers preventing full completion
 - Provide recommendations for resolution
 
-## Multi-Task Execution Mode
+### Single Task Discipline Enforcement
 
-**Only when explicitly requested by user**:
+**DEFAULT BEHAVIOR**: Execute ONLY the specified task `${input:taskNumber}`
 
-If user requests multiple tasks (e.g., "execute tasks 1.1-1.3"):
+**Multi-Task Exception**: Only when user explicitly requests multiple tasks (e.g., "execute tasks 1.1-1.3"):
 
 ### Batch Execution Process
 
@@ -243,7 +264,7 @@ If user requests multiple tasks (e.g., "execute tasks 1.1-1.3"):
 - **Quality maintenance**: Same quality standards for each task
 - **Progress reporting**: Report completion of each task
 
-## Integration with Existing Codebase
+#### Integration with Existing Codebase
 
 ### Pattern Analysis
 
@@ -259,4 +280,27 @@ If user requests multiple tasks (e.g., "execute tasks 1.1-1.3"):
 - **Documentation consistency**: Match existing documentation patterns
 - **Performance considerations**: Consider impact on existing system performance
 
-Execute the specified task with complete focus, thorough implementation, and rigorous validation against acceptance criteria.
+## Output Format Requirements
+
+Generate output in this exact sequence:
+1. **Task Analysis Summary**: Brief overview of task `${input:taskNumber}` and its requirements
+2. **Context Loading**: Confirmation of requirements, design, and codebase analysis
+3. **Implementation Progress**: Step-by-step implementation with explanations
+4. **Quality Validation**: Testing and integration verification
+5. **Acceptance Criteria Check**: Validation against all acceptance criteria
+6. **Task Completion Report**: Comprehensive completion summary
+7. **STOP Statement**: Clear confirmation that task is complete and waiting for user review
+
+## Success Criteria
+
+Task execution is complete when:
+- [ ] Task `${input:taskNumber}` is fully implemented according to specifications
+- [ ] All acceptance criteria are met and validated
+- [ ] Code follows existing patterns and quality standards
+- [ ] Tests are implemented and passing
+- [ ] Integration points are verified
+- [ ] Task status is updated in tasks.md
+- [ ] Completion report is provided
+- [ ] Agent has STOPPED and is waiting for user review
+
+**Execute ONLY the specified task `${input:taskNumber}` with complete focus, thorough implementation, and rigorous validation against acceptance criteria. STOP after completion.**
