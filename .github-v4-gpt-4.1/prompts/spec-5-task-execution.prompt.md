@@ -31,7 +31,7 @@ Plan your single-task execution systematically: analyze task context → underst
 ### Prerequisites Validation
 **CRITICAL**: Verify before execution:
 
-- Implementation plan exists: `.kiro/specs/${input:feature}/tasks.md`
+- Implementation plan exists: `.spec-workflow/specs/${input:feature}/tasks.md`
 - Task `${input:taskNumber}` exists in the task list
 - Previous phases approved (requirements, design, implementation-plan)
 
@@ -41,9 +41,9 @@ Plan your single-task execution systematically: analyze task context → underst
 
 **MUST READ specification documents before implementation**:
 
-1. **Requirements**: `.kiro/specs/${input:feature}/requirements.md`
-2. **Design**: `.kiro/specs/${input:feature}/design.md`
-3. **Tasks**: `.kiro/specs/${input:feature}/tasks.md`
+1. **Requirements**: `.spec-workflow/specs/${input:feature}/requirements.md`
+2. **Design**: `.spec-workflow/specs/${input:feature}/design.md`
+3. **Tasks**: `.spec-workflow/specs/${input:feature}/tasks.md`
 
 **Locate specific task**: Find task `${input:taskNumber}` in tasks.md and analyze:
 

@@ -102,7 +102,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### API Standards and Guidelines
 
-**Target**: `.kiro/steering/api-standards.md`
+**Target**: `.spec-workflow/steering/api-standards.md`
 **Focus Areas**:
 
 - REST API design principles and endpoint patterns
@@ -114,7 +114,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Testing Methodologies and Standards
 
-**Target**: `.kiro/steering/testing-approach.md`
+**Target**: `.spec-workflow/steering/testing-approach.md`
 **Focus Areas**:
 
 - Unit testing frameworks and patterns used in project
@@ -126,7 +126,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Security Policies and Implementation
 
-**Target**: `.kiro/steering/security-policies.md`
+**Target**: `.spec-workflow/steering/security-policies.md`
 **Focus Areas**:
 
 - Authentication and authorization patterns in use
@@ -138,7 +138,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Database Design and Usage Conventions
 
-**Target**: `.kiro/steering/database-conventions.md`
+**Target**: `.spec-workflow/steering/database-conventions.md`
 **Focus Areas**:
 
 - Schema design principles and naming conventions
@@ -150,7 +150,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Performance Standards and Optimization
 
-**Target**: `.kiro/steering/performance-standards.md`
+**Target**: `.spec-workflow/steering/performance-standards.md`
 **Focus Areas**:
 
 - Performance benchmarks and measurement targets
@@ -162,7 +162,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Deployment and DevOps Practices
 
-**Target**: `.kiro/steering/deployment-workflows.md`
+**Target**: `.spec-workflow/steering/deployment-workflows.md`
 **Focus Areas**:
 
 - Deployment pipeline standards and automation
@@ -289,7 +289,7 @@ description: "{Domain} standards - reference with @{filename}.md when needed for
 
 ## File Locations and Updates
 
-- **Primary Output**: `.kiro/steering/${steeringType}.md`
+- **Primary Output**: `.spec-workflow/steering/${steeringType}.md`
 - **Configuration Update**: Add to `.github/copilot-instructions.md` in Custom Steering Files section
 - **Format**: `- \`${steeringType}.md\`: ${inclusionMode} - ${filePattern} - ${description}`
 

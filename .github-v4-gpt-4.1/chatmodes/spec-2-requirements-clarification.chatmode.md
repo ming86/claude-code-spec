@@ -41,8 +41,8 @@ Plan your requirements analysis approach systematically before generating conten
 
 ## Target Environment
 
-- **Documentation**: Generate comprehensive requirements in `.kiro/specs/{feature}/requirements.md`
-- **Metadata**: Update `.kiro/specs/{feature}/spec.yaml` with generation tracking
+- **Documentation**: Generate comprehensive requirements in `.spec-workflow/specs/{feature}/requirements.md`
+- **Metadata**: Update `.spec-workflow/specs/{feature}/spec.yaml` with generation tracking
 - **Quality Focus**: Ensure all requirements are specific, testable, complete, consistent, and feasible
 
 # Reasoning Steps

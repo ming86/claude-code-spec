@@ -32,7 +32,7 @@ Plan your analysis systematically: verify file structure → analyze each phase 
 ### Analysis Requirements
 
 - **Analysis Focus**: Parse and analyze specification files, metadata, and implementation progress
-- **File Analysis**: Examine `.kiro/specs/${feature}/` directory structure and contents
+- **File Analysis**: Examine `.spec-workflow/specs/${feature}/` directory structure and contents
 - **Progress Calculation**: Calculate completion percentages and phase status based on actual file contents
 
 ### Quality Standards

@@ -7,7 +7,7 @@ tools: ['codebase', 'editFiles', 'search']
 
 ## Role and Objective
 
-You are a specialized steering document creator focused on analyzing specific technical domains and creating targeted guidance documents in `.kiro/steering/` that complement core project steering while maintaining consistency with existing patterns.
+You are a specialized steering document creator focused on analyzing specific technical domains and creating targeted guidance documents in `.spec-workflow/steering/` that complement core project steering while maintaining consistency with existing patterns.
 
 # Core Agent Principles
 
@@ -39,7 +39,7 @@ Plan extensively before creating content. Reflect on codebase analysis results t
 
 ## Target Environment
 
-- **Location**: `.kiro/steering/${steeringType}.md`
+- **Location**: `.spec-workflow/steering/${steeringType}.md`
 - **Integration**: Update `.github/copilot-instructions.md` with new steering configuration
 - **Inclusion Modes**: Always, Conditional, or Manual based on domain scope
 
@@ -69,7 +69,7 @@ Plan extensively before creating content. Reflect on codebase analysis results t
 ## Directory Structure
 
 ```
-.kiro/
+.spec-workflow/
 └── steering/
     ├── product.md                    (Core - Always included)
     ├── tech.md                       (Core - Always included)

@@ -1,6 +1,6 @@
 ---
 description: Core workflow principles for all spec-driven development phases
-applyTo: ".kiro/**/*"
+applyTo: ".spec-workflow/**/*"
 ---
 
 # Spec-Driven Development Workflow

@@ -50,9 +50,9 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 
 **Analysis Process**:
 
-- Verify specification exists and is ready for requirements generation at `.kiro/specs/${input:feature}/`
+- Verify specification exists and is ready for requirements generation at `.spec-workflow/specs/${input:feature}/`
 - Use #codebase to examine existing system architecture, similar features, and integration patterns
-- Review steering documents (.kiro/steering/) for project context, technical constraints, and business objectives
+- Review steering documents (.spec-workflow/steering/) for project context, technical constraints, and business objectives
 - Analyze current spec.yaml metadata to understand feature scope, complexity assessment, and initial requirements
 - Identify existing user workflows, system boundaries, and technical constraints that new feature must respect
 - Understand integration points where feature connects with existing system components
@@ -95,10 +95,10 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 
 **Integration Process**:
 
-- Update `.kiro/specs/${input:feature}/requirements.md` with comprehensive requirements document
+- Update `.spec-workflow/specs/${input:feature}/requirements.md` with comprehensive requirements document
 - Verify all requirements align with existing system capabilities and architectural constraints
 - Confirm acceptance criteria are measurable and testable within current project capabilities and constraints
-- Update `.kiro/specs/${input:feature}/spec.yaml` with generation tracking and phase progression
+- Update `.spec-workflow/specs/${input:feature}/spec.yaml` with generation tracking and phase progression
 - Provide clear next steps guidance for human review, editing, and approval workflow
 - Document assumptions, risks, or areas requiring further clarification or stakeholder input
 
@@ -340,8 +340,8 @@ GIVEN user has unsaved changes WHEN user attempts to navigate away from page THE
 
 ## Integration and Workflow Validation Checklist
 
-- [ ] Requirements document successfully updated at `.kiro/specs/${input:feature}/requirements.md`
-- [ ] Spec metadata updated at `.kiro/specs/${input:feature}/spec.yaml` with proper generation tracking
+- [ ] Requirements document successfully updated at `.spec-workflow/specs/${input:feature}/requirements.md`
+- [ ] Spec metadata updated at `.spec-workflow/specs/${input:feature}/spec.yaml` with proper generation tracking
 - [ ] Phase updated to "requirements-generated" with approval workflow properly configured
 - [ ] Next steps guidance provided for human review and approval process
 - [ ] Integration verified with existing project structure and development workflow

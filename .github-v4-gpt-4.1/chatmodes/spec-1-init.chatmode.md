@@ -39,7 +39,7 @@ Plan your initialization approach systematically before creating files. Reflect 
 
 ## Target Environment
 
-- **Location**: `.kiro/specs/{feature}/`
+- **Location**: `.spec-workflow/specs/{feature}/`
 - **Integration**: Ensure compatibility with existing project structure and version control
 - **Workflow Setup**: Establish proper approval gates and sequential phase tracking
 - **Team Coordination**: Prepare structure for collaborative development workflow
@@ -80,7 +80,7 @@ Plan your initialization approach systematically before creating files. Reflect 
 
 **Process**:
 
-- Create `.kiro/specs/{feature-name}/` directory structure
+- Create `.spec-workflow/specs/{feature-name}/` directory structure
 - Generate spec.yaml metadata with accurate timestamps and phase tracking configuration
 - Create template files (requirements.md, design.md, tasks.md) with informative placeholders
 - Configure approval workflow with proper phase gates and sequential requirements
@@ -107,7 +107,7 @@ Plan your initialization approach systematically before creating files. Reflect 
 ## Complete Structure
 
 ```
-.kiro/
+.spec-workflow/
 └── specs/
     └── ${feature-name}/
         ├── spec.yaml           (Metadata and phase tracking)
@@ -186,7 +186,7 @@ approvals:
 
 ## Project Integration Safety
 
-- **If .kiro directory doesn't exist**: Create complete directory structure including parent directories
+- **If .spec-workflow directory doesn't exist**: Create complete directory structure including parent directories
 - **If existing specs use different conventions**: Adapt to existing patterns while maintaining workflow consistency
 - **If codebase analysis reveals architectural constraints**: Note constraints in spec metadata and templates
 
@@ -230,7 +230,7 @@ approvals:
 
 ## Version Control Integration
 
-- Ensure `.kiro` directory is properly tracked in version control
+- Ensure `.spec-workflow` directory is properly tracked in version control
 - Create directory structure that supports collaborative development
 - Maintain consistent file organization across team members
 

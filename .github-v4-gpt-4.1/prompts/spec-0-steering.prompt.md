@@ -8,7 +8,7 @@ tools: ['codebase', 'editFiles', 'search']
 
 ## Role and Objective
 
-You are a comprehensive project analyzer and documentation generator. Your task is to intelligently create or update core steering documents in `.kiro/steering/` to maintain accurate, actionable project knowledge for spec-driven development.
+You are a comprehensive project analyzer and documentation generator. Your task is to intelligently create or update core steering documents in `.spec-workflow/steering/` to maintain accurate, actionable project knowledge for spec-driven development.
 
 # Core Agent Principles
 
@@ -64,7 +64,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 **Assessment Process**:
 
-- Check for existing steering documents in `.kiro/steering/` directory
+- Check for existing steering documents in `.spec-workflow/steering/` directory
 - Identify user customizations, manual additions, and editorial content to preserve
 - Assess currency of existing information against current codebase state
 - Determine appropriate update strategy (full regeneration vs. targeted updates)
@@ -78,14 +78,14 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 **Generation Process**:
 
-### Product Overview (.kiro/steering/product.md)
+### Product Overview (.spec-workflow/steering/product.md)
 
 - Extract product purpose and description from codebase analysis and documentation
 - Identify core features and capabilities from component and functionality analysis
 - Derive target use cases from application architecture and user interaction patterns
 - Document key value proposition and architectural decision rationale
 
-### Technology Stack (.kiro/steering/tech.md)
+### Technology Stack (.spec-workflow/steering/tech.md)
 
 - Compile comprehensive technology inventory from dependency analysis
 - Document development environment setup with specific commands and requirements
@@ -93,7 +93,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 - Record port configurations, environment variables, and service dependencies
 - Include build processes, testing frameworks, and deployment configurations
 
-### Project Structure (.kiro/steering/structure.md)
+### Project Structure (.spec-workflow/steering/structure.md)
 
 - Map detailed directory organization based on actual project layout
 - Document code organization patterns and architectural boundaries observed
@@ -119,7 +119,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 # Core Steering Documents
 
-## 1. Product Overview (.kiro/steering/product.md)
+## 1. Product Overview (.spec-workflow/steering/product.md)
 
 ### Content Requirements Based on Codebase Analysis
 
@@ -163,7 +163,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 - [Third-party dependencies and their purposes]
 ```
 
-## 2. Technology Stack (.kiro/steering/tech.md)
+## 2. Technology Stack (.spec-workflow/steering/tech.md)
 
 ### Content Requirements Based on Codebase Analysis
 
@@ -222,7 +222,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 - [Development vs production variable differences]
 ```
 
-## 3. Project Structure (.kiro/steering/structure.md)
+## 3. Project Structure (.spec-workflow/steering/structure.md)
 
 ### Content Requirements Based on Codebase Analysis
 
@@ -314,7 +314,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 - **If .github/copilot-instructions.md doesn't exist**: Create file with proper steering configuration and format
 - **If custom steering files exist**: Reference appropriately in configuration, ensure no conflicts with core steering
-- **If required directory structure is missing**: Create `.kiro/steering/` directory and any necessary parent directories
+- **If required directory structure is missing**: Create `.spec-workflow/steering/` directory and any necessary parent directories
 
 # Success Validation
 
@@ -339,10 +339,10 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 ## File Locations and Integration
 
 - **Primary Outputs**:
-  - `.kiro/steering/product.md` - Product overview and business context
-  - `.kiro/steering/tech.md` - Technology stack and development environment
-  - `.kiro/steering/structure.md` - Project organization and code patterns
+  - `.spec-workflow/steering/product.md` - Product overview and business context
+  - `.spec-workflow/steering/tech.md` - Technology stack and development environment
+  - `.spec-workflow/steering/structure.md` - Project organization and code patterns
 - **Configuration Update**: `.github/copilot-instructions.md` with complete steering setup
-- **Directory Creation**: Ensure `.kiro/steering/` directory exists and is properly structured
+- **Directory Creation**: Ensure `.spec-workflow/steering/` directory exists and is properly structured
 
 Create comprehensive, living documentation that provides valuable project context for spec-driven development while preserving user customizations and maintaining accuracy through systematic codebase analysis.

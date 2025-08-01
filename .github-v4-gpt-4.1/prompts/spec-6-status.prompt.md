@@ -38,11 +38,11 @@ Plan your analysis systematically: verify file structure → analyze each phase 
 
 **MUST VERIFY** specification completeness using tools:
 
-- **Spec directory**: `.kiro/specs/${input:feature}/`
-- **Metadata file**: `.kiro/specs/${input:feature}/spec.yaml`
-- **Requirements file**: `.kiro/specs/${input:feature}/requirements.md`
-- **Design file**: `.kiro/specs/${input:feature}/design.md`
-- **Tasks file**: `.kiro/specs/${input:feature}/tasks.md`
+- **Spec directory**: `.spec-workflow/specs/${input:feature}/`
+- **Metadata file**: `.spec-workflow/specs/${input:feature}/spec.yaml`
+- **Requirements file**: `.spec-workflow/specs/${input:feature}/requirements.md`
+- **Design file**: `.spec-workflow/specs/${input:feature}/design.md`
+- **Tasks file**: `.spec-workflow/specs/${input:feature}/tasks.md`
 
 #### Metadata Analysis
 

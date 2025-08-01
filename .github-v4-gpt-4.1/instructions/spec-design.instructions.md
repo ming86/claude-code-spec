@@ -1,6 +1,6 @@
 ---
 description: Architecture and design documentation standards
-applyTo: ".kiro/**/design.md"
+applyTo: ".spec-workflow/**/design.md"
 ---
 
 # Design Documentation Standards

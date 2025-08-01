@@ -38,7 +38,7 @@ Plan your task breakdown approach systematically: validate prerequisites → ana
 
 ### Approval Status Check
 
-Verify in `.kiro/specs/${input:feature}/spec.yaml`:
+Verify in `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 approvals:
@@ -58,9 +58,9 @@ approvals:
 
 **MUST READ AND ANALYZE** approved documents:
 
-- **Requirements**: `.kiro/specs/${input:feature}/requirements.md` - Extract all functional and non-functional requirements
-- **Design**: `.kiro/specs/${input:feature}/design.md` - Understand technical architecture and component specifications
-- **Metadata**: `.kiro/specs/${input:feature}/spec.yaml` - Verify approval status and project context
+- **Requirements**: `.spec-workflow/specs/${input:feature}/requirements.md` - Extract all functional and non-functional requirements
+- **Design**: `.spec-workflow/specs/${input:feature}/design.md` - Understand technical architecture and component specifications
+- **Metadata**: `.spec-workflow/specs/${input:feature}/spec.yaml` - Verify approval status and project context
 
 #### Codebase Implementation Context
 
@@ -267,7 +267,7 @@ Identify tasks that block other tasks:
 
 ### 1. Tasks File Creation
 
-Update `.kiro/specs/${input:feature}/tasks.md` with:
+Update `.spec-workflow/specs/${input:feature}/tasks.md` with:
 
 - Complete task breakdown following hierarchical structure
 - All tasks with requirement traceability
@@ -276,7 +276,7 @@ Update `.kiro/specs/${input:feature}/tasks.md` with:
 
 ### 2. Spec Metadata Update
 
-Update `.kiro/specs/${input:feature}/spec.yaml`:
+Update `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 updated_at: "{current_timestamp}"

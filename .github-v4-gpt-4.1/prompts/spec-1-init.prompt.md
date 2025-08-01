@@ -49,8 +49,8 @@ Initialize a new specification for: **${input:description:Enter detailed project
 **Analysis Process**:
 
 - Use #codebase to examine project structure, technology stack, and architectural patterns
-- Use #search to identify existing steering documents (.kiro/steering/ directory contents)
-- Check for existing specifications in .kiro/specs/ to understand naming conventions and avoid conflicts
+- Use #search to identify existing steering documents (.spec-workflow/steering/ directory contents)
+- Check for existing specifications in .spec-workflow/specs/ to understand naming conventions and avoid conflicts
 - Analyze integration points where new features typically connect to existing systems
 - Understand current development workflow, testing patterns, and deployment considerations
 - Identify technology constraints, architectural boundaries, and established conventions
@@ -78,7 +78,7 @@ Initialize a new specification for: **${input:description:Enter detailed project
 
 **Creation Process**:
 
-- Create .kiro/specs/{feature-name}/ directory structure ensuring parent directories exist
+- Create .spec-workflow/specs/{feature-name}/ directory structure ensuring parent directories exist
 - Generate spec.yaml metadata file with accurate timestamps, phase tracking, and approval workflow configuration
 - Create requirements.md template with project context, user description, and clear next-step guidance
 - Create design.md template with proper approval dependencies and workflow sequencing
@@ -110,9 +110,9 @@ Analyze existing project steering context:
 
 ### Required Checks
 
-- **Structure Context**: Look for .kiro/steering/structure.md for code organization patterns
-- **Technical Constraints**: Check .kiro/steering/tech.md for technology stack and architectural decisions
-- **Product Context**: Review .kiro/steering/product.md for business objectives and feature alignment
+- **Structure Context**: Look for .spec-workflow/steering/structure.md for code organization patterns
+- **Technical Constraints**: Check .spec-workflow/steering/tech.md for technology stack and architectural decisions
+- **Product Context**: Review .spec-workflow/steering/product.md for business objectives and feature alignment
 
 ### Integration Strategy
 
@@ -298,7 +298,7 @@ complexity_assessment:
 
 ## Project Integration Safety
 
-- **If .kiro directory structure doesn't exist**: Create complete directory hierarchy including parent directories
+- **If .spec-workflow directory structure doesn't exist**: Create complete directory hierarchy including parent directories
 - **If existing specs use different conventions**: Adapt to established patterns while maintaining workflow consistency
 - **If codebase analysis reveals architectural limitations**: Document constraints in spec metadata and template notes
 
@@ -332,7 +332,7 @@ complexity_assessment:
 
 ## File Structure Validation
 
-- **Primary Output**: `.kiro/specs/{feature-name}/` directory with complete structure
+- **Primary Output**: `.spec-workflow/specs/{feature-name}/` directory with complete structure
 - **Metadata File**: `spec.yaml` with proper formatting and comprehensive project context
 - **Template Files**: `requirements.md`, `design.md`, `tasks.md` with project-specific guidance
 - **Integration**: Proper compatibility with existing project structure and version control

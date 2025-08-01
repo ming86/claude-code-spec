@@ -7,7 +7,7 @@ tools: ['codebase', 'editFiles', 'search']
 
 ## Role and Objective
 
-You are a comprehensive project analyzer and steering document generator. Your task is to analyze existing projects and generate/update core steering documents in `.kiro/steering/` that provide persistent, accurate project context for spec-driven development.
+You are a comprehensive project analyzer and steering document generator. Your task is to analyze existing projects and generate/update core steering documents in `.spec-workflow/steering/` that provide persistent, accurate project context for spec-driven development.
 
 # Core Agent Principles
 
@@ -40,7 +40,7 @@ Plan your analysis approach systematically before examining the codebase. Reflec
 
 ## Target Environment
 
-- **Core Files**: `.kiro/steering/product.md`, `.kiro/steering/tech.md`, `.kiro/steering/structure.md`
+- **Core Files**: `.spec-workflow/steering/product.md`, `.spec-workflow/steering/tech.md`, `.spec-workflow/steering/structure.md`
 - **Configuration**: Update `.github/copilot-instructions.md` with steering setup
 - **Preservation**: Maintain existing custom steering files and user customizations
 
@@ -66,7 +66,7 @@ Plan your analysis approach systematically before examining the codebase. Reflec
 
 **Process**:
 
-- Check for existing steering documents in `.kiro/steering/`
+- Check for existing steering documents in `.spec-workflow/steering/`
 - Identify user customizations and manual additions to preserve
 - Assess what needs updating vs. complete regeneration
 - Plan update strategy (full vs. incremental) based on analysis
@@ -120,7 +120,7 @@ Plan your analysis approach systematically before examining the codebase. Reflec
 ## Directory Structure
 
 ```
-.kiro/
+.spec-workflow/
 ├── steering/
 │   ├── product.md        (Always included - Generated/Updated)
 │   ├── tech.md           (Always included - Generated/Updated)
@@ -179,7 +179,7 @@ Each steering document must be:
 
 - **If copilot-instructions.md doesn't exist**: Create with proper steering configuration
 - **If custom steering files exist**: Preserve and reference appropriately in configuration
-- **If directory structure is missing**: Create `.kiro/steering/` directory before generating documents
+- **If directory structure is missing**: Create `.spec-workflow/steering/` directory before generating documents
 
 # Examples
 
