@@ -1,6 +1,6 @@
 ---
 description: Execute individual implementation tasks from existing tasks.md with single-task focus and validation
-tools: ['codebase', 'problems', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'findTestFiles', 'runTests', 'editFiles', 'search', 'runCommands', 'runTasks', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Task Execution Mode

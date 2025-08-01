@@ -1,7 +1,7 @@
 ---
 description: Execute specific implementation task from approved tasks.md with single-task focus
 mode: agent
-tools: ['codebase', 'editFiles', 'search', 'problems']
+tools: ['codebase', 'usages', 'problems', 'changes', 'testFailure', 'terminalSelection', 'terminalLastCommand', 'findTestFiles', 'runTests', 'editFiles', 'search', 'runCommands', 'runTasks', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Execute Implementation Task
