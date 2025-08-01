@@ -169,4 +169,31 @@ Transform non-coding tasks to coding equivalents:
 - **Phase Organization**: Logical grouping of related tasks
 - **Execution Order**: Clear guidance on task sequencing
 
-These standards ensure tasks focus on actionable coding work with clear structure, requirement traceability, and systematic execution planning.
+## Task Execution Progress Standards
+
+### HOW to Mark Tasks Complete
+
+**CRITICAL**: Update tasks.md immediately after completing any task:
+- Change `- [ ]` to `- [x]` for completed task
+- Save file immediately - don't batch multiple completions
+
+### HOW to Resume Task Execution
+
+**ALWAYS re-read `.spec-workflow/${feature}/tasks.md` before starting ANY work:**
+- Whether executing a single task OR all tasks
+- Scan for completed tasks (marked with `- [x]`)
+- Identify remaining pending tasks (marked with `- [ ]`)
+- Check for any new tasks added since last session
+- Verify dependencies are satisfied before starting
+- This enables seamless resume from any interruption point
+
+**Key Workflow Pattern:**
+1. **Read tasks.md** (always, regardless of scope)
+2. **Assess current state** (what's done, what's pending)
+3. **Execute work** (single task or batch)
+4. **Mark complete immediately** (don't wait)
+5. **Save tasks.md** (preserve state)
+
+This makes any execution scope resumable and any interruption recoverable. The tasks.md file itself serves as the complete state persistence mechanism.
+
+These standards ensure tasks focus on actionable coding work with clear structure, requirement traceability, systematic execution planning, and reliable progress tracking.
