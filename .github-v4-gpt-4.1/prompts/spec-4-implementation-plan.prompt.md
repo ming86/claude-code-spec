@@ -1,7 +1,7 @@
 ---
 description: Generate implementation tasks with requirement traceability and coding focus
 mode: agent
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Implementation Tasks Generation

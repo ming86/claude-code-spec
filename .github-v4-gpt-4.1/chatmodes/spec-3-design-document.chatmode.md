@@ -1,6 +1,6 @@
 ---
 description: Research-driven technical design with source citations and architecture analysis
-tools: ['codebase', 'fetch', 'findTestFiles', 'githubRepo', 'search']
+tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'githubRepo', 'search']
 ---
 
 # Technical Design Mode

@@ -1,7 +1,7 @@
 ---
 description: Generate comprehensive EARS-format requirements with optional research
 mode: agent
-tools: ['codebase', 'fetch', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'fetch', 'findTestFiles', 'editFiles', 'search']
 ---
 
 # Requirements Generation

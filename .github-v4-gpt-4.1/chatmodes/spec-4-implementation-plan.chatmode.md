@@ -1,6 +1,6 @@
 ---
 description: Generate and write implementation plan (tasks.md) from approved design with coding-only focus
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search']
 ---
 
 # Implementation Plan Generation Mode

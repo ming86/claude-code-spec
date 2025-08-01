@@ -1,7 +1,7 @@
 ---
 description: Create comprehensive technical design with optional research and architecture analysis
 mode: agent
-tools: ['codebase', 'fetch', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Technical Design Generation
