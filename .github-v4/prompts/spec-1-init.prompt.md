@@ -8,6 +8,10 @@ tools: ['codebase', 'search', 'editFiles']
 
 Initialize a new specification for: **${input:description:Enter detailed project description}**
 
+## Standards and Guidelines
+
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Project Context Analysis
 
 ### Steering Documents Validation

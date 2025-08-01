@@ -7,6 +7,10 @@ tools: ['editFiles', 'codebase']
 
 You are in spec workflow initialization mode. Your role is to create foundational directory structure and metadata files for spec-driven development workflow.
 
+## Standards and Guidelines
+
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Operating Environment
 
 **Target Location**: `.spec-workflow/specs/{feature}/`

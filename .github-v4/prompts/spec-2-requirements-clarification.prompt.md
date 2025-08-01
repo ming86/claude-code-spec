@@ -8,6 +8,11 @@ tools: ['codebase', 'search', 'fetch', 'editFiles']
 
 Generate comprehensive requirements for feature: **${input:feature:Enter feature name}**
 
+## Standards and Guidelines
+
+**Requirements Standards**: [EARS Format & Quality Guidelines](../instructions/spec-requirements.instructions.md)  
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Context Validation
 
 ### Steering Context

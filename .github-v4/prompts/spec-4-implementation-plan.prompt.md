@@ -10,6 +10,11 @@ Generate detailed implementation tasks for feature: **${input:feature:Enter feat
 
 **Task Execution Mode**: ${input:executionMode:single|multiple} task execution preference
 
+## Standards and Guidelines
+
+**Task Standards**: [Task Structure & Planning Guidelines](../instructions/spec-tasks.instructions.md)  
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Prerequisites Validation
 
 **CRITICAL**: Tasks can only be generated after both requirements and design are approved.

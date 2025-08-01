@@ -8,6 +8,11 @@ tools: ['codebase', 'search', 'fetch', 'editFiles']
 
 Create comprehensive technical design for feature: **${input:feature:Enter feature name}**
 
+## Standards and Guidelines
+
+**Design Standards**: [Architecture & Documentation Guidelines](../instructions/spec-design.instructions.md)  
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Prerequisites Validation
 
 **CRITICAL**: Design can only be generated after requirements are approved.

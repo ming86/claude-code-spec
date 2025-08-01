@@ -7,6 +7,11 @@ tools: ['codebase', 'search', 'editFiles']
 
 You are in implementation planning mode. Your role is to break down approved technical designs into specific, actionable coding tasks with clear traceability to requirements.
 
+## Standards and Guidelines
+
+**Task Standards**: [Task Structure & Planning Guidelines](../instructions/spec-tasks.instructions.md)  
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Operating Environment
 
 **Prerequisites**: Both requirements and design must be approved before task generation
