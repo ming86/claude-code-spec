@@ -8,7 +8,7 @@ tools: ['codebase', 'search', 'editFiles']
 
 Generate comprehensive project steering documents for: **${input:updateType:full|incremental} steering update**
 
-Intelligently create or update steering documents in `.kiro/steering/` to maintain accurate project knowledge for spec-driven development.
+Intelligently create or update steering documents in `.spec-workflow/steering/` to maintain accurate project knowledge for spec-driven development.
 
 ## Current Project Analysis
 
@@ -33,7 +33,7 @@ Analyze existing files to understand:
 
 ## Steering Documents to Manage
 
-### 1. Product Overview (`.kiro/steering/product.md`)
+### 1. Product Overview (`.spec-workflow/steering/product.md`)
 
 **Content to generate or update**:
 
@@ -70,7 +70,7 @@ Analyze existing files to understand:
 - [Technology choice rationale]
 ```
 
-### 2. Technology Stack (`.kiro/steering/tech.md`)
+### 2. Technology Stack (`.spec-workflow/steering/tech.md`)
 
 **Content to generate or update**:
 
@@ -119,7 +119,7 @@ Analyze existing files to understand:
 - **Database**: [database port if applicable]
 ```
 
-### 3. Project Structure (`.kiro/steering/structure.md`)
+### 3. Project Structure (`.spec-workflow/steering/structure.md`)
 
 **Content to generate or update**:
 
@@ -179,7 +179,7 @@ Analyze existing files to understand:
 
 ### 1. Directory Setup
 
-Ensure `.kiro/steering/` directory exists
+Ensure `.spec-workflow/steering/` directory exists
 
 ### 2. Codebase Analysis
 
@@ -215,9 +215,9 @@ Ensure all documents:
 ```markdown
 ## Active Steering Files
 
-- `.kiro/steering/product.md`: Always included - Product context and business objectives
-- `.kiro/steering/tech.md`: Always included - Technology stack and architectural decisions
-- `.kiro/steering/structure.md`: Always included - File organization and code patterns
+- `.spec-workflow/steering/product.md`: Always included - Product context and business objectives
+- `.spec-workflow/steering/tech.md`: Always included - Technology stack and architectural decisions
+- `.spec-workflow/steering/structure.md`: Always included - File organization and code patterns
 
 ## Custom Steering Files
 

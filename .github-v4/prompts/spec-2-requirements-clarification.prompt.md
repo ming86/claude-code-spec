@@ -14,17 +14,17 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 
 Reference steering documents if available:
 
-- **Architecture context**: `.kiro/steering/structure.md`
-- **Technical constraints**: `.kiro/steering/tech.md`
-- **Product context**: `.kiro/steering/product.md`
+- **Architecture context**: `.spec-workflow/steering/structure.md`
+- **Technical constraints**: `.spec-workflow/steering/tech.md`
+- **Product context**: `.spec-workflow/steering/product.md`
 
 ### Existing Spec Context
 
 Verify the specification exists and is ready for requirements generation:
 
-- **Current spec directory**: `.kiro/specs/${input:feature}/`
-- **Current requirements**: `.kiro/specs/${input:feature}/requirements.md`
-- **Spec metadata**: `.kiro/specs/${input:feature}/spec.yaml`
+- **Current spec directory**: `.spec-workflow/specs/${input:feature}/`
+- **Current requirements**: `.spec-workflow/specs/${input:feature}/requirements.md`
+- **Spec metadata**: `.spec-workflow/specs/${input:feature}/spec.yaml`
 
 ### Codebase Analysis
 
@@ -173,7 +173,7 @@ Ensure each requirement is:
 
 ### 1. Requirements File Update
 
-Update `.kiro/specs/${input:feature}/requirements.md` with:
+Update `.spec-workflow/specs/${input:feature}/requirements.md` with:
 
 - Complete requirements document following the structure above
 - All functional requirements in EARS format
@@ -182,7 +182,7 @@ Update `.kiro/specs/${input:feature}/requirements.md` with:
 
 ### 2. Spec Metadata Update
 
-Update `.kiro/specs/${input:feature}/spec.yaml`:
+Update `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 updated_at: "{current_timestamp}"

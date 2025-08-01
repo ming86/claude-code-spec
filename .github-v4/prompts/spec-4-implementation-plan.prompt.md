@@ -16,7 +16,7 @@ Generate detailed implementation tasks for feature: **${input:feature:Enter feat
 
 ### Approval Status Check
 
-Verify in `.kiro/specs/${input:feature}/spec.yaml`:
+Verify in `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 approvals:
@@ -34,9 +34,9 @@ approvals:
 
 Analyze approved documents:
 
-- **Requirements**: `.kiro/specs/${input:feature}/requirements.md`
-- **Design**: `.kiro/specs/${input:feature}/design.md`
-- **Metadata**: `.kiro/specs/${input:feature}/spec.yaml`
+- **Requirements**: `.spec-workflow/specs/${input:feature}/requirements.md`
+- **Design**: `.spec-workflow/specs/${input:feature}/design.md`
+- **Metadata**: `.spec-workflow/specs/${input:feature}/spec.yaml`
 
 ### Codebase Implementation Context
 
@@ -241,7 +241,7 @@ Identify tasks that block other tasks:
 
 ### 1. Tasks File Creation
 
-Update `.kiro/specs/${input:feature}/tasks.md` with:
+Update `.spec-workflow/specs/${input:feature}/tasks.md` with:
 
 - Complete task breakdown following hierarchical structure
 - All tasks with requirement traceability
@@ -250,7 +250,7 @@ Update `.kiro/specs/${input:feature}/tasks.md` with:
 
 ### 2. Spec Metadata Update
 
-Update `.kiro/specs/${input:feature}/spec.yaml`:
+Update `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 updated_at: "{current_timestamp}"

@@ -14,7 +14,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### API Standards and Guidelines
 
-**File**: `.kiro/steering/api-standards.md`
+**File**: `.spec-workflow/steering/api-standards.md`
 
 - REST API design principles
 - Endpoint naming conventions
@@ -25,7 +25,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Testing Methodologies
 
-**File**: `.kiro/steering/testing-approach.md`
+**File**: `.spec-workflow/steering/testing-approach.md`
 
 - Unit testing standards and frameworks
 - Integration testing strategies
@@ -36,7 +36,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Security Policies and Standards
 
-**File**: `.kiro/steering/security-policies.md`
+**File**: `.spec-workflow/steering/security-policies.md`
 
 - Authentication and authorization standards
 - Data protection and privacy requirements
@@ -47,7 +47,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Database Conventions
 
-**File**: `.kiro/steering/database-conventions.md`
+**File**: `.spec-workflow/steering/database-conventions.md`
 
 - Schema design principles
 - Naming conventions for tables, columns, indexes
@@ -58,7 +58,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Performance Standards
 
-**File**: `.kiro/steering/performance-standards.md`
+**File**: `.spec-workflow/steering/performance-standards.md`
 
 - Performance benchmarks and targets
 - Optimization strategies and techniques
@@ -69,7 +69,7 @@ Create specialized steering document for: **${input:steeringType:Enter steering 
 
 ### Deployment and DevOps
 
-**File**: `.kiro/steering/deployment-workflows.md`
+**File**: `.spec-workflow/steering/deployment-workflows.md`
 
 - Deployment pipeline standards
 - Environment configuration management
@@ -217,6 +217,6 @@ Consider:
 
 ## File Location
 
-**Target Directory**: `.kiro/steering/${steeringType}.md`
+**Target Directory**: `.spec-workflow/steering/${steeringType}.md`
 
 Create specialized steering documents that provide clear, actionable guidance for specific development domains while integrating seamlessly with existing workflow and practices.

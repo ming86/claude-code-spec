@@ -14,7 +14,7 @@ Create comprehensive technical design for feature: **${input:feature:Enter featu
 
 ### Approval Status Check
 
-Verify in `.kiro/specs/${input:feature}/spec.yaml`:
+Verify in `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 approvals:
@@ -28,7 +28,7 @@ approvals:
 
 ### Requirements Analysis
 
-Read and analyze `.kiro/specs/${input:feature}/requirements.md`:
+Read and analyze `.spec-workflow/specs/${input:feature}/requirements.md`:
 
 - Understand all functional requirements
 - Identify non-functional requirements
@@ -50,9 +50,9 @@ Use codebase tool to understand:
 
 Reference steering documents if available:
 
-- **Architecture constraints**: `.kiro/steering/structure.md`
-- **Technology stack**: `.kiro/steering/tech.md`
-- **Product context**: `.kiro/steering/product.md`
+- **Architecture constraints**: `.spec-workflow/steering/structure.md`
+- **Technology stack**: `.spec-workflow/steering/tech.md`
+- **Product context**: `.spec-workflow/steering/product.md`
 
 ## Optional Research Integration
 
@@ -370,7 +370,7 @@ sequenceDiagram
 
 ### 1. Design File Creation
 
-Update `.kiro/specs/${input:feature}/design.md` with:
+Update `.spec-workflow/specs/${input:feature}/design.md` with:
 
 - Complete technical design following the structure above
 - All component specifications and API designs
@@ -379,7 +379,7 @@ Update `.kiro/specs/${input:feature}/design.md` with:
 
 ### 2. Spec Metadata Update
 
-Update `.kiro/specs/${input:feature}/spec.yaml`:
+Update `.spec-workflow/specs/${input:feature}/spec.yaml`:
 
 ```yaml
 updated_at: "{current_timestamp}"

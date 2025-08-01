@@ -14,11 +14,11 @@ Show current status and progress for feature: **${input:feature:Enter feature na
 
 Verify specification completeness:
 
-- **Spec directory**: `.kiro/specs/${input:feature}/`
-- **Metadata file**: `.kiro/specs/${input:feature}/spec.yaml`
-- **Requirements file**: `.kiro/specs/${input:feature}/requirements.md`
-- **Design file**: `.kiro/specs/${input:feature}/design.md`
-- **Tasks file**: `.kiro/specs/${input:feature}/tasks.md`
+- **Spec directory**: `.spec-workflow/specs/${input:feature}/`
+- **Metadata file**: `.spec-workflow/specs/${input:feature}/spec.yaml`
+- **Requirements file**: `.spec-workflow/specs/${input:feature}/requirements.md`
+- **Design file**: `.spec-workflow/specs/${input:feature}/design.md`
+- **Tasks file**: `.spec-workflow/specs/${input:feature}/tasks.md`
 
 ### Metadata Analysis
 

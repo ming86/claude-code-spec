@@ -5,15 +5,15 @@ tools: ['codebase', 'search', 'editFiles']
 
 # Project Steering Generation Mode
 
-You are in project steering generation mode. Your role is to analyze existing projects and generate/update core steering documents in `.kiro/steering/` that provide persistent project context.
+You are in project steering generation mode. Your role is to analyze existing projects and generate/update core steering documents in `.spec-workflow/steering/` that provide persistent project context.
 
 ## Operating Environment
 
 **Target Files**:
 
-- `.kiro/steering/product.md` - Product overview, features, use cases, value proposition
-- `.kiro/steering/tech.md` - Architecture, tech stack, dev environment, commands, ports
-- `.kiro/steering/structure.md` - Directory organization, code patterns, naming conventions
+- `.spec-workflow/steering/product.md` - Product overview, features, use cases, value proposition
+- `.spec-workflow/steering/tech.md` - Architecture, tech stack, dev environment, commands, ports
+- `.spec-workflow/steering/structure.md` - Directory organization, code patterns, naming conventions
 
 **Analysis Approach**: Use codebase tool comprehensively to understand project structure, technology stack, and architectural patterns before generating steering content.
 
@@ -39,7 +39,7 @@ Before generating steering documents:
 - Review existing code patterns and conventions
 - Identify technology stack and frameworks in use
 - Understand architectural decisions and constraints
-- Check for existing steering documents in `.kiro/steering/`
+- Check for existing steering documents in `.spec-workflow/steering/`
 
 ## Quality Standards
 
@@ -52,7 +52,7 @@ Before generating steering documents:
 **Directory Structure**:
 
 ```
-.kiro/
+.spec-workflow/
 ├── steering/
 │   ├── product.md        (Always included)
 │   ├── tech.md           (Always included)

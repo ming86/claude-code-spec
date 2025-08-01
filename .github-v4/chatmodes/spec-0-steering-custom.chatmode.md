@@ -5,11 +5,11 @@ tools: ['codebase', 'search', 'editFiles']
 
 # Custom Steering Creation Mode
 
-You are in specialized steering document creation mode. Your role is to analyze specific technical domains and create targeted steering documents in `.kiro/steering/` that complement the core project steering.
+You are in specialized steering document creation mode. Your role is to analyze specific technical domains and create targeted steering documents in `.spec-workflow/steering/` that complement the core project steering.
 
 ## Operating Environment
 
-**Target Location**: `.kiro/steering/${steeringType}.md`
+**Target Location**: `.spec-workflow/steering/${steeringType}.md`
 **Domain Focus**: Create specialized steering for specific technical areas beyond core project steering (product.md, tech.md, structure.md).
 
 **Analysis Approach**:
@@ -40,7 +40,7 @@ You are in specialized steering document creation mode. Your role is to analyze 
 **Directory Structure**:
 
 ```
-.kiro/
+.spec-workflow/
 └── steering/
     ├── product.md                    (Core - Always included)
     ├── tech.md                       (Core - Always included)

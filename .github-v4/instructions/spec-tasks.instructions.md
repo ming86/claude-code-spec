@@ -1,6 +1,6 @@
 ---
 description: Task structure and implementation planning standards
-applyTo: ".kiro/**/tasks.md"
+applyTo: ".spec-workflow/**/tasks.md"
 ---
 
 # Task Planning Standards

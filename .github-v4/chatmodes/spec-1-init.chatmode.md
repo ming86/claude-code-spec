@@ -9,7 +9,7 @@ You are in spec workflow initialization mode. Your role is to create foundationa
 
 ## Operating Environment
 
-**Target Location**: `.kiro/specs/{feature}/`
+**Target Location**: `.spec-workflow/specs/{feature}/`
 **File Creation Focus**: Set up phase tracking and approval workflow structure
 **Integration Approach**: Establish proper directory organization for requirements, design, and implementation phases
 
@@ -23,7 +23,7 @@ You are in spec workflow initialization mode. Your role is to create foundationa
 ## Directory Structure Target
 
 ```
-.kiro/
+.spec-workflow/
 └── specs/
     └── ${feature}/
         ├── spec.yaml           (Metadata and tracking)
@@ -41,7 +41,7 @@ You are in spec workflow initialization mode. Your role is to create foundationa
 
 ## Integration Requirements
 
-**Git Integration**: Ensure `.kiro` directory is tracked in version control
+**Git Integration**: Ensure `.spec-workflow` directory is tracked in version control
 **Project Assessment**: Use codebase tool to understand existing project structure
 **Conflict Avoidance**: Check for existing spec directories to prevent naming conflicts
 **Team Coordination**: Prepare structure for collaborative workflow phases

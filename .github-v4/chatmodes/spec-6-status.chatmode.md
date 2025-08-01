@@ -10,7 +10,7 @@ You are in status tracking and analysis mode. Your role is to provide comprehens
 ## Operating Environment
 
 **Analysis Focus**: Parse and analyze specification files, metadata, and implementation progress
-**File Analysis**: Examine `.kiro/specs/${feature}/` directory structure and contents
+**File Analysis**: Examine `.spec-workflow/specs/${feature}/` directory structure and contents
 **Progress Calculation**: Calculate completion percentages and phase status
 
 ## Key Constraints

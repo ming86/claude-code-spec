@@ -14,9 +14,9 @@ Initialize a new specification for: **${input:description:Enter detailed project
 
 Check for existing steering context:
 
-- **Structure context**: `.kiro/steering/structure.md`
-- **Technical constraints**: `.kiro/steering/tech.md`
-- **Product context**: `.kiro/steering/product.md`
+- **Structure context**: `.spec-workflow/steering/structure.md`
+- **Technical constraints**: `.spec-workflow/steering/tech.md`
+- **Product context**: `.spec-workflow/steering/product.md`
 
 **Note**: Steering documents are recommended but not required. For new features or projects without steering, proceed with specification generation.
 
@@ -42,7 +42,7 @@ Based on the provided description, generate a concise, descriptive feature name 
 
 ### 1. Directory Setup
 
-Create `.kiro/specs/{generated-feature-name}/` with:
+Create `.spec-workflow/specs/{generated-feature-name}/` with:
 
 ### 2. Specification Metadata (`spec.yaml`)
 
