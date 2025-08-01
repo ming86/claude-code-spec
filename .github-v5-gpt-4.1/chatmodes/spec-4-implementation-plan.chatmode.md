@@ -1,6 +1,6 @@
 ---
 description: Generate and write implementation plan (tasks.md) from approved design with coding-only focus
-tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
+tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search']
 ---
 
 # Implementation Plan Generation Mode

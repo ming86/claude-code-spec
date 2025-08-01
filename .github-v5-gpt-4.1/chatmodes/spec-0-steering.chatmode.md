@@ -1,6 +1,6 @@
 ---
 description: Generate and update project steering documents from codebase analysis
-tools: ['codebase', 'usages', 'findTestFiles', 'searchResults', 'editFiles', 'search']
+tools: ['codebase', 'editFiles', 'search']
 ---
 
 # Project Steering Generation Mode

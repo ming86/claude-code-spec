@@ -1,6 +1,6 @@
 ---
 description: Create specialized steering documents for specific technical contexts and standards
-tools: ['codebase', 'usages', 'findTestFiles', 'searchResults', 'editFiles', 'search']
+tools: ['codebase', 'editFiles', 'search']
 ---
 
 # Custom Steering Creation Mode

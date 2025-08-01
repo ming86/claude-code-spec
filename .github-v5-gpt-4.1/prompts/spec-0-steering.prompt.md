@@ -1,8 +1,7 @@
 ---
 description: Create or update project steering documents for spec-driven development
 mode: agent
-tools: ['codebase', 'usages', 'findTestFiles', 'searchResults', 'editFiles', 'search']
-model: Claude Sonnet 4
+tools: ['codebase', 'editFiles', 'search']
 ---
 
 # Project Steering Management

@@ -1,6 +1,6 @@
 ---
 description: Generate EARS-format requirements with codebase analysis and optional research
-tools: ['codebase', 'usages', 'fetch', 'githubRepo', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'fetch', 'findTestFiles', 'githubRepo', 'search']
 ---
 
 # Requirements Generation Mode

@@ -1,7 +1,7 @@
 ---
 description: Comprehensive status tracking and progress analysis for spec-driven development
 mode: agent
-tools: ['codebase', 'usages', 'changes', 'testFailure', 'findTestFiles', 'editFiles', 'search']
+tools: ['codebase', 'search']
 ---
 
 # Specification Status and Progress Analysis

@@ -1,6 +1,6 @@
 ---
 description: Progress tracking and comprehensive status reporting with validation analysis
-tools: ['codebase', 'usages', 'changes', 'testFailure', 'findTestFiles', 'editFiles', 'search']
+tools: ['codebase', 'search']
 ---
 
 # Status Tracking Mode

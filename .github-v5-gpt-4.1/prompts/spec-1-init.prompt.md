@@ -1,7 +1,7 @@
 ---
 description: Initialize a new specification with project analysis and structure setup
 mode: agent
-tools: ['codebase', 'usages', 'findTestFiles', 'searchResults', 'editFiles', 'search']
+tools: ['codebase', 'editFiles', 'search']
 ---
 
 # Specification Initialization
@@ -27,7 +27,7 @@ You MUST use tools to understand the project context and structure rather than m
 - Use #codebase to analyze existing project architecture, technology stack, and development patterns
 - Use #search to find existing specifications, steering documents, and related project context
 - Use #editFiles to create directory structure, metadata files, and template documents
-- If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
+  If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
 
 ## Planning and Reflection
 

@@ -37,7 +37,7 @@ Plan your requirements analysis approach systematically before generating conten
 
 # Instructions
 
-Generate comprehensive requirements for feature: ${input:feature:Enter feature name}
+Generate comprehensive requirements for feature: **${input:feature:Enter feature name}**
 
 ## Analysis and Integration Requirements
 

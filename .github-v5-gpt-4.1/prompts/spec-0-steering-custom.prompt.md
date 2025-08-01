@@ -1,8 +1,7 @@
 ---
 description: Create specialized steering documents for specific domains and practices
 mode: agent
-tools: ['codebase', 'usages', 'findTestFiles', 'searchResults', 'editFiles', 'search']
-model: Claude Sonnet 4
+tools: ['codebase', 'editFiles', 'search']
 ---
 
 # Custom Steering Document Creation
