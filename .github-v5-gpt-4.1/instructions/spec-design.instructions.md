@@ -160,7 +160,7 @@ Code examples showing:
 - [ ] Security considerations addressed appropriate to feature scope
 - [ ] Testing strategy appropriate for all design components
 - [ ] Architectural diagrams provided using mermaid where applicable
-- [ ] Language-agnostic design principles applied throughout
+- [ ] Scenario-based technology approach applied (greenfield/brownfield/hybrid as appropriate)
 - [ ] Research findings properly documented with source citations where applicable
 
 ## Conclusion
@@ -204,15 +204,27 @@ Summary of design decisions and next steps for implementation.
 - **SHOULD enhance implementation approaches** for existing requirements through research and best practices
 - **MUST document additional feature ideas** for future consideration but exclude from current design scope
 
-## Language-Agnostic Design Standards
+## Technology-Specific Design Standards
 
-### Technology-Neutral Design Principles
+### Scenario-Based Technology Approach
 
-- **MUST avoid technology-specific assumptions** unless project explicitly constrains to specific technology stack
-- **MUST create adaptable design templates** that work across programming languages and frameworks
-- **MUST use detection-based approach** to understand actual project technology before making design decisions
-- **SHOULD focus on architectural patterns** rather than implementation-specific details
-- **MUST write data model specifications** that can be adapted to any programming language
+#### Greenfield Projects (No Existing Codebase)
+- **MUST analyze project requirements** to determine appropriate technology stack selection
+- **MUST make explicit technology decisions** based on requirements, team expertise, and constraints
+- **MUST design specifically for chosen technology stack** once technology decisions are made
+- **MUST document technology selection rationale** with clear reasoning
+
+#### Brownfield Projects (Existing Codebase)
+- **MUST analyze existing codebase** to identify current technology stack and patterns
+- **MUST design for existing technology stack** to maintain consistency and integration
+- **MUST follow established architectural patterns** unless compelling reasons exist for changes
+- **SHOULD leverage existing components** and frameworks where applicable
+
+#### Hybrid Projects (Adding New Technology)
+- **MUST analyze existing technology constraints** and integration requirements
+- **MUST justify new technology choices** with clear business or technical rationale
+- **MUST design integration patterns** between existing and new technology components
+- **MUST document migration strategy** where technology changes affect existing systems
 
 ## Integration Requirements
 

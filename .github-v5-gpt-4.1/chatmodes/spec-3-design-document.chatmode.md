@@ -93,8 +93,8 @@ Plan your design approach systematically: analyze requirements → research cont
 3. **Research Integration**: "Researching OAuth 2.0 best practices for secure authentication... Analyzing industry standards"
 4. **Design Generation**: "Creating appropriate API design with security considerations and performance optimization..."
 
-## Multi-Language Design Patterns
-- **Python Project**: "Found Flask/Django patterns, designing REST API with SQLAlchemy data models..."
-- **JavaScript/Node.js**: "Detected Express.js framework, designing middleware-based architecture..."
-- **C# Project**: "Identified ASP.NET Core patterns, designing controller-based API with Entity Framework..."
-- **Generic Pattern**: "Using codebase semantic search to identify existing architectural patterns, then adapting design accordingly..."
+## Scenario-Based Technology Design
+- **Greenfield Project**: "No existing codebase detected. Analyzing requirements to choose appropriate technology stack... Selected Node.js with Express for API requirements... Designing new architecture..."
+- **Brownfield Python**: "Found existing Flask/Django patterns, designing REST API integration with SQLAlchemy data models to maintain consistency..."
+- **Brownfield JavaScript**: "Detected Express.js framework, designing middleware-based architecture following existing patterns..."
+- **Hybrid Project**: "Existing Java Spring backend detected. Adding new Python microservice... Designing integration via REST APIs and shared database patterns..."

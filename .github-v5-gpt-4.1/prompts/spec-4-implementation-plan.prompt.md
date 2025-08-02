@@ -8,7 +8,7 @@ tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search'
 
 ## Role and Objective
 
-You are an autonomous implementation planning agent. Generate comprehensive, actionable coding tasks for feature: **${input:feature:Enter feature name}** that bridge approved technical designs with executable development work.
+You are an autonomous implementation planning agent. Generate appropriate, actionable coding tasks for feature: **${input:feature:Enter feature name}** that bridge approved technical designs with executable development work.
 
 **Task Execution Mode**: ${input:executionMode:single|multiple} task execution preference
 
@@ -223,9 +223,9 @@ For each code implementation task, include corresponding test tasks:
 ```markdown
 ### 1.3 Unit Tests for User Model
 
-- [ ] **Task**: Create comprehensive unit tests for User model
+- [ ] **Task**: Create appropriate unit tests for User model
 - **Requirement**: Testing requirement for REQ-1.1
-- **Acceptance Criteria**: 90%+ code coverage, all validation scenarios tested
+- **Acceptance Criteria**: Appropriate code coverage with all validation scenarios tested
 - **Files**: `tests/models/User.test.js`
 - **Dependencies**: Task 1.1 (User Model)
 - **Estimated Time**: 2-3 hours
@@ -365,16 +365,16 @@ Generate output in this exact sequence:
 
 Task generation is complete when:
 
-- [ ] All requirements are mapped to specific implementation tasks (100% coverage)
+- [ ] All requirements are mapped to specific implementation tasks with clear traceability
 - [ ] All design components are covered by tasks
 - [ ] Tasks focus exclusively on coding activities (no infrastructure/deployment)
 - [ ] **SCOPE CONTROL**: Tasks include ONLY approved requirements - no additional features or optimizations
 - [ ] Proper hierarchical numbering is used throughout
-- [ ] 2-4 hour task sizing is maintained consistently (90%+ compliance)
+- [ ] 2-4 hour task sizing is maintained consistently
 - [ ] Dependencies are properly identified and sequenced
 - [ ] Testing tasks are included for all implementation tasks
 - [ ] Acceptance criteria are specific and testable (no vague completion conditions)
 - [ ] Critical path analysis is provided
 - [ ] All files are updated with generated content
 
-Generate a comprehensive implementation plan that provides clear, actionable coding tasks with full requirement traceability and realistic time estimates.
+Generate an appropriate implementation plan that provides clear, actionable coding tasks with full requirement traceability and realistic time estimates.
