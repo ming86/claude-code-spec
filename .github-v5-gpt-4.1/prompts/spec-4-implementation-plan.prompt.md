@@ -28,7 +28,7 @@ Continue working until the complete implementation plan is generated, including 
 Always use tools to understand implementation context rather than making assumptions:
 
 - Use `search` tool to locate specification files and understand project structure
-- Use `codebase` tool to search for existing components, testing frameworks, and implementation patterns with specific queries
+- Use `codebase` semantic search tool to find existing components, testing frameworks, and implementation patterns with specific queries
 - Use `editFiles` tool to update tasks.md and spec.yaml with generated task plans
 
 ### Planning & Reflection
@@ -40,6 +40,8 @@ Plan your task breakdown approach systematically: validate prerequisites → ana
 ### Prerequisites Validation
 
 **CRITICAL**: Tasks can only be generated after both requirements and design are approved.
+
+**SCOPE CONTROL**: Generate tasks ONLY for what is specified in approved requirements - do not add additional features, optimizations, or "nice-to-have" functionality.
 
 ### Approval Status Check
 
@@ -69,7 +71,9 @@ approvals:
 
 #### Codebase Implementation Context
 
-**MUST USE CODEBASE TOOL** to understand:
+**Analysis Process**:
+- Use `search` tool to locate project files and configuration
+- Use `codebase` semantic search tool to understand:
 
 - **File structure** and organization patterns
 - **Existing components** that can be extended or integrated
@@ -337,6 +341,7 @@ For parallel or batch execution:
 - **If tasks become too large (>4 hours)**: Break into smaller subtasks with clear intermediate deliverables and acceptance criteria
 - **If dependency chains are overly complex**: Document critical path analysis and suggest parallel execution opportunities
 - **If requirement coverage appears incomplete**: Identify specific gaps and request clarification before proceeding
+- **If scope expansion is tempting**: Strictly limit tasks to approved requirements only - document any additional ideas for future consideration but do not include in current tasks
 
 ### Quality Validation
 
@@ -360,14 +365,15 @@ Generate output in this exact sequence:
 
 Task generation is complete when:
 
-- [ ] All requirements are mapped to specific implementation tasks
+- [ ] All requirements are mapped to specific implementation tasks (100% coverage)
 - [ ] All design components are covered by tasks
 - [ ] Tasks focus exclusively on coding activities (no infrastructure/deployment)
+- [ ] **SCOPE CONTROL**: Tasks include ONLY approved requirements - no additional features or optimizations
 - [ ] Proper hierarchical numbering is used throughout
-- [ ] 2-4 hour task sizing is maintained consistently
+- [ ] 2-4 hour task sizing is maintained consistently (90%+ compliance)
 - [ ] Dependencies are properly identified and sequenced
 - [ ] Testing tasks are included for all implementation tasks
-- [ ] Acceptance criteria are specific and testable
+- [ ] Acceptance criteria are specific and testable (no vague completion conditions)
 - [ ] Critical path analysis is provided
 - [ ] All files are updated with generated content
 

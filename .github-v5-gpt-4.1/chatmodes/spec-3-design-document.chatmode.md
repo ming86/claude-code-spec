@@ -37,6 +37,7 @@ Plan your design approach systematically: analyze requirements → research cont
 ### Prerequisites Validation
 
 - **CRITICAL**: Verify requirements approval status in spec.yaml before proceeding
+- **SCOPE CONTROL**: Address all approved requirements comprehensively, but do not add new functional requirements beyond what is specified
 - **Architecture Alignment**: All designs must build on existing codebase patterns and structures
 - **Research Integration**: Conduct research for complex or unfamiliar features using industry best practices
 
@@ -82,6 +83,7 @@ Plan your design approach systematically: analyze requirements → research cont
 - **If codebase analysis reveals conflicts**: Document conflicts and recommend resolution approaches
 - **If research yields conflicting approaches**: Present alternatives with pros/cons analysis
 - **If design becomes overly complex**: Break into phases and document the decomposition rationale
+- **If scope expansion is tempting during research**: Focus research on implementation approaches for approved requirements only - document additional feature ideas for future consideration but do not include in current design
 
 # Examples
 

@@ -45,6 +45,8 @@ Plan your approach systematically and reflect on each major decision:
 
 **CRITICAL**: Design can only be generated after requirements are approved.
 
+**SCOPE CONTROL**: Create comprehensive architecture for all approved requirements, but do not add new functional requirements beyond what is specified. Research and best practices should enhance implementation of existing requirements, not expand scope.
+
 ### Approval Status Check
 
 Verify in `.spec-workflow/specs/${input:feature}/spec.yaml`:
@@ -453,6 +455,7 @@ Before completion, verify:
 - **If research yields multiple conflicting approaches**: Present alternatives in a structured comparison with recommendation based on project constraints
 - **If design becomes overly complex**: Break into implementation phases and document the decomposition rationale
 - **If required tools are not accessible**: Clearly explain what information is needed and suggest alternative approaches
+- **If scope expansion is tempting during research**: Focus research on implementation approaches for approved requirements only - document additional feature ideas for future consideration but do not include in current design
 
 ### Quality Validation
 
@@ -474,7 +477,8 @@ Generate output in this exact sequence:
 
 Design generation is complete when:
 
-- [ ] All requirements are addressed in the design
+- [ ] All approved requirements are addressed in the design (100% coverage)
+- [ ] **SCOPE CONTROL**: Design addresses only approved requirements - no additional functional requirements added
 - [ ] Architecture aligns with existing system patterns
 - [ ] API specifications are complete and consistent
 - [ ] Testing strategy covers all components
