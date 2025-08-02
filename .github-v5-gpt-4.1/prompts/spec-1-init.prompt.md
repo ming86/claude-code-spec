@@ -24,8 +24,8 @@ Keep working until the complete specification structure is successfully created,
 
 You MUST use tools to understand the project context and structure rather than making assumptions:
 
-- Use `search` to explore project structure and locate existing specifications and related project context
-- Use `codebase` to search for technology stack indicators and development patterns with specific queries
+- Use `search` tool to locate existing specifications, project structure, and configuration files
+- Use `codebase` semantic search tool to find code patterns, architectural approaches, and implementation examples
 - Use `editFiles` to create directory structure, metadata files, and template documents
 
 If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
@@ -53,8 +53,8 @@ Initialize a new specification for: **${input:description:Enter detailed project
 
 **Analysis Process**:
 
-- Use `codebase` to examine project structure, technology stack, and architectural patterns
-- Use `search` to identify existing steering documents (.spec-workflow/steering/ directory contents)
+- Use `codebase` semantic search tool to find code patterns, architectural approaches, and implementation examples
+- Use `search` tool to identify existing steering documents (.spec-workflow/steering/ directory contents)
 - Check for existing specifications in .spec-workflow/specs/ to understand naming conventions and avoid conflicts
 - Analyze integration points where new features typically connect to existing systems
 - Understand current development workflow, testing patterns, and deployment considerations
@@ -275,7 +275,8 @@ approvals:
 
 - **Input**: "Create a way for users to upload and process documents"
 - **Analysis**: Core functionality is document upload + processing workflow
-- **Generated**: "document-upload-processor" (specific, descriptive, scoped)
+- **Detection**: Search tool identifies existing file handling patterns in project
+- **Generated**: "document-upload-processor" (aligned with project conventions)
 
 - **Input**: "Add social login options to the authentication system"
 - **Analysis**: Extending existing auth with social provider integration
@@ -322,6 +323,13 @@ approvals:
 - [ ] Approval workflow matches project collaboration requirements
 - [ ] Directory structure supports version control and team collaboration
 - [ ] No sensitive information included in any generated files
+
+## Template Content Validation
+
+- [ ] All templates contain project-specific analysis findings (not generic placeholders)
+- [ ] YAML metadata follows proper formatting with no syntax errors
+- [ ] Feature name follows detected project conventions (kebab-case validated)
+- [ ] Integration notes reflect actual codebase patterns discovered
 
 ## File Structure Validation
 
