@@ -1,7 +1,7 @@
 ---
 description: Create or update project steering documents for spec-driven development
 mode: agent
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Project Steering Management
@@ -49,7 +49,8 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 **Analysis Process**:
 
-- Use #codebase to examine root directory structure and key organizational patterns
+- Use #search to explore project structure and locate key configuration files
+- Use #codebase to search for technology patterns and organizational examples
 - Identify and analyze package management files (package.json, requirements.txt, Cargo.toml, go.mod, etc.)
 - Review configuration files (tsconfig.json, webpack.config.js, next.config.js, .env templates, etc.)
 - Examine documentation files (README.md, docs/, API documentation) for project context

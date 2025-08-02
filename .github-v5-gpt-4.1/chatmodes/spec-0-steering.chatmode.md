@@ -1,6 +1,6 @@
 ---
 description: Generate and update project steering documents from codebase analysis
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Project Steering Generation Mode
@@ -52,7 +52,8 @@ Plan your analysis approach systematically before examining the codebase. Reflec
 
 **Process**:
 
-- Use #codebase to examine root directory structure and organization
+- Use #search to explore project structure and locate key files
+- Use #codebase to search for technology stack patterns and project organization
 - Identify package management files (package.json, requirements.txt, Cargo.toml, etc.)
 - Analyze configuration files (tsconfig.json, webpack.config.js, next.config.js, etc.)
 - Review documentation files (README.md, docs/, etc.) for context

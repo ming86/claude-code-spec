@@ -1,6 +1,6 @@
 ---
 description: Generate and write implementation plan (tasks.md) from approved design with coding-only focus
-tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'problems', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Implementation Plan Generation Mode
@@ -24,8 +24,9 @@ Continue working until the complete implementation plan is generated, including 
 
 Always use tools to understand implementation context rather than making assumptions:
 
-- Use `codebase` tool to understand file structures, existing components, and testing frameworks
-- Use `search` tool to find existing patterns and reusable components
+- Use `search` tool to locate specification files and understand project structure
+- Use `codebase` tool to search for existing components and testing frameworks with specific queries
+- Use `codebase` tool to find implementation patterns relevant to task breakdown
 - Use `editFiles` tool to update tasks.md and spec.yaml with generated content
 
 ### Planning & Reflection

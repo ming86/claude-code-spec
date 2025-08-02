@@ -25,8 +25,8 @@ Continue working until the complete technical design is generated, validated, an
 
 Always use tools to gather factual information rather than making assumptions:
 
-- Use `codebase` tool to understand existing architecture patterns and components
-- Use `search` tool to find relevant existing implementations and patterns
+- Use `search` tool to explore project structure and locate relevant files
+- Use `codebase` tool to search for existing architecture patterns and components with specific queries
 - Use `fetch` tool for researching industry best practices when dealing with complex features
 - Use `editFiles` tool to update design documents and metadata files
 
@@ -72,7 +72,7 @@ Read and analyze `.spec-workflow/specs/${input:feature}/requirements.md`:
 
 #### Codebase Architecture Analysis
 
-**MUST USE CODEBASE TOOL** to understand:
+**MUST USE CODEBASE TOOL** with specific search queries to find:
 
 - **Current architecture patterns** and structures
 - **Existing components** that can be reused or extended

@@ -27,8 +27,9 @@ Continue working until the complete implementation plan is generated, including 
 
 Always use tools to understand implementation context rather than making assumptions:
 
-- Use `codebase` tool to understand file structures, existing components, and testing frameworks
-- Use `search` tool to find existing patterns, reusable components, and similar implementations
+- Use `search` tool to locate specification files and understand project structure
+- Use `codebase` tool to search for existing components and testing frameworks with specific queries
+- Use `codebase` tool to find implementation patterns and similar implementations
 - Use `editFiles` tool to update tasks.md and spec.yaml with generated task plans
 
 ### Planning & Reflection

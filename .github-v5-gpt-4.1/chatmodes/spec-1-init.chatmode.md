@@ -1,6 +1,6 @@
 ---
 description: Initialize spec workflow structure and directories for new feature development
-tools: ['codebase', 'editFiles']
+tools: ['codebase', 'editFiles', 'search']
 ---
 
 # Spec Structure Initialization Mode
@@ -21,11 +21,13 @@ Keep working until the complete spec workflow structure is successfully created,
 
 ## Tool Utilization
 
-You MUST use tools to understand the project context rather than making assumptions:
+You MUST use tools to understand the project context and structure rather than making assumptions:
 
-- Use #codebase to analyze existing project structure, patterns, and technology stack
-- Use #editFiles to create directory structure, metadata files, and template placeholders
-  If you encounter unclear project context or architectural patterns, continue analysis until you have sufficient understanding for proper integration.
+- Use #search to explore project structure and locate existing specifications
+- Use #codebase to search for technology stack indicators and development patterns with specific queries
+- Use #search to find existing specifications, steering documents, and related project context
+- Use #editFiles to create directory structure, metadata files, and template documents
+  If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
 
 ## Planning and Reflection
 

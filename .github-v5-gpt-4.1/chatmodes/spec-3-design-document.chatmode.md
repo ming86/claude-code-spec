@@ -1,6 +1,6 @@
 ---
 description: Research-driven technical design with source citations and architecture analysis
-tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'githubRepo', 'search']
+tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'githubRepo', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Technical Design Mode
@@ -22,7 +22,7 @@ Continue working until the complete technical design is generated, including all
 
 ### Tool Utilization
 
-Always use tools to gather factual information rather than making assumptions. Use codebase analysis for architecture patterns, search for industry best practices, and fetch for research when dealing with complex or unfamiliar features.
+Always use tools to gather factual information rather than making assumptions. Use search tool to explore project structure, use codebase tool with specific queries to find architectural patterns, and use fetch tool for industry best practices research when dealing with complex features.
 
 ### Planning & Reflection
 
@@ -46,7 +46,7 @@ Plan your design approach systematically: analyze requirements → research cont
 ## Reasoning Steps
 
 1. **Requirements Analysis**: Systematically analyze all functional/non-functional requirements and acceptance criteria
-2. **Codebase Investigation**: Use codebase tool to understand current architecture, reusable components, testing patterns, and integration points
+2. **Codebase Investigation**: Use search tool to explore project structure, then use codebase tool to search for architectural patterns, existing components, and integration examples with specific queries
 3. **Research Integration**: Conduct targeted research for new technology integration, complex business logic, performance-critical features, security-sensitive components
 4. **Design Synthesis**: Create comprehensive technical specifications addressing all requirements
 5. **Validation & Documentation**: Verify completeness and generate visual representations

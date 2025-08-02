@@ -25,8 +25,8 @@ Keep working until comprehensive requirements are generated with proper EARS for
 
 You MUST use tools to understand context and validate requirements rather than making assumptions:
 
-- Use #codebase to analyze existing system architecture, patterns, and similar feature implementations
-- Use #search to find related features and understand current system capabilities
+- Use #search to explore existing features and understand system structure
+- Use #codebase to search for similar feature implementations and architectural patterns with specific queries
 - Use #fetch to research industry standards, best practices, and proven approaches for complex features
 - Use #editFiles to update requirements documentation and spec metadata
   If context is unclear or technical validation is needed, continue analysis until comprehensive understanding is achieved.

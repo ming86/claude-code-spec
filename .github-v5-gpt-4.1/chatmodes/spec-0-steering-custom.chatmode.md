@@ -1,6 +1,6 @@
 ---
 description: Create specialized steering documents for specific technical contexts and standards
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Custom Steering Creation Mode
@@ -19,8 +19,8 @@ Keep working until you have successfully created a complete, well-researched ste
 
 You MUST use tools to gather information rather than making assumptions:
 
-- Use #codebase to examine relevant code areas and understand existing patterns
-- Use #search to find related implementations and conventions
+- Use #search to locate relevant code areas and understand project structure
+- Use #codebase to search for existing patterns and domain-specific implementations with specific queries
 - Use #editFiles to create and update steering documents
   If you don't have enough context about a domain, use tools to research before proceeding.
 

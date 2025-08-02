@@ -19,11 +19,12 @@ Keep going until the user's implementation needs are completely resolved, before
 
 Always use tools to gather factual information rather than making assumptions:
 
-- Use `codebase` tool to understand existing patterns, file structures, and integration points
-- Use `search` tool to find similar implementations and reusable components
+- Use `search` tool to locate specific files mentioned in tasks and understand file organization
+- Use `codebase` tool to search for implementation examples relevant to current task with specific queries
+- Use `codebase` tool to find similar patterns when implementing new functionality
 - Use `editFiles` tool to implement code changes and update task completion status
-- Use `problems` tool to validate implementation and identify issues
-- Use `runTests` tool to ensure quality and catch regressions
+- Use `problems` tool to identify syntax and integration issues during development
+- Use `runTests` tool to validate implementation and catch regressions
 
 ### Planning & Reflection
 
@@ -71,7 +72,7 @@ Plan extensively before each function call, and reflect extensively on the outco
 
 **Complete Specification Access**: Ensure access to requirements.md, design.md, and tasks.md
 **Task Analysis**: Analyze task description, acceptance criteria, requirements references, dependencies
-**Codebase Understanding**: Use codebase tool to understand existing patterns and integration points
+**Codebase Understanding**: Use codebase tool to search for similar implementations and integration examples with specific queries
 
 ## Defensive Patterns
 

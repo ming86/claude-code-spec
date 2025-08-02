@@ -1,7 +1,7 @@
 ---
 description: Initialize a new specification with project analysis and structure setup
 mode: agent
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'editFiles', 'search']
 ---
 
 # Specification Initialization
@@ -24,7 +24,8 @@ Keep working until the complete specification structure is successfully created,
 
 You MUST use tools to understand the project context and structure rather than making assumptions:
 
-- Use #codebase to analyze existing project architecture, technology stack, and development patterns
+- Use #search to explore project structure and locate existing specifications
+- Use #codebase to search for technology stack indicators and development patterns with specific queries
 - Use #search to find existing specifications, steering documents, and related project context
 - Use #editFiles to create directory structure, metadata files, and template documents
   If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
@@ -147,32 +148,20 @@ Analyze existing project steering context:
 ```yaml
 feature_name: "{generated-feature-name}"
 project_description: "{user-provided-description}"
-created_at: "{current-timestamp-iso}"
-updated_at: "{current-timestamp-iso}"
+created_at: "{current-timestamp}"
+updated_at: "{current-timestamp}"
 language: "english"
 phase: "initialized"
-project_context:
-  technology_stack: "{identified-from-analysis}"
-  integration_points: "{identified-connection-points}"
-  architectural_notes: "{relevant-constraints-and-considerations}"
 approvals:
   requirements:
     generated: false
     approved: false
-    notes: ""
   design:
     generated: false
     approved: false
-    notes: ""
   tasks:
     generated: false
     approved: false
-    notes: ""
-complexity_assessment:
-  level: "{simple|moderate|complex}"
-  estimated_timeline: "{based-on-analysis}"
-  key_challenges: ["{identified-technical-challenges}"]
-  required_expertise: ["{identified-skill-requirements}"]
 ```
 
 ## Requirements Template (requirements.md)

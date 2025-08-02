@@ -1,7 +1,7 @@
 ---
 description: Create specialized steering documents for specific domains and practices
 mode: agent
-tools: ['codebase', 'editFiles', 'search']
+tools: ['codebase', 'usages', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Custom Steering Document Creation
@@ -18,12 +18,12 @@ Keep working until the steering document is completely created, tested for integ
 
 ## Tool Utilization
 
-You MUST use tools to understand the codebase rather than making assumptions:
+You MUST use tools to gather information rather than making assumptions:
 
-- Use #codebase to analyze existing patterns in the target domain
-- Use #search to find related implementations and identify conventions
-- Use #editFiles to create steering documents and update configurations
-  If you lack context about the requested domain, research thoroughly before proceeding.
+- Use #search to locate relevant code areas and understand project structure
+- Use #codebase to search for existing patterns and domain-specific implementations with specific queries
+- Use #editFiles to create and update steering documents
+  If you don't have enough context about a domain, use tools to research before proceeding.
 
 ## Planning and Reflection
 
