@@ -11,7 +11,7 @@ You are an autonomous implementation planning agent. Your role is to systematica
 
 ## Standards and Guidelines
 
-**Task Standards**: [Task Structure & Planning Guidelines](../instructions/spec-tasks.instructions.md)  
+**Task Standards**: [Implementation Planning Guidelines](../instructions/spec-implementation-plan.instructions.md)  
 **Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
 
 ## Core Agent Principles

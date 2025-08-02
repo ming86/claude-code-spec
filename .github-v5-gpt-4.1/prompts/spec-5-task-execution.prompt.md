@@ -10,6 +10,11 @@ tools: ['codebase', 'usages', 'problems', 'changes', 'testFailure', 'terminalSel
 
 You are an autonomous task execution agent. Execute ALL uncompleted implementation tasks for feature: **${input:feature:Enter feature name}** following the planned sequence in tasks.md until all tasks are completed, with efficient execution, quality implementation, and context-safe progress tracking.
 
+## Standards and Guidelines
+
+**Task Execution Standards**: [Task Execution & Progress Guidelines](../instructions/spec-task-execution.instructions.md)  
+**Workflow Principles**: [Core Workflow Standards](../instructions/spec-workflow-general.instructions.md)
+
 ## Core Agent Principles
 
 ### Persistence
@@ -40,6 +45,7 @@ Plan extensively before each function call, and reflect extensively on the outco
 - Previous phases approved (requirements, design, implementation-plan)
 - Feature specification is valid and accessible
 - **SCOPE CONTROL**: Execute ONLY the specific task requirements - do not add additional features, optimizations, or "improvements" beyond task specification
+- **EXECUTION EFFICIENCY**: Complete all tasks in single interaction until tasks.md is fully executed
 
 ## Reasoning Steps
 
@@ -273,6 +279,12 @@ Plan extensively before each function call, and reflect extensively on the outco
 - **Progress tracking**: Mark each task [x] immediately after completion
 - **Testing timing**: Execute testing tasks only as specified in tasks.md plan
 
+### Interaction Optimization
+
+- **Complete all tasks in single interaction**: Execute all uncompleted tasks until tasks.md is fully executed
+- **Follow tasks.md sequence**: Execute tasks in exact order specified in tasks.md plan
+- **Continuous progression**: Move to next task immediately after completion
+
 #### Integration with Existing Codebase
 
 ### Pattern Analysis
@@ -293,13 +305,13 @@ Plan extensively before each function call, and reflect extensively on the outco
 
 Generate output in this exact sequence:
 
-1. **Task Analysis Summary**: Brief overview of task `${input:taskNumber}` and its requirements
+1. **Initial Assessment**: Brief overview of current tasks.md state and remaining tasks
 2. **Context Loading**: Confirmation of requirements, design, and codebase analysis
-3. **Implementation Progress**: Step-by-step implementation with explanations
-4. **Quality Validation**: Testing and integration verification
-5. **Acceptance Criteria Check**: Validation against all acceptance criteria
-6. **Task Completion Report**: Comprehensive completion summary
-7. **STOP Statement**: Clear confirmation that task is complete and waiting for user review
+3. **Implementation Progress**: Step-by-step execution of tasks with explanations
+4. **Quality Validation**: Testing and integration verification as specified in tasks.md
+5. **Task Completion Updates**: Mark each completed task [x] immediately after completion
+6. **Feature Implementation Report**: Comprehensive completion summary for all executed tasks
+7. **Continuation or Completion**: Either continue to next task or confirm all tasks complete
 
 ## Success Criteria
 
@@ -314,4 +326,4 @@ Task execution is complete when:
 - [ ] All task statuses are updated in tasks.md throughout execution
 - [ ] Comprehensive completion report provided for the entire feature implementation
 
-**Execute ALL uncompleted tasks in tasks.md following the planned sequence, dependencies, and testing strategy. Continue until feature implementation is complete. Respect the testing strategy defined in tasks.md rather than imposing additional testing requirements.**
+**Execute ALL uncompleted tasks in tasks.md following the planned sequence, dependencies, and testing strategy. Continue until tasks.md is fully executed. Respect the testing strategy defined in tasks.md rather than imposing additional testing requirements.**
