@@ -344,10 +344,10 @@ GIVEN user has unsaved changes WHEN user attempts to navigate away from current 
 - [ ] Edge cases and error conditions explicitly addressed in requirements and acceptance criteria
 
 ## Measurable Quality Criteria
-- [ ] 100% of functional requirements use proper EARS syntax validation
+- [ ] All functional requirements use proper EARS format where condition/response patterns apply
 - [ ] All acceptance criteria include specific numeric thresholds where applicable
 - [ ] Priority assignments have explicit business impact statements
-- [ ] Research citations include minimum 2 authoritative sources for complex features
+- [ ] Research citations include authoritative sources for complex features with proper attribution
 - [ ] Integration requirements reference specific existing system components
 
 ## Documentation Quality Standards Checklist

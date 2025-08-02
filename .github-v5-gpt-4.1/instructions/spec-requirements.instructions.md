@@ -149,6 +149,21 @@ REQ-003: WHEN invalid data is submitted THEN system displays specific error mess
 - **Write from user and system perspective** as appropriate
 - **Ensure each acceptance criterion is verifiable** through testing
 
+### Language-Agnostic Requirements Standards
+
+- **MUST avoid technology-specific assumptions** unless project explicitly constrains to specific technology stack
+- **MUST write requirements applicable across technology stacks** where possible
+- **MUST use detection-based analysis** to understand actual project technology before making assumptions
+- **SHOULD focus on user behavior and system responses** rather than implementation details
+
+### Measurable Quality Criteria
+
+- **MUST use EARS format** for functional requirements where condition/response patterns apply
+- **MUST provide specific, testable acceptance criteria** with clear pass/fail conditions for all requirements  
+- **MUST assign priority levels with business impact rationale** for all requirements
+- **SHOULD include numeric thresholds** where applicable and meaningful (response times, performance metrics, capacity limits)
+- **MUST validate against quality checklist** before considering requirements complete
+
 ### Requirement Identification
 
 - **REQ-{ID}**: Use sequential numbering (REQ-001, REQ-002, etc.)
