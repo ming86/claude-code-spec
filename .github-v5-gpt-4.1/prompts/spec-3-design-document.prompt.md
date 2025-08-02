@@ -26,7 +26,7 @@ Continue working until the complete technical design is generated, validated, an
 Always use tools to gather factual information rather than making assumptions:
 
 - Use `search` tool to explore project structure and locate relevant files
-- Use `codebase` tool to search for existing architecture patterns and components with specific queries
+- Use `codebase` semantic search tool to find existing architecture patterns and code examples with specific queries
 - Use `fetch` tool for researching industry best practices when dealing with complex features
 - Use `editFiles` tool to update design documents and metadata files
 
@@ -72,7 +72,9 @@ Read and analyze `.spec-workflow/specs/${input:feature}/requirements.md`:
 
 #### Codebase Architecture Analysis
 
-**MUST USE CODEBASE TOOL** with specific search queries to find:
+**MUST USE SEARCH AND CODEBASE TOOLS** systematically:
+- Use `search` tool to locate relevant files and project structure
+- Use `codebase` semantic search tool with specific queries to find:
 
 - **Current architecture patterns** and structures
 - **Existing components** that can be reused or extended
@@ -161,13 +163,12 @@ Generate comprehensive technical design following this structure:
 
 **Purpose**: Brief description of the model's role
 
-**Structure**:
+**Structure** (adapt to project language):
 
-```typescript
-interface {ModelName} {
-  field1: type; // Description
-  field2: type; // Description
-}
+```
+{ModelName} Data Structure:
+- field1: [type] - Description
+- field2: [type] - Description
 ```
 ````
 
@@ -231,7 +232,7 @@ interface {ModelName} {
 #### Unit Testing
 
 - **Scope**: Individual component testing
-- **Framework**: {Existing testing framework}
+- **Framework**: {Detected testing framework from project analysis}
 - **Coverage**: Minimum coverage requirements
 - **Mock Strategy**: External dependency mocking
 

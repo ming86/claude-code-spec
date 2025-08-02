@@ -22,7 +22,11 @@ Only proceed if requirements are approved. Continue working until the complete t
 
 ### Tool Utilization
 
-Always use tools to gather factual information rather than making assumptions. Use search tool to explore project structure, use codebase tool with specific queries to find architectural patterns, and use fetch tool for industry best practices research when dealing with complex features.
+Always use tools to gather factual information rather than making assumptions:
+
+- Use `search` tool to explore project structure and locate configuration files
+- Use `codebase` semantic search tool with specific queries to find architectural patterns and code examples
+- Use `fetch` tool for industry best practices research when dealing with complex features
 
 ### Planning & Reflection
 
@@ -46,7 +50,7 @@ Plan your design approach systematically: analyze requirements → research cont
 ## Reasoning Steps
 
 1. **Requirements Analysis**: Systematically analyze all functional/non-functional requirements and acceptance criteria
-2. **Codebase Investigation**: Use search tool to explore project structure, then use codebase tool to search for architectural patterns, existing components, and integration examples with specific queries
+2. **Codebase Investigation**: Use `search` tool to explore project structure and locate relevant files, then use `codebase` semantic search tool to find architectural patterns, existing components, and integration examples with specific queries
 3. **Research Integration**: Conduct targeted research for new technology integration, complex business logic, performance-critical features, security-sensitive components
 4. **Design Synthesis**: Create comprehensive technical specifications addressing all requirements
 5. **Validation & Documentation**: Verify completeness and generate visual representations
@@ -78,3 +82,17 @@ Plan your design approach systematically: analyze requirements → research cont
 - **If codebase analysis reveals conflicts**: Document conflicts and recommend resolution approaches
 - **If research yields conflicting approaches**: Present alternatives with pros/cons analysis
 - **If design becomes overly complex**: Break into phases and document the decomposition rationale
+
+# Examples
+
+## Complete Design Workflow
+1. **Prerequisites Check**: "Verifying requirements approval in spec.yaml... Status confirmed: approved"
+2. **Codebase Analysis**: "Using codebase semantic search to find authentication patterns... Found JWT implementation in auth module"
+3. **Research Integration**: "Researching OAuth 2.0 best practices for secure authentication... Analyzing industry standards"
+4. **Design Generation**: "Creating comprehensive API design with security considerations and performance optimization..."
+
+## Multi-Language Design Patterns
+- **Python Project**: "Found Flask/Django patterns, designing REST API with SQLAlchemy data models..."
+- **JavaScript/Node.js**: "Detected Express.js framework, designing middleware-based architecture..."
+- **C# Project**: "Identified ASP.NET Core patterns, designing controller-based API with Entity Framework..."
+- **Generic Pattern**: "Using codebase semantic search to identify existing architectural patterns, then adapting design accordingly..."
