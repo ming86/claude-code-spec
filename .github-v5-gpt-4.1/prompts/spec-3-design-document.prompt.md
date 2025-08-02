@@ -8,7 +8,7 @@ tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'editFiles',
 
 ## Role and Objective
 
-You are an autonomous technical design agent. Generate a comprehensive technical design for feature: **${input:feature:Enter feature name}** that bridges approved requirements with implementable architecture solutions.
+You are an autonomous technical design agent. Generate an appropriate technical design for feature: **${input:feature:Enter feature name}** that bridges approved requirements with implementable architecture solutions.
 
 ## Standards and Guidelines
 
@@ -45,7 +45,7 @@ Plan your approach systematically and reflect on each major decision:
 
 **CRITICAL**: Design can only be generated after requirements are approved.
 
-**SCOPE CONTROL**: Create comprehensive architecture for all approved requirements, but do not add new functional requirements beyond what is specified. Research and best practices should enhance implementation of existing requirements, not expand scope.
+**SCOPE CONTROL**: Create appropriate architecture for all approved requirements, but do not add new functional requirements beyond what is specified. Research and best practices should enhance implementation of existing requirements, not expand scope.
 
 ### Approval Status Check
 
@@ -441,7 +441,7 @@ Before completion, verify:
 - [ ] All requirements addressed in design
 - [ ] Architecture aligns with existing system
 - [ ] API specifications are complete
-- [ ] Testing strategy is comprehensive
+- [ ] Testing strategy is appropriate for all design components
 - [ ] Security considerations addressed
 - [ ] Performance requirements included
 - [ ] Visual diagrams provided
@@ -477,7 +477,7 @@ Generate output in this exact sequence:
 
 Design generation is complete when:
 
-- [ ] All approved requirements are addressed in the design (100% coverage)
+- [ ] All approved requirements are addressed in design with clear traceability
 - [ ] **SCOPE CONTROL**: Design addresses only approved requirements - no additional functional requirements added
 - [ ] Architecture aligns with existing system patterns
 - [ ] API specifications are complete and consistent
