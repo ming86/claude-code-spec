@@ -25,11 +25,12 @@ Keep working until comprehensive requirements are generated with proper EARS for
 
 You MUST use tools to understand context and validate requirements rather than making assumptions:
 
-- Use #search to explore existing features and understand system structure
-- Use #codebase to search for similar feature implementations and architectural patterns with specific queries
-- Use #fetch to research industry standards, best practices, and proven approaches for complex features
-- Use #editFiles to update requirements documentation and spec metadata
-  If context is unclear or technical validation is needed, continue analysis until comprehensive understanding is achieved.
+- Use `search` to explore existing features and understand system structure
+- Use `codebase` to search for similar feature implementations and architectural patterns with specific queries
+- Use `fetch` to research industry standards, best practices, and proven approaches for complex features
+- Use `editFiles` to update requirements documentation and spec metadata
+
+If context is unclear or technical validation is needed, continue analysis until comprehensive understanding is achieved.
 
 ## Planning and Reflection
 
@@ -56,7 +57,7 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 **Analysis Process**:
 
 - Verify specification exists and is ready for requirements generation at `.spec-workflow/specs/${input:feature}/`
-- Use #codebase to examine existing system architecture, similar features, and integration patterns
+- Use `codebase` to examine existing system architecture, similar features, and integration patterns
 - Review steering documents (.spec-workflow/steering/) for project context, technical constraints, and business objectives
 - Analyze current spec.yaml metadata to understand feature scope, complexity assessment, and initial requirements
 - Identify existing user workflows, system boundaries, and technical constraints that new feature must respect
@@ -72,7 +73,7 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 
 - Analyze feature description and initial requirements to understand scope and complexity
 - Determine research needs for complex business requirements, technical approaches, or industry standards
-- If research needed: Use #fetch to investigate industry best practices, standards, and proven implementation approaches
+- If research needed: Use `fetch` to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
 - Define explicit feature boundaries identifying what is included vs. excluded from scope
 - Identify potential risks, assumptions, and areas requiring further stakeholder clarification

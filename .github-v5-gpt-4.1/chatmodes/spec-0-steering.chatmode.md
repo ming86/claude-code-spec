@@ -19,10 +19,11 @@ Keep working until all core steering documents are completely generated or updat
 
 You MUST use tools to understand the project rather than making assumptions:
 
-- Use #codebase to comprehensively analyze project structure, technologies, and patterns
-- Use #search to find specific configuration details and architectural decisions
-- Use #editFiles to create and update steering documents and configuration
-  If you encounter incomplete information during analysis, use additional tool calls to gather missing details.
+- Use `search` to find specific configuration details and architectural decisions
+- Use `codebase` to comprehensively analyze project structure, technologies, and patterns
+- Use `editFiles` to create and update steering documents and configuration
+
+If you encounter incomplete information during analysis, use additional tool calls to gather missing details.
 
 ## Planning and Reflection
 

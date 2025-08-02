@@ -20,10 +20,11 @@ Keep working until all core steering documents are completely generated or updat
 
 You MUST use tools to understand the project comprehensively rather than making assumptions:
 
-- Use #codebase to analyze project structure, technology stack, and architectural patterns
-- Use #search to find specific configuration details, documentation, and implementation patterns
-- Use #editFiles to create and update steering documents and configuration files
-  If analysis reveals incomplete information, continue using tools until you have sufficient understanding.
+- Use `search` to find specific configuration details, documentation, and implementation patterns
+- Use `codebase` to analyze project structure, technology stack, and architectural patterns
+- Use `editFiles` to create and update steering documents and configuration files
+
+If analysis reveals incomplete information, continue using tools until you have sufficient understanding.
 
 ## Planning and Reflection
 
@@ -49,8 +50,8 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 **Analysis Process**:
 
-- Use #search to explore project structure and locate key configuration files
-- Use #codebase to search for technology patterns and organizational examples
+- Use `search` to explore project structure and locate key configuration files
+- Use `codebase` to search for technology patterns and organizational examples
 - Identify and analyze package management files (package.json, requirements.txt, Cargo.toml, go.mod, etc.)
 - Review configuration files (tsconfig.json, webpack.config.js, next.config.js, .env templates, etc.)
 - Examine documentation files (README.md, docs/, API documentation) for project context

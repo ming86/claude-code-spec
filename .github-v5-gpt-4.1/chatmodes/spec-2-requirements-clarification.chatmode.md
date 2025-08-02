@@ -24,11 +24,12 @@ Keep working until complete, comprehensive requirements are generated with prope
 
 You MUST use tools to understand context and validate requirements rather than making assumptions:
 
-- Use #search to explore existing features and understand system structure
-- Use #codebase to search for similar features and architectural patterns with specific queries
-- Use #fetch to research industry standards and best practices for complex features
-- Use #githubRepo to understand external system integrations when applicable
-  If requirements context is unclear or technical validation is needed, continue analysis until comprehensive understanding is achieved.
+- Use `search` to explore existing features and understand system structure
+- Use `codebase` to search for similar features and architectural patterns with specific queries
+- Use `fetch` to research industry standards and best practices for complex features
+- Use `githubRepo` to understand external system integrations when applicable
+
+If requirements context is unclear or technical validation is needed, continue analysis until comprehensive understanding is achieved.
 
 # Planning and Reflection
 

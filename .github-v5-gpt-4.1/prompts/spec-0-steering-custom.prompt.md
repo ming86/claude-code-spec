@@ -20,10 +20,11 @@ Keep working until the steering document is completely created, tested for integ
 
 You MUST use tools to gather information rather than making assumptions:
 
-- Use #search to locate relevant code areas and understand project structure
-- Use #codebase to search for existing patterns and domain-specific implementations with specific queries
-- Use #editFiles to create and update steering documents
-  If you don't have enough context about a domain, use tools to research before proceeding.
+- Use `search` to locate relevant code areas and understand project structure
+- Use `codebase` to search for existing patterns and domain-specific implementations with specific queries
+- Use `editFiles` to create and update steering documents
+
+If you don't have enough context about a domain, use tools to research before proceeding.
 
 ## Planning and Reflection
 

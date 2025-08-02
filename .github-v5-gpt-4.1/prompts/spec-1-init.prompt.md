@@ -24,11 +24,11 @@ Keep working until the complete specification structure is successfully created,
 
 You MUST use tools to understand the project context and structure rather than making assumptions:
 
-- Use #search to explore project structure and locate existing specifications
-- Use #codebase to search for technology stack indicators and development patterns with specific queries
-- Use #search to find existing specifications, steering documents, and related project context
-- Use #editFiles to create directory structure, metadata files, and template documents
-  If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
+- Use `search` to explore project structure and locate existing specifications and related project context
+- Use `codebase` to search for technology stack indicators and development patterns with specific queries
+- Use `editFiles` to create directory structure, metadata files, and template documents
+
+If project context is unclear or architectural patterns are ambiguous, continue analysis until you have sufficient understanding.
 
 ## Planning and Reflection
 
@@ -53,8 +53,8 @@ Initialize a new specification for: **${input:description:Enter detailed project
 
 **Analysis Process**:
 
-- Use #codebase to examine project structure, technology stack, and architectural patterns
-- Use #search to identify existing steering documents (.spec-workflow/steering/ directory contents)
+- Use `codebase` to examine project structure, technology stack, and architectural patterns
+- Use `search` to identify existing steering documents (.spec-workflow/steering/ directory contents)
 - Check for existing specifications in .spec-workflow/specs/ to understand naming conventions and avoid conflicts
 - Analyze integration points where new features typically connect to existing systems
 - Understand current development workflow, testing patterns, and deployment considerations

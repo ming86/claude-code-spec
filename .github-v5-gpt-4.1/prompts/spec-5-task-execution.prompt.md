@@ -21,8 +21,7 @@ Keep going until the user's implementation needs are completely resolved, before
 Always use tools to gather factual information rather than making assumptions:
 
 - Use `search` tool to locate specific files mentioned in tasks and understand file organization
-- Use `codebase` tool to search for implementation examples relevant to current task with specific queries
-- Use `codebase` tool to find similar patterns when implementing new functionality
+- Use `codebase` tool to search for implementation examples and similar patterns relevant to current task with specific queries
 - Use `editFiles` tool to implement code changes and update task completion status
 - Use `problems` tool to identify syntax and integration issues during development
 - Use `runTests` tool to validate implementation and catch regressions
