@@ -179,7 +179,7 @@ approvals:
 
 ## User Value Analysis
 
-<!-- Generated in requirements phase: Transform vague request into clear user value understanding -->
+<!-- Generated in requirements phase: Transform fuzzy ideas into clear user value understanding -->
 <!-- Format: As a [persona], I want [intent], so that [value] when clarification is needed -->
 
 ## EARS Requirements
@@ -211,7 +211,7 @@ approvals:
 ---
 
 **STATUS**: Ready for user value clarification and EARS requirements generation
-**NEXT STEP**: Use spec-2-requirements-clarification to begin vague → clear → formal requirements workflow
+**NEXT STEP**: Use spec-2-requirements-clarification to begin concept → clear → formal requirements workflow
 **APPROVAL REQUIRED**: Human review and approval needed before proceeding to design phase
 ```
 
