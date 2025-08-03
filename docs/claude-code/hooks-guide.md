@@ -1,4 +1,3 @@
-<!-- updated at 2025-07-26 -->
 # Get started with Claude Code hooks
 
 > Learn how to customize and extend Claude Code's behavior by registering shell commands
@@ -44,7 +43,7 @@ workflow:
 * **PostToolUse**: Runs after tool calls complete
 * **Notification**: Runs when Claude Code sends notifications
 * **Stop**: Runs when Claude Code finishes responding
-* **Sub Agent Stop**: Runs when sub agent tasks complete
+* **Subagent Stop**: Runs when subagent tasks complete
 
 Each event receives different data and can control Claude's behavior in
 different ways.
