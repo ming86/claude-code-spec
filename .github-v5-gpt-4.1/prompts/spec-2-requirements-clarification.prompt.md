@@ -74,20 +74,23 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 
 **Success Criteria**: Complete system context profile with integration requirements, technical constraints, and business alignment
 
-## 2. Feature Scope Definition and Research Integration
+## 2. User Value Clarification and Feature Scope Definition
 
-**Objective**: Define clear feature boundaries and gather relevant industry context for informed requirements
+**Objective**: Transform ambiguous requests into clear business value understanding and define feature boundaries
 
-**Research Process**:
+**Clarification Process**:
 
-- Analyze feature description and initial requirements to understand scope and complexity
+- Analyze feature description for clarity of intent and value proposition
+- If request is vague or unclear: Use user story format to clarify personas, intents, and business value
+- Focus on understanding the actual problem being solved and who benefits
+- Use clarified understanding as foundation for scope definition
 - Determine research needs for complex business requirements, technical approaches, or industry standards
 - If research needed: Use `fetch` tool to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
-- Define explicit feature boundaries identifying what is included vs. excluded from scope
+- Define clear feature boundaries and identify what is explicitly included vs. excluded from scope
 - Identify potential risks, assumptions, and areas requiring further stakeholder clarification
 
-**Success Criteria**: Clear feature scope with research-informed context and explicit boundaries for requirements generation
+**Success Criteria**: Clear understanding of user value and feature scope with research-informed context and explicit boundaries for requirements generation
 
 ## 3. EARS Requirements Development and Validation
 

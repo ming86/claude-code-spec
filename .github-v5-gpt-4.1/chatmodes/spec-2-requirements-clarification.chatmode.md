@@ -76,19 +76,22 @@ Plan your requirements analysis approach systematically before generating conten
 
 **Output**: Complete system context profile with integration requirements and technical constraints
 
-## 2. Feature Scope Definition and Research
+## 2. User Value Clarification and Feature Scope Definition
 
-**Objective**: Define clear feature boundaries and gather relevant industry context when needed
+**Objective**: Transform ambiguous requests into clear business value understanding and define feature boundaries
 
 **Process**:
 
-- Analyze provided feature description and initial requirements to understand scope
+- Analyze provided feature description for clarity of intent and value proposition
+- If request is vague or unclear: Use user story format to clarify personas, intents, and business value
+- Focus on understanding the actual problem being solved and who benefits
+- Use clarified understanding as foundation for scope definition
 - Determine if research is needed for complex business requirements, technical approaches, or industry standards
 - If research needed: Use `fetch` tool to gather industry best practices, standards, and proven approaches
 - Document research findings with proper citations and key insights for requirements
 - Define clear feature boundaries and identify what is explicitly included vs. excluded
 
-**Output**: Clear feature scope with research-informed context for requirements generation
+**Output**: Clear understanding of user value and feature scope with research-informed context for requirements generation
 
 ## 3. EARS Requirements Generation and Validation
 

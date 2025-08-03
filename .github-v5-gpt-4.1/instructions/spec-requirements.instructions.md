@@ -22,6 +22,16 @@ Requirements documents MUST follow this comprehensive structure:
 - Expected user benefits and success metrics
 - Alignment with business objectives
 
+## User Value Analysis
+
+### User Stories (When Clarification Needed)
+
+*Use this section when the initial request is vague or unclear*
+
+- As a [persona], I want [intent], so that [value]
+- Focus on understanding who benefits and what problem is being solved
+- Transform ambiguous requests into clear user value understanding
+
 ### Integration with Existing System
 
 - How feature integrates with current architecture

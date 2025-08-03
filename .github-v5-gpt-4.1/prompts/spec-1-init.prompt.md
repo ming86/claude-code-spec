@@ -177,6 +177,16 @@ approvals:
 
 {user-provided-description}
 
+## User Value Analysis
+
+<!-- Generated in requirements phase: Transform vague request into clear user value understanding -->
+<!-- Format: As a [persona], I want [intent], so that [value] when clarification is needed -->
+
+## EARS Requirements
+
+<!-- Generated in requirements phase: Convert user value into formal EARS format -->
+<!-- Format: WHEN [condition] THEN [response] -->
+
 ## Project Context Analysis
 
 ### Integration Points
@@ -191,10 +201,6 @@ approvals:
 
 {identified-technology-stack-implications}
 
-## Requirements
-
-<!-- Detailed user stories and requirements will be generated in requirements phase -->
-
 ## Complexity Assessment
 
 - **Estimated Complexity**: {simple|moderate|complex}
@@ -204,8 +210,8 @@ approvals:
 
 ---
 
-**STATUS**: Ready for requirements generation
-**NEXT STEP**: Use `/kiro:spec-requirements {feature-name}` to generate detailed requirements
+**STATUS**: Ready for user value clarification and EARS requirements generation
+**NEXT STEP**: Use spec-2-requirements-clarification to begin vague → clear → formal requirements workflow
 **APPROVAL REQUIRED**: Human review and approval needed before proceeding to design phase
 ```
 
