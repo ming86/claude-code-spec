@@ -163,11 +163,12 @@ graph TD
 
 #### Development Methodologies Research Foundation
 
-Based on comprehensive analysis of USDD, BDD, and SDD methodologies:
+Based on comprehensive analysis of development methodologies:
 
-- **USDD**: Excels at capturing user empathy and clarifying fuzzy ideas through "As a [persona], I want [intent], so that [value]" format
-- **EARS**: Provides formal, testable requirements using "WHEN [condition] THEN [response]" structure  
-- **SDD**: Enables direct executable specifications (already implemented in existing workflow)
+**Methodology Definitions:**
+- **USDD (User Story Driven Development)**: Excels at capturing user empathy and clarifying fuzzy ideas through "As a [persona], I want [intent], so that [value]" format
+- **EARS (Easy Approach to Requirements Syntax)**: Provides formal, testable requirements using "WHEN [condition] THEN [response]" structure  
+- **SDD (Specification-Driven Development)**: Enables direct executable specifications (already implemented in existing workflow)
 
 #### Hybrid Integration Strategy
 
