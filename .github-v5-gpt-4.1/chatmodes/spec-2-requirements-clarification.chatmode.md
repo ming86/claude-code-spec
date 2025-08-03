@@ -1,6 +1,6 @@
 ---
 description: Generate EARS-format requirements with codebase analysis and optional research
-tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'githubRepo', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
+tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Requirements Generation Mode
@@ -35,7 +35,6 @@ You MUST use tools to understand context and validate requirements rather than m
 - Use `search` tool to explore existing features and understand system structure
 - Use `codebase` semantic search tool to find similar features and architectural patterns with specific queries
 - Use `fetch` tool to research industry standards and best practices for complex features
-- Use `githubRepo` tool to understand external system integrations when applicable
 
 If requirements context is unclear or technical validation is needed, continue analysis until comprehensive understanding is achieved.
 

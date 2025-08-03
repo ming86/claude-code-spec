@@ -1,6 +1,6 @@
 ---
 description: Research-driven technical design with source citations and architecture analysis
-tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'githubRepo', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
+tools: ['codebase', 'usages', 'problems', 'fetch', 'findTestFiles', 'editFiles', 'search', 'get_syntax_docs', 'mermaid-diagram-validator']
 ---
 
 # Technical Design Mode
