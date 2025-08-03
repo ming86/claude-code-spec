@@ -130,6 +130,8 @@ WHEN {usability condition} THEN {usability response with standards}
 
 ## EARS Format Requirements
 
+**EARS**: Easy Approach to Requirements Syntax - A structured format for writing clear, testable requirements using conditional logic.
+
 ### Mandatory Format
 
 - **MUST use EARS format**: WHEN [condition] THEN [response]

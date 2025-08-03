@@ -27,6 +27,12 @@ Core workflow principles that apply to all spec-driven development phases.
 
 ### Hybrid USDD → EARS → SDD Approach
 
+**Methodology Definitions:**
+- **USDD**: User Story Driven Development - Capturing user empathy through "As a [persona], I want [intent], so that [value]" format
+- **EARS**: Easy Approach to Requirements Syntax - Formal, testable requirements using "WHEN [condition] THEN [response]" structure  
+- **SDD**: Specification-Driven Development - Direct executable specifications for implementation
+
+**Implementation Process:**
 - **User Value Clarification**: Transform fuzzy ideas into clear user-focused understanding when needed
 - **EARS Formalization**: Convert user value understanding into precise, testable requirements
 - **SDD Execution**: Maintain direct executable specifications in implementation stages
