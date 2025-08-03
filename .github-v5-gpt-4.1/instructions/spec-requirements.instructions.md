@@ -26,11 +26,11 @@ Requirements documents MUST follow this comprehensive structure:
 
 ### User Stories (When Clarification Needed)
 
-*Use this section when the initial request is vague or unclear*
+*Use this section when initial ideas are fuzzy or unclear*
 
 - As a [persona], I want [intent], so that [value]
 - Focus on understanding who benefits and what problem is being solved
-- Transform ambiguous requests into clear user value understanding
+- Transform fuzzy ideas into clear user value understanding
 
 ### Integration with Existing System
 

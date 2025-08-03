@@ -27,14 +27,14 @@ Core workflow principles that apply to all spec-driven development phases.
 
 ### Hybrid USDD → EARS → SDD Approach
 
-- **User Value Clarification**: Transform vague requests into clear user-focused understanding when needed
+- **User Value Clarification**: Transform fuzzy ideas into clear user-focused understanding when needed
 - **EARS Formalization**: Convert user value understanding into precise, testable requirements
 - **SDD Execution**: Maintain direct executable specifications in implementation stages
 
 ### Personal Productivity Integration
 
-- **Stakeholder Clarity**: Use user stories to clarify ambiguous requests and build understanding
-- **Vague-to-Actionable Pipeline**: Systematic transformation from unclear requests to structured plans
+- **Idea Clarification**: Use user stories to clarify fuzzy ideas and build understanding 
+- **Idea-to-Implementation Pipeline**: Systematic transformation from initial ideas to structured plans
 - **Documentation Generation**: Structured progression suitable for ticket documentation and handoffs
 
 ## Workflow Integration
