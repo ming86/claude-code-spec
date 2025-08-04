@@ -157,7 +157,7 @@ graph TD
 
 ### 5. USDD → EARS → SDD Hybrid Methodology
 
-**Why**: Personal productivity workflows require transformation of initial ideas and fuzzy ideas into clear, actionable plans while maintaining systematic quality control.
+**Why**: Personal productivity workflows require systematic clarification and analysis of all feature ideas to uncover true user value and transform them into clear, actionable plans while maintaining systematic quality control.
 
 **How**: Implemented adaptive hybrid approach combining User Story Driven Development, EARS format requirements, and Specification-Driven Development:
 
@@ -166,7 +166,7 @@ graph TD
 Based on comprehensive analysis of development methodologies:
 
 **Methodology Definitions:**
-- **USDD (User Story Driven Development)**: Provides user context and ensures user-focused development for all features through "As a [persona], I want [intent], so that [value]" format
+- **USDD (User Story Driven Development)**: Always clarifies feature descriptions through systematic analysis to uncover true user value and hidden assumptions using "As a [persona], I want [intent], so that [value]" format
 - **EARS (Easy Approach to Requirements Syntax)**: Provides formal, testable requirements using "WHEN [condition] THEN [response]" structure  
 - **SDD (Specification-Driven Development)**: Enables direct executable specifications (already implemented in existing workflow)
 
@@ -186,14 +186,15 @@ Based on comprehensive analysis of development methodologies:
 
 **Idea-to-Implementation Pipeline**:
 
-1. Initial idea or fuzzy idea
-2. User story clarification (when needed)
-3. EARS formal requirements
-4. Existing design → implementation → execution workflow
+1. Initial feature idea (any clarity level)
+2. Always clarify through systematic analysis and questioning
+3. User story generation from clarification analysis
+4. EARS formal requirements from clarified user stories
+5. Existing design → implementation → execution workflow
 
 **Benefits for Individual Use**:
 
-- Transform fuzzy ideas into structured implementation plans
+- Transform all feature ideas into structured implementation plans through systematic clarification
 - Generate comprehensive Jira ticket content from initial ideas
 - Support individual brainstorming and idea clarification
 - Maintain systematic quality while enhancing thought organization
@@ -290,8 +291,8 @@ Based on comprehensive analysis of development methodologies:
 
 **Hybrid Methodology Integration**:
 
-- User value analysis section prepared in templates for fuzzy idea clarification
-- Conditional user story application when ideas lack clarity
+- User value analysis section with systematic clarification for all feature ideas
+- Always apply user story methodology through investigation and questioning
 - EARS format requirements as primary formal specification
 - Idea-to-implementation pipeline for personal productivity optimization
 
@@ -371,8 +372,8 @@ Based on comprehensive analysis of development methodologies:
 
 ### For Personal Productivity
 
-1. **Idea Development**: Systematic conversion of fuzzy ideas into actionable implementation plans
-2. **Idea Clarification**: User story format improves clarity and builds understanding of initial ideas
+1. **Idea Development**: Systematic clarification and conversion of all feature ideas into actionable implementation plans
+2. **Always Clarify**: User story format through systematic analysis builds comprehensive understanding of all feature ideas
 3. **Documentation Generation**: Structured progression suitable for Jira ticket creation and project handoffs
 4. **Individual Workflow Optimization**: Supports personal brainstorming and requirement clarification processes
 
