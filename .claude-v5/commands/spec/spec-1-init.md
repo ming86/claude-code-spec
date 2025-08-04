@@ -267,7 +267,8 @@ approvals:
 
 ## User Value Analysis
 
-<!-- Generated in requirements phase: Always include user stories for context and user-focused development -->
+<!-- Generated in requirements phase: Always clarify through systematic analysis, transform all ideas into clear user stories -->
+<!-- Always include: Original description + clarification analysis + clarified user stories -->
 <!-- Format: As a [persona], I want [intent], so that [value] -->
 
 ## EARS Requirements

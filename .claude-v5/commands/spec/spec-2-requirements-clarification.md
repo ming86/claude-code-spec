@@ -106,14 +106,16 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 
 ## 2. User Value Clarification and Feature Scope Definition
 
-**Objective**: Transform feature descriptions into clear user value understanding and define feature boundaries
+**Objective**: Always transform feature descriptions into clear user value understanding through systematic clarification and analysis, regardless of initial apparent clarity
 
 **Process**:
 
-- Always generate brief user stories to clarify who benefits and why
-- Analyze feature description and create simple user story analysis covering personas, intents, and user value
+- **Always analyze and clarify** feature descriptions through systematic questions and deeper investigation
+- **Transform all ideas** into clear user stories through clarification questions and analysis, regardless of initial apparent clarity
+- **Systematically explore** personas, use cases, contexts, and underlying problems to uncover hidden assumptions
+- **Always produce clear user stories** as the foundation for EARS requirements
 - Focus on understanding the actual problem being solved and who benefits
-- Use clarified user value understanding as foundation for scope definition
+- Use clarified understanding as foundation for scope definition
 - Determine research needs for complex business requirements, technical approaches, or industry standards
 - If research needed: Use `WebFetch` tool to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
@@ -312,7 +314,13 @@ Always include user stories to provide context and ensure user-focused developme
 ```markdown
 ## User Value Analysis
 
-### Primary User Stories
+### Initial Feature Description
+{original-feature-description - always include for reference}
+
+### Clarification Analysis
+{questions explored, assumptions uncovered, context discovered through systematic analysis}
+
+### Clarified User Stories
 
 **As a** [specific persona/user type]
 **I want** [specific capability or action]  
@@ -324,8 +332,8 @@ Always include user stories to provide context and ensure user-focused developme
 
 ### User Benefits
 
-- **Problem Solved**: {Specific problem or pain point addressed}
-- **User Value**: {Direct benefit to users from this feature}
+- **Problem Solved**: {Specific problem or pain point addressed through clarification}
+- **User Value**: {Direct benefit to users discovered through analysis}
 ```
 
 ### Conversion to Formal Requirements
