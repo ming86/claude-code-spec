@@ -26,11 +26,14 @@ Requirements documents MUST follow this comprehensive structure:
 
 ### User Stories (Always Include)
 
-*Always include user stories to provide context and ensure user-focused development*
+*Always clarify through systematic analysis - transform all ideas into clear user stories through investigation and questioning*
 
-- As a [persona], I want [intent], so that [value]
-- Focus on understanding who benefits and what problem is being solved
-- Provide user context for all technical decisions
+- Always include: Original description + clarification analysis + clarified user stories
+- Systematically explore personas, use cases, contexts, and underlying problems
+- Format: As a [persona], I want [intent], so that [value]
+- Focus on understanding who benefits and what problem is being solved through deeper investigation
+- Uncover hidden assumptions even in apparently "clear" feature requests
+- Provide comprehensive user context for all technical decisions
 
 ### Integration with Existing System
 

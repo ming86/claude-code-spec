@@ -76,14 +76,16 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 
 ## 2. User Value Clarification and Feature Scope Definition
 
-**Objective**: Transform feature descriptions into clear user value understanding and define feature boundaries
+**Objective**: Always transform feature descriptions into clear user value understanding through systematic clarification and analysis, regardless of initial apparent clarity
 
 **Clarification Process**:
 
-- Always generate brief user stories to clarify who benefits and why
-- Analyze feature description and create simple user story analysis covering personas, intents, and user value
+- **Always analyze and clarify** feature descriptions through systematic questions and deeper investigation
+- **Transform all ideas** into clear user stories through clarification questions and analysis, regardless of initial apparent clarity
+- **Systematically explore** personas, use cases, contexts, and underlying problems to uncover hidden assumptions
+- **Always produce clear user stories** as the foundation for EARS requirements
 - Focus on understanding the actual problem being solved and who benefits
-- Use clarified user value understanding as foundation for scope definition
+- Use clarified understanding as foundation for scope definition
 - Determine research needs for complex business requirements, technical approaches, or industry standards
 - If research needed: Use `fetch` tool to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
