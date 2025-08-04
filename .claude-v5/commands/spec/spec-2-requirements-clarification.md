@@ -106,14 +106,14 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 
 ## 2. User Value Clarification and Feature Scope Definition
 
-**Objective**: Transform fuzzy ideas into clear business value understanding and define feature boundaries
+**Objective**: Transform feature descriptions into clear user value understanding and define feature boundaries
 
 **Process**:
 
-- Analyze feature description for clarity of intent and value proposition
-- If ideas are fuzzy or unclear: Use user story format to clarify personas, intents, and business value
+- Always generate brief user stories to clarify who benefits and why
+- Analyze feature description and create simple user story analysis covering personas, intents, and user value
 - Focus on understanding the actual problem being solved and who benefits
-- Use clarified understanding as foundation for scope definition
+- Use clarified user value understanding as foundation for scope definition
 - Determine research needs for complex business requirements, technical approaches, or industry standards
 - If research needed: Use `WebFetch` tool to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
@@ -303,9 +303,9 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 
 # User Value Analysis Methodology
 
-## USDD Integration for Fuzzy Ideas
+## User Story Integration
 
-When initial feature descriptions lack clarity, use User Story Driven Development format:
+Always include user stories to provide context and ensure user-focused development:
 
 ### User Story Format
 
@@ -316,13 +316,16 @@ When initial feature descriptions lack clarity, use User Story Driven Developmen
 
 **As a** [specific persona/user type]
 **I want** [specific capability or action]  
-**So that** [clear business value or outcome]
+**So that** [clear user value or outcome]
 
-### Value Proposition
+**As a** [additional persona if relevant]
+**I want** [additional capability]
+**So that** [additional user value]
+
+### User Benefits
 
 - **Problem Solved**: {Specific problem or pain point addressed}
-- **User Benefit**: {Direct benefit to users from this feature}
-- **Business Impact**: {How this creates business value or reduces costs}
+- **User Value**: {Direct benefit to users from this feature}
 ```
 
 ### Conversion to Formal Requirements

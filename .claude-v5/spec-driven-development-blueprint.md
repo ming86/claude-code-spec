@@ -12,9 +12,9 @@ This blueprint defines a comprehensive **Spec-Driven Development** workflow spec
 
 ### **User Story Driven Development (USDD)**
 
-- **Purpose**: Transform fuzzy initial ideas into clear user value understanding
+- **Purpose**: Provide user context and ensure user-focused development for all features
 - **Format**: "As a [persona], I want [capability], so that [value]"
-- **Application**: Requirements clarification phase for unclear specifications
+- **Application**: Always included in requirements phase for consistency and user context
 
 ### **EARS (Easy Approach to Requirements Syntax)**
 

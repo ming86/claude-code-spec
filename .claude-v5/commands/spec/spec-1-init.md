@@ -267,8 +267,8 @@ approvals:
 
 ## User Value Analysis
 
-<!-- Generated in requirements phase: Transform fuzzy ideas into clear user value understanding -->
-<!-- Format: As a [persona], I want [intent], so that [value] when clarification is needed -->
+<!-- Generated in requirements phase: Always include user stories for context and user-focused development -->
+<!-- Format: As a [persona], I want [intent], so that [value] -->
 
 ## EARS Requirements
 
