@@ -12,9 +12,9 @@ This blueprint defines a comprehensive **Spec-Driven Development** workflow spec
 
 ### **User Story Driven Development (USDD)**
 
-- **Purpose**: Provide user context and ensure user-focused development for all features
-- **Format**: "As a [persona], I want [capability], so that [value]"
-- **Application**: Always included in requirements phase for consistency and user context
+- **Purpose**: Always clarify feature descriptions through systematic analysis to uncover true user value and hidden assumptions
+- **Format**: "As a [persona], I want [capability], so that [value]" 
+- **Application**: Always clarify through investigation and questioning, regardless of initial apparent clarity
 
 ### **EARS (Easy Approach to Requirements Syntax)**
 
@@ -84,7 +84,7 @@ This blueprint defines a comprehensive **Spec-Driven Development** workflow spec
 
 **Purpose**: Generate comprehensive EARS-format requirements with research integration
 
-- **User Value Clarification**: USDD methodology for unclear specifications
+- **Always Clarify**: USDD methodology - systematic analysis and questioning for all feature descriptions to uncover hidden assumptions
 - **EARS Requirements**: Formal "WHEN/THEN" syntax with measurable conditions
 - **Research Integration**: Industry standards and best practices via WebFetch
 - **Quality Validation**: Traceability, acceptance criteria, priority assignment
