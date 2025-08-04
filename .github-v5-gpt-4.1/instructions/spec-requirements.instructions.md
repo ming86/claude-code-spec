@@ -24,13 +24,13 @@ Requirements documents MUST follow this comprehensive structure:
 
 ## User Value Analysis
 
-### User Stories (When Clarification Needed)
+### User Stories (Always Include)
 
-*Use this section when initial ideas are fuzzy or unclear*
+*Always include user stories to provide context and ensure user-focused development*
 
 - As a [persona], I want [intent], so that [value]
 - Focus on understanding who benefits and what problem is being solved
-- Transform fuzzy ideas into clear user value understanding
+- Provide user context for all technical decisions
 
 ### Integration with Existing System
 

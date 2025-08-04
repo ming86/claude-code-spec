@@ -77,14 +77,14 @@ Plan your requirements analysis approach systematically before generating conten
 
 ## 2. User Value Clarification and Feature Scope Definition
 
-**Objective**: Transform fuzzy ideas into clear business value understanding and define feature boundaries
+**Objective**: Transform feature descriptions into clear user value understanding and define feature boundaries
 
 **Process**:
 
-- Analyze provided feature description for clarity of intent and value proposition
-- If ideas are fuzzy or unclear: Use user story format to clarify personas, intents, and business value
+- Always generate brief user stories to clarify who benefits and why
+- Analyze provided feature description and create simple user story analysis covering personas, intents, and user value
 - Focus on understanding the actual problem being solved and who benefits
-- Use clarified understanding as foundation for scope definition
+- Use clarified user value understanding as foundation for scope definition
 - Determine if research is needed for complex business requirements, technical approaches, or industry standards
 - If research needed: Use `fetch` tool to gather industry best practices, standards, and proven approaches
 - Document research findings with proper citations and key insights for requirements
