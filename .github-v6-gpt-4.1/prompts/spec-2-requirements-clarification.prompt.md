@@ -42,7 +42,7 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 - If research needed: Use `fetch` tool to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
 - Define clear feature boundaries and identify what is explicitly included vs. excluded from scope
-- Identify potential risks, assumptions, and areas requiring further stakeholder clarification
+- Identify potential risks, assumptions, and areas requiring further user clarification
 
 **Success Criteria**: Generated user stories with explicit feature boundaries and research-informed context ready for EARS requirements generation
 
@@ -72,7 +72,7 @@ Generate comprehensive requirements for feature: **${input:feature:Enter feature
 - Confirm acceptance criteria are measurable and testable within current project capabilities and constraints
 - Update `.spec-workflow/specs/${input:feature}/spec.yaml` with generation tracking and phase progression
 - Provide clear next steps guidance for human review, editing, and approval workflow
-- Document assumptions, risks, or areas requiring further clarification or stakeholder input
+- Document assumptions, risks, or areas requiring further clarification or user input
 
 **Success Criteria**: Fully integrated requirements documentation ready for human review and approval workflow
 

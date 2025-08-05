@@ -80,7 +80,7 @@ Analyze existing project steering context:
 
 - **Structure Context**: Look for .spec-workflow/steering/structure.md for code organization patterns
 - **Technical Constraints**: Check .spec-workflow/steering/tech.md for technology stack and architectural decisions
-- **Product Context**: Review .spec-workflow/steering/product.md for business objectives and feature alignment
+- **Product Context**: Review .spec-workflow/steering/product.md for project objectives and feature alignment
 
 ### Integration Strategy
 
@@ -238,7 +238,7 @@ approvals:
 1. **Specificity Check**: Ensure name captures actual functionality, not generic terms
 2. **Conflict Detection**: Verify no existing directories with same name
 3. **Scope Alignment**: Confirm name matches intended feature boundaries
-4. **Team Clarity**: Ensure name is meaningful to developers and stakeholders
+4. **Team Clarity**: Ensure name is meaningful to developers and users
 
 ## Examples of Systematic Naming
 

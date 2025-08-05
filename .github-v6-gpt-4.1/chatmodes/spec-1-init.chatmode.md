@@ -190,7 +190,7 @@ approvals:
 
 - **Format**: kebab-case (lowercase with hyphens)
 - **Specificity**: Capture core functionality, avoid generic terms
-- **Clarity**: Meaningful to developers and stakeholders
+- **Clarity**: Meaningful to developers and users
 - **Scope**: Reflect intended feature boundaries and purpose
 
 ## Examples of Good Feature Names

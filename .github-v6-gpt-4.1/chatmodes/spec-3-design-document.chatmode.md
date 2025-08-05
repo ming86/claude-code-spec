@@ -281,7 +281,7 @@ Summary of design decisions and next steps for implementation.
 #### Hybrid Projects (Adding New Technology)
 
 - **MUST analyze existing technology constraints** and integration requirements
-- **MUST justify new technology choices** with clear business or technical rationale
+- **MUST justify new technology choices** with clear project or technical rationale
 - **MUST design integration patterns** between existing and new technology components
 - **MUST document migration strategy** where technology changes affect existing systems
 

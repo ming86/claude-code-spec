@@ -115,7 +115,7 @@ Generate comprehensive project steering documents for: **${input:updateType:full
 
 - [Primary use cases based on application design and user flow analysis]
 - [Target user scenarios derived from interface and interaction patterns]
-- [Business value delivered based on feature set and architecture]
+- [Project value delivered based on feature set and architecture]
 
 ## Architecture Overview
 

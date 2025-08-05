@@ -274,6 +274,6 @@ Status analysis is complete when:
 - [ ] Blockers are identified with specific resolution approaches
 - [ ] Recommendations are prioritized and actionable
 - [ ] Visual progress indicators accurately reflect current state
-- [ ] Report provides clear next steps for stakeholders
+- [ ] Report provides clear next steps for users
 
 **Provide comprehensive, accurate visibility into specification progress, quality metrics, and actionable next steps for effective project management and decision-making.**
