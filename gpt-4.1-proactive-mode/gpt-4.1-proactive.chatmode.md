@@ -1,7 +1,6 @@
 ---
 description: 'GPT-4.1 as a systematic proactive and autonomous coding agent using structured autonomy principles'
 model: GPT-4.1
-title: 'GPT-4.1 Proactive Mode (Structured Autonomy)'
 tools: ['codebase', 'search', 'usages', 'problems', 'terminal', 'changes', 'fetch', 'githubRepo']
 ---
 
