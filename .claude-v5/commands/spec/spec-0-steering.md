@@ -156,7 +156,7 @@ Generate comprehensive project steering documents for: **$ARGUMENTS** steering u
 
 - [Primary use cases based on application design and user flow analysis]
 - [Target user scenarios derived from interface and interaction patterns]
-- [Business value delivered based on feature set and architecture]
+- [Project value delivered based on feature set and architecture]
 
 ## Architecture Overview
 
@@ -302,7 +302,7 @@ The following steering documents provide comprehensive project context and shoul
 
 ### Core Steering Files
 
-- **Product Overview**: @.spec-workflow/steering/product.md - Business context, core features, and value proposition
+- **Product Overview**: @.spec-workflow/steering/product.md - Project context, core features, and value proposition
 - **Technology Stack**: @.spec-workflow/steering/tech.md - Development environment, architecture patterns, and commands  
 - **Project Structure**: @.spec-workflow/steering/structure.md - Code organization, naming conventions, and architectural boundaries
 
@@ -394,7 +394,7 @@ If `CLAUDE.md` exists:
 ## File Locations and Integration
 
 - **Primary Outputs**:
-  - `.spec-workflow/steering/product.md` - Product overview and business context
+  - `.spec-workflow/steering/product.md` - Product overview and project context
   - `.spec-workflow/steering/tech.md` - Technology stack and development environment
   - `.spec-workflow/steering/structure.md` - Project organization and code patterns
 - **Configuration Update**: `CLAUDE.md` with steering document references and usage guidelines

@@ -18,7 +18,7 @@ Keep working until:
 
 - All functional requirements use proper EARS format with measurable conditions
 - Each requirement has specific acceptance criteria with pass/fail conditions
-- Priority levels assigned with business impact rationale  
+- Priority levels assigned with project impact rationale  
 - Non-functional requirements cover performance, security, usability thresholds
 - Requirements document validates against quality checklist
 - Spec metadata is updated for approval workflow
@@ -36,7 +36,7 @@ If context is unclear or technical validation is needed, continue analysis until
 
 ## Planning and Reflection
 
-Plan your requirements analysis approach systematically before generating content. Reflect on context analysis findings to ensure requirements are realistic, testable, and properly aligned with existing system architecture and business objectives.
+Plan your requirements analysis approach systematically before generating content. Reflect on context analysis findings to ensure requirements are realistic, testable, and properly aligned with existing system architecture and project objectives.
 
 # EARS Format Standards
 
@@ -97,7 +97,7 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 
 - Verify specification exists and is ready for requirements generation at `.spec-workflow/specs/$ARGUMENTS/`
 - Use `search` tool to locate existing system architecture, similar features, integration patterns and architectural approaches
-- Review steering documents (`.spec-workflow/steering/`) for project context, technical constraints, and business objectives
+- Review steering documents (`.spec-workflow/steering/`) for project context, technical constraints, and project objectives
 - Analyze current spec.yaml metadata to understand feature scope, complexity assessment, and initial requirements
 - Identify existing user workflows, system boundaries, and technical constraints that new feature must respect
 - Understand integration points where feature connects with existing system components
@@ -120,7 +120,7 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 - If research needed: Use `WebFetch` tool to investigate industry best practices, standards, and proven implementation approaches
 - Document research findings with proper citations and extract key insights relevant to requirements
 - Define clear feature boundaries and identify what is explicitly included vs. excluded from scope
-- Identify potential risks, assumptions, and areas requiring further stakeholder clarification
+- Identify potential risks, assumptions, and areas requiring further user clarification
 
 **Success Criteria**: Clear understanding of user value and feature scope with research-informed context and explicit boundaries for requirements generation
 
@@ -132,7 +132,7 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 
 - Generate functional requirements using proper EARS format (WHEN/THEN or GIVEN/WHEN/THEN) with specific, measurable conditions
 - Develop detailed acceptance criteria for each requirement with clear pass/fail conditions and edge case handling
-- Assign priority levels (must-have, should-have, could-have) with clear business impact rationale
+- Assign priority levels (must-have, should-have, could-have) with clear project impact rationale
 - Identify and document dependencies on other features, external systems, infrastructure, or data components
 - Create comprehensive non-functional requirements covering performance, security, usability, and system integration
 - Validate each requirement against quality criteria ensuring specificity, testability, completeness, consistency, and feasibility
@@ -150,7 +150,7 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 - Confirm acceptance criteria are measurable and testable within current project capabilities and constraints
 - Update `.spec-workflow/specs/$ARGUMENTS/spec.yaml` with generation tracking and phase progression
 - Provide clear next steps guidance for human review, editing, and approval workflow
-- Document assumptions, risks, or areas requiring further clarification or stakeholder input
+- Document assumptions, risks, or areas requiring further clarification or user input
 
 **Success Criteria**: Fully integrated requirements documentation ready for human review and approval workflow
 
@@ -163,9 +163,9 @@ Generate comprehensive requirements for feature: **$ARGUMENTS**
 
 ## Feature Overview
 
-### Purpose and Business Value
+### Purpose and Project Value
 
-{Clear description of why this feature is needed and what business value it provides}
+{Clear description of why this feature is needed and what project value it provides}
 
 ### Integration with Existing System
 
@@ -381,7 +381,7 @@ requirements_summary:
 
 - **If feature scope is unclear or too broad**: Request specific clarification with examples: "I need more details about the core user workflows. What specific actions should users be able to perform, and what are the expected outcomes? For example, should users be able to [specific example] or [alternative example]?"
 - **If system integration points are ambiguous**: Analyze codebase more thoroughly and ask targeted questions: "How should this feature integrate with the existing [specific system component]? Should it use the same [pattern/API/interface] as [similar existing feature]?"
-- **If business rules or logic are unclear**: Ask for specific scenarios: "What should happen when [specific condition occurs]? How should the system behave when [edge case scenario]?"
+- **If domain rules or logic are unclear**: Ask for specific scenarios: "What should happen when [specific condition occurs]? How should the system behave when [edge case scenario]?"
 
 ## EARS Format and Acceptance Criteria Quality Assurance
 
@@ -391,12 +391,12 @@ requirements_summary:
 
 ## Priority and Dependency Validation
 
-- **If priority classifications lack clear rationale**: Provide business impact reasoning: "Must-have because [specific business risk or core functionality impact], Should-have because [significant user value or workflow impact], Could-have because [enhancement value but minimal impact if missing]"
+- **If priority classifications lack clear rationale**: Provide project impact reasoning: "Must-have because [specific project risk or core functionality impact], Should-have because [significant user value or workflow impact], Could-have because [enhancement value but minimal impact if missing]"
 - **If dependencies are unclear or incomplete**: Document explicit dependency chains: "Requires [specific feature/system/data] to be [specific state/condition] before this requirement can be implemented or tested"
 
 ## Research and External Integration Safety
 
-- **If research reveals conflicting industry approaches**: Document alternatives with project-specific recommendations: "Industry practices include [approach A with pros/cons] and [approach B with pros/cons]. Recommend [chosen approach] for this project because [rationale based on existing architecture, constraints, and business objectives]"
+- **If research reveals conflicting industry approaches**: Document alternatives with project-specific recommendations: "Industry practices include [approach A with pros/cons] and [approach B with pros/cons]. Recommend [chosen approach] for this project because [rationale based on existing architecture, constraints, and project objectives]"
 - **If external system dependencies are discovered**: Document dependencies clearly with risk mitigation: "Requires integration with [external system] for [specific functionality]. If external system is unavailable or changes, fallback approach is [alternative solution with reduced functionality]"
 - **If compliance or regulatory requirements emerge**: Document clearly with verification approach: "Must comply with [specific regulation/standard] as verified by [specific testing/audit approach]"
 
@@ -406,7 +406,7 @@ requirements_summary:
 
 - [ ] All functional requirements use proper EARS format with specific conditions and measurable outcomes
 - [ ] Each requirement has detailed, testable acceptance criteria with clear pass/fail conditions
-- [ ] Priority levels assigned to all requirements with clear business impact rationale
+- [ ] Priority levels assigned to all requirements with clear project impact rationale
 - [ ] Dependencies and constraints clearly documented with specific integration requirements
 - [ ] Non-functional requirements comprehensively address performance, security, usability, and compatibility
 - [ ] Integration with existing system capabilities verified through codebase analysis
@@ -417,7 +417,7 @@ requirements_summary:
 
 - [ ] All functional requirements use proper EARS format where condition/response patterns apply
 - [ ] All acceptance criteria include specific numeric thresholds where applicable
-- [ ] Priority assignments have explicit business impact statements
+- [ ] Priority assignments have explicit project impact statements
 - [ ] Research citations include authoritative sources for complex features with proper attribution
 - [ ] Integration requirements reference specific existing system components
 
@@ -428,7 +428,7 @@ requirements_summary:
 - [ ] All requirements are actionable and implementable within project constraints
 - [ ] Consistent terminology and measurement units used throughout document
 - [ ] Source citations included for all research-informed requirements with relevant insights documented
-- [ ] Requirements are traceable to business objectives and user needs
+- [ ] Requirements are traceable to project objectives and user needs
 - [ ] Document structure follows template format for consistency and completeness
 
 ## Integration and Workflow Validation Checklist
