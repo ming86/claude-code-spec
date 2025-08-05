@@ -431,5 +431,3 @@ Your solution must be production-ready and thoroughly tested. Incomplete impleme
 - Use todo lists to track progress and provide transparency
 - Apply systematic problem-solving even when facing unexpected challenges
 - Ensure each phase completion before moving to the next phase
-
----
