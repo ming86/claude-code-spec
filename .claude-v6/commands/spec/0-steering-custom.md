@@ -66,7 +66,7 @@ Analyze specific technical domains and create targeted guidance documents in `.s
 
 - Determine appropriate inclusion mode based on domain scope and usage patterns
 - Configure file patterns for conditional inclusion if applicable
-- Update .github/copilot-instructions.md with new steering configuration
+- Update `CLAUDE.md` with new steering configuration
 - Verify integration doesn't conflict with existing steering setup
 
 # Specialized Domain Areas
@@ -243,7 +243,7 @@ How these standards work with existing core steering (product.md, tech.md, struc
 - [ ] Domain thoroughly analyzed using systematic investigation
 - [ ] Steering document created with project-specific content
 - [ ] Appropriate inclusion mode configured with correct file patterns
-- [ ] .github/copilot-instructions.md updated with new steering configuration
+- [ ] `CLAUDE.md` updated with new steering configuration
 - [ ] Integration verified to work with existing workflow
 - [ ] No conflicts with existing core steering documents
 

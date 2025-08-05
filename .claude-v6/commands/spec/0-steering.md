@@ -83,7 +83,7 @@ Generate comprehensive project steering documents that provide persistent, accur
 
 **Process**:
 
-- Update `.github/copilot-instructions.md` with complete steering configuration
+- Update `CLAUDE.md` with complete steering configuration
 - Verify steering documents are accessible and properly formatted for consumption
 - Ensure integration doesn't conflict with existing custom steering or configuration
 - Test document accessibility and validate workflow integration points
@@ -135,7 +135,7 @@ Each steering document must be:
 - [ ] Comprehensive codebase analysis completed using all available tools
 - [ ] All three core steering documents generated with project-specific content
 - [ ] User customizations preserved in existing documents where applicable
-- [ ] .github/copilot-instructions.md updated with complete steering configuration
+- [ ] `CLAUDE.md` updated with complete steering configuration
 - [ ] Integration verified to work with existing workflow and custom steering
 - [ ] No sensitive information included in any generated documentation
 - [ ] All documents follow consistent formatting and provide actionable information
