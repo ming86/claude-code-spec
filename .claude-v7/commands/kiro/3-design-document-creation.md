@@ -28,6 +28,9 @@ Stage 2 transforms approved requirements into detailed system architecture throu
 - When user says "proceed" or "generate design document", begin systematic generation based on approved approach and research findings
 - When generating design document, create actual file following exact 6-section template structure
 - When user requests changes, implement modifications while preserving research integration and scope discipline
+- When existing design.md detected, jump directly to review cycle with loaded content
+- When loading context, include existing design.md if present for draft analysis
+- When existing draft path selected, offer research update option if user requests it
 </behavioral_specifications>
 
 # Kiro Design Document Creation (Stage 2)
@@ -81,6 +84,7 @@ Loading project context for feature: **${feature-name}**
 
 @.kiro/specs/${feature-name}/spec.yaml
 @.kiro/specs/${feature-name}/requirements.md
+@.kiro/specs/${feature-name}/design.md (if exists)
 @.kiro/steering/product.md
 @.kiro/steering/tech.md  
 @.kiro/steering/structure.md
@@ -95,6 +99,7 @@ Loading project context for feature: **${feature-name}**
 - Feature initialized: ${feature-name}
 - Requirements stage: **MUST be approved** (checking spec.yaml approval status)
 - requirements.md exists and accessible for design context
+- Existing design.md loaded if present for draft state analysis
 - Steering context loaded for design guidance
 
 **Prerequisites Status:**
@@ -111,6 +116,46 @@ If requirements are not approved, you must complete Stage 1 first:
 
 **Ready to proceed with design document creation.**
 </context_loading_and_validation>
+
+## 2.5. Draft State Detection & Workflow Routing
+
+<draft_state_routing>
+**Determining optimal workflow path based on current design state...**
+
+**After systematically analyzing the loaded project context, determine the most efficient workflow path for user needs.**
+
+**State Analysis:**
+[Checking approval status from loaded spec.yaml content]
+
+- **File Status**: `.kiro/specs/${feature-name}/design.md` [EXISTS/MISSING based on file loading above]
+- **Generation Status**: `design.generated` [true/false from spec.yaml]
+- **Approval Status**: `design.approved` [true/false from spec.yaml]
+- **Prerequisites**: `requirements.approved` [MUST be true to proceed]
+
+**Workflow Routing Decision:**
+
+[If design.generated: false OR design.md doesn't exist]
+**Fresh Generation Path**: No existing design document found.
+**Proceeding**: Research Integration → Design Planning → Generation → Review
+→ Continue to Section 3: Research Integration Phase
+
+[If design.generated: true, approved: true]
+**Design Complete**: Design document approved and ready for implementation planning.
+**Status**: Ready for next stage progression.
+**Next Step**: Use `/kiro:4-implementation-planning ${feature-name}` to proceed to implementation planning stage.
+
+[If design.generated: true, approved: false]
+**Existing Draft Path**: Found existing design draft ready for review and revision.
+
+Since I've loaded the design.md content along with all project context, I can immediately present your existing design for review and potential modification.
+
+**Research Option**: By default, I'll skip research phase for efficiency, but if you want updated research context, just say "update research" and I'll conduct fresh research before review.
+
+**Proceeding**: Direct to Design Review & Revision Cycle
+→ Jump to Section 7: Design Review & Revision Cycle
+
+**Selected Workflow Path**: [Indicate chosen path with clear reasoning]
+</draft_state_routing>
 
 ## 3. Research Integration Phase
 
@@ -461,6 +506,8 @@ Creating comprehensive design document at: `.kiro/specs/${feature-name}/design.m
 
 <design_review_process>
 
+[If coming from fresh generation path - design just generated]
+
 ## Design Document Complete
 
 I've generated a comprehensive design document following all Kiro Stage 2 standards:
@@ -471,9 +518,25 @@ I've generated a comprehensive design document following all Kiro Stage 2 standa
 - **Steering Guidance**: Product, technical, and structural guidance applied throughout design
 - **Scope Discipline**: Design boundaries documented, over-engineering avoided
 
-**Generated Document:**
-**Location**: `.kiro/specs/${feature-name}/design.md`
-**Quality Score**: [Score] (meeting all Kiro validation standards and scope discipline)
+[If coming from existing draft path - design previously generated]
+
+## Existing Design Draft Review
+
+I've loaded your existing design draft for review and potential revision. The document contains your previously generated architecture incorporating requirements analysis and research findings.
+
+**Existing Document Status:**
+
+- **Created**: [timestamp from spec.yaml created_at]
+- **Last Updated**: [timestamp from spec.yaml updated_at]
+- **Current State**: Generated but awaiting approval
+- **Research Context**: Existing design incorporates previous research findings
+
+**Research Update Option**: If you'd like me to update research context before review, just say "update research" and I'll conduct fresh research analysis.
+
+[Common section for both paths continues here]
+
+**Document Location**: `.kiro/specs/${feature-name}/design.md`
+**Quality Assessment**: [Run quality validation on loaded/generated content]
 
 [Display key design highlights and architectural decisions]
 

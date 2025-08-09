@@ -22,11 +22,12 @@ This command executes Kiro Stage 1, generating comprehensive requirements using 
 <behavioral_specifications>
 
 - When feature argument missing, display available features and wait for user selection
-- When loading context, read complete content of spec.yaml and all steering documents
+- When loading context, read complete content of spec.yaml, existing requirements.md (if present), and all steering documents
 - When user provides context, accumulate all input before scope planning phase
 - When user says "proceed" or "generate requirements", begin systematic scope planning
 - When scope confirmed, generate complete requirements document using exact template
 - When presenting draft, display quality validation results transparently
+- When existing draft detected, jump directly to review cycle with loaded content
 - When user requests changes, implement specific modifications while preserving Kiro compliance
 </behavioral_specifications>
 
@@ -78,6 +79,7 @@ Once you provide a valid feature name, I'll continue with that feature.
 Loading project context for feature: **${feature-name}**
 
 @.kiro/specs/${feature-name}/spec.yaml
+@.kiro/specs/${feature-name}/requirements.md (if exists)
 @.kiro/steering/product.md
 @.kiro/steering/tech.md  
 @.kiro/steering/structure.md
@@ -89,8 +91,46 @@ Loading project context for feature: **${feature-name}**
 - Feature initialized: ${feature-name}
 - spec.yaml exists with proper structure
 - Steering context loaded for decision guidance
+- Existing requirements.md loaded if present for draft state analysis
 - Ready to proceed with requirements clarification
 </context_loading_phase>
+
+## 2.5. Draft State Detection & Workflow Routing
+
+<draft_state_routing>
+**Determining optimal workflow path based on current requirements state...**
+
+**After systematically analyzing the loaded project context, determine the most efficient workflow path for user needs.**
+
+**State Analysis:**
+[Checking approval status from loaded spec.yaml content]
+
+- **File Status**: `.kiro/specs/${feature-name}/requirements.md` [EXISTS/MISSING based on file loading above]
+- **Generation Status**: `requirements.generated` [true/false from spec.yaml]
+- **Approval Status**: `requirements.approved` [true/false from spec.yaml]
+
+**Workflow Routing Decision:**
+
+[If requirements.generated: false OR requirements.md doesn't exist]
+**Fresh Generation Path**: No existing requirements document found.
+**Proceeding**: Context Gathering → Scope Planning → Requirements Generation → Review
+→ Continue to Section 3: Context Gathering Phase
+
+[If requirements.generated: true, approved: true]
+**Requirements Complete**: Requirements have been approved and finalized.
+**Status**: Ready for next stage progression.
+**Next Step**: Use `/kiro:3-design-document-creation ${feature-name}` to proceed to design stage.
+
+[If requirements.generated: true, approved: false]
+**Existing Draft Path**: Found existing requirements draft ready for review and revision.
+
+Since I've loaded the requirements.md content along with all project context, I can immediately present your existing requirements for review and potential modification.
+
+**Proceeding**: Direct to Requirements Review & Revision Cycle
+→ Jump to Section 6: Requirements Review & Revision Cycle
+
+**Selected Workflow Path**: [Indicate chosen path with clear reasoning]
+</draft_state_routing>
 
 ## 3. Context Gathering
 
@@ -406,6 +446,8 @@ Creating comprehensive requirements document at: `.kiro/specs/${feature-name}/re
 
 <requirements_review_process>
 
+[If coming from fresh generation path - requirements just generated]
+
 ## Requirements Draft Complete
 
 I've generated comprehensive requirements following all Kiro Stage 1 standards, incorporating:
@@ -416,11 +458,24 @@ I've generated comprehensive requirements following all Kiro Stage 1 standards, 
 - All steering context guidance applied
 - Industry best practices for edge cases and error handling
 
-**Generated Document:**
-**Location**: `.kiro/specs/${feature-name}/requirements.md`  
-**Quality Score**: [Score] (meeting all Kiro validation standards)
+[If coming from existing draft path - requirements previously generated]
 
-[Display key highlights of generated requirements]
+## Existing Requirements Draft Review
+
+I've loaded your existing requirements draft for review and potential revision. The document contains your previously generated requirements incorporating project context and steering guidance.
+
+**Existing Document Status:**
+
+- **Created**: [timestamp from spec.yaml created_at]
+- **Last Updated**: [timestamp from spec.yaml updated_at]
+- **Current State**: Generated but awaiting approval
+
+[Common section for both paths continues here]
+
+**Document Location**: `.kiro/specs/${feature-name}/requirements.md`
+**Quality Assessment**: [Run quality validation on loaded/generated content]
+
+[Display key highlights of the requirements content]
 
 **Please review your requirements document.**
 

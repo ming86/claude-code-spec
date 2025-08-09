@@ -27,6 +27,10 @@ This is Stage 3 of the Kiro workflow - the critical transformation point from de
 - When user says "proceed", begin task breakdown generation using all gathered context
 - When generating tasks.md, create actual file using exact template specification
 - When user provides feedback, implement specific modifications while preserving scope discipline
+- When existing tasks.md detected, jump directly to review cycle with loaded content
+- When loading context, include existing tasks.md if present for draft analysis
+- When validating prerequisites, check both requirements.approved AND design.approved must be true
+- When existing draft path selected, skip scope planning phase for efficiency
 </behavioral_specifications>
 
 <systematic_task_analysis_framework>
@@ -80,6 +84,7 @@ Loading project context for feature: **${feature-name}**
 @.kiro/specs/${feature-name}/spec.yaml
 @.kiro/specs/${feature-name}/requirements.md
 @.kiro/specs/${feature-name}/design.md
+@.kiro/specs/${feature-name}/tasks.md (if exists)
 @.kiro/steering/product.md
 @.kiro/steering/tech.md  
 @.kiro/steering/structure.md
@@ -96,13 +101,14 @@ Loading project context for feature: **${feature-name}**
 - Requirements stage: **MUST be approved** (Stage 1 complete)
 - Design stage: **MUST be approved** (Stage 2 complete)
 - Both requirements.md and design.md exist and accessible
+- Existing tasks.md loaded if present for draft state analysis
 - Steering context loaded for implementation guidance
 
 **Prerequisites Status:**
 
 - Feature: ${feature-name} ✓
-- Stage 1 (Requirements): [Checking approval status from spec.yaml]
-- Stage 2 (Design): [Checking approval status from spec.yaml]
+- Stage 1 (Requirements): [Checking requirements.approved from spec.yaml - MUST be true]
+- Stage 2 (Design): [Checking design.approved from spec.yaml - MUST be true]
 - Context Documents: [Verifying accessibility]
 
 If previous stages are not approved, you must complete them first:
@@ -114,6 +120,57 @@ If previous stages are not approved, you must complete them first:
 
 **Ready to proceed with implementation planning.**
 </context_loading_validation>
+
+## 2.5. Draft State Detection & Workflow Routing
+
+<draft_state_routing>
+**Determining optimal workflow path based on current implementation planning state...**
+
+**After systematically analyzing the loaded project context, determine the most efficient workflow path for user needs.**
+
+**State Analysis with Dual Validation:**
+[Checking both file existence AND spec.yaml flags for complete state validation]
+
+!test -f ".kiro/specs/${feature-name}/tasks.md" && echo "FILE_EXISTS" || echo "FILE_MISSING"
+
+- **File Status**: `.kiro/specs/${feature-name}/tasks.md` [EXISTS/MISSING based on file check above]
+- **Generation Flag**: `tasks.generated` [true/false from spec.yaml]
+- **Approval Flag**: `tasks.approved` [true/false from spec.yaml]
+- **Prerequisites**: Both `requirements.approved` AND `design.approved` [MUST be true to proceed]
+- **State Consistency**: [Validate spec.yaml flags match physical file existence]
+
+**Workflow Routing Decision:**
+
+[If tasks.generated: false OR tasks.md doesn't exist]
+**Fresh Generation Path**: No proper state tracking OR missing file.
+**Proceeding**: Implementation Scope Planning → Task Breakdown → Review
+→ Continue to Section 3: Implementation Scope Planning Phase
+
+[If tasks.generated: true AND tasks.approved: true]
+**Implementation Complete**: Task breakdown approved and ready for execution.
+**Status**: Ready for next stage progression.
+**Next Step**: Use `/kiro:5-task-execution ${feature-name}` to proceed to task execution stage.
+
+[If tasks.generated: true AND tasks.approved: false AND tasks.md exists]
+**Existing Draft Path**: Found existing task breakdown ready for review and revision.
+
+Since I've loaded the tasks.md content along with all project context, I can immediately present your existing implementation plan for review and potential modification.
+
+**Proceeding**: Direct to Task Review & Revision Cycle (skip scope planning for efficiency)
+→ Jump to Section 6: Task Review & Revision Cycle
+
+[If tasks.generated: true AND tasks.md doesn't exist]
+**State Corruption Detected**: spec.yaml indicates generated but file missing.
+**Issue**: File may have been deleted or corrupted after generation.
+**Recovery Options:**
+
+- **Regenerate**: Create fresh task breakdown (reset to fresh generation path)
+- **Reset State**: Mark tasks.generated: false and proceed normally
+
+**What would you like to do? (regenerate/reset)**
+
+**Selected Workflow Path**: [Indicate chosen path with clear reasoning]
+</draft_state_routing>
 
 **After loading all context documents, carefully analyze their completeness and quality to determine the optimal task breakdown approach.**
 
@@ -380,6 +437,8 @@ Creating comprehensive task breakdown at: `.kiro/specs/${feature-name}/tasks.md`
 
 <task_review_process>
 
+[If coming from fresh generation path - tasks just generated]
+
 ## Implementation Tasks Complete
 
 I've generated a comprehensive task breakdown following all Kiro Stage 3 standards:
@@ -390,9 +449,24 @@ I've generated a comprehensive task breakdown following all Kiro Stage 3 standar
 - **Incremental Development**: Tasks sequenced for progressive implementation with clear dependencies
 - **Scope Discipline**: Implementation boundaries honor previous stage decisions with sound reasoning
 
-**Generated Document:**
-**Location**: `.kiro/specs/${feature-name}/tasks.md`
-**Quality Score**: [Score] (meeting all Kiro validation standards and scope discipline)
+[If coming from existing draft path - tasks previously generated]
+
+## Existing Implementation Plan Review
+
+I've loaded your existing task breakdown for review and potential revision. The document contains your previously generated implementation plan incorporating requirements and design analysis.
+
+**Existing Document Status:**
+
+- **Created**: [timestamp from spec.yaml created_at]
+- **Last Updated**: [timestamp from spec.yaml updated_at]
+- **Current State**: Generated but awaiting approval
+- **Task Breakdown**: Existing plan incorporates previous scope planning decisions
+- **Scope Analysis**: Implementation plan reflects approved requirements and design boundaries
+
+[Common section for both paths continues here]
+
+**Document Location**: `.kiro/specs/${feature-name}/tasks.md`
+**Quality Assessment**: [Run quality validation on loaded/generated content]
 
 [Display key task breakdown highlights and implementation sequence]
 
