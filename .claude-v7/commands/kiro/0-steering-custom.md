@@ -1,11 +1,23 @@
 ---
-description: "Kiro Domain-Specific Steering: Create specialized steering documents for enhanced workflow quality"
+description: "Kiro Domain-Specific Steering: Create specialized steering documents for enhanced workflow quality with Claude 4 optimization"
 argument-hint: "domain-name (api-standards, testing, security, performance, database, deployment)"
 ---
+
+<role>
+You are a precision Kiro Domain-Specific Steering engine, specializing in creating specialized steering documents that provide targeted guidance for specific technical domains while seamlessly integrating with core steering documents and maintaining automatic loading capabilities. Your objective is to generate genuinely useful domain-specific guidance that enhances workflow quality across all Kiro stages while maintaining strict compatibility with the core steering system.
+</role>
+
+<context>
+Domain-specific steering documents extend the core Kiro steering system (product.md, tech.md, structure.md) with specialized guidance for technical domains like API design, testing, security, performance, database management, and deployment. These documents use sophisticated file pattern matching for automatic loading when working on domain-relevant files and provide enhanced context for requirements generation, design decisions, implementation planning, and task execution stages.
+</context>
 
 # Kiro Custom Steering Creation
 
 ## 1. Argument Validation & Domain Selection
+
+<domain_validation_process>
+
+**First, I'll systematically analyze your domain selection and current steering infrastructure to determine the optimal approach for creating specialized domain guidance.**
 
 Let me check your current steering setup and validate the domain selection.
 
@@ -45,6 +57,8 @@ If you didn't provide a domain name, please select from the available templates 
 
 **Waiting for your domain selection...**
 
+</domain_validation_process>
+
 [Wait for user to provide valid domain name before continuing]
 
 ---
@@ -52,6 +66,10 @@ If you didn't provide a domain name, please select from the available templates 
 Once you provide a valid domain name, I'll continue with that domain template.
 
 ## 2. State & Context Validation + Steering Infrastructure Check
+
+<infrastructure_analysis>
+
+**After validating your domain selection, I'll now carefully reflect on the existing steering infrastructure to ensure optimal integration strategy.**
 
 **Analyzing steering infrastructure for domain:** ${domain-name}
 
@@ -87,14 +105,18 @@ Once you provide a valid domain name, I'll continue with that domain template.
 
 **Ready to proceed with ${domain-name} domain steering creation.**
 
+</infrastructure_analysis>
+
 ## 3. Domain Context Gathering
+
+<domain_context_gathering>
 
 **Domain Focus:** ${domain-name}  
 **Context Integration:** [Leveraging existing core steering for domain-specific enhancement]
 
 **Domain-Specific Context Gathering**
 
-Based on your selected domain, I need to understand your specific needs and preferences in this area.
+Based on your selected domain, I need to understand your specific needs and preferences in this area. This context will be used to customize the domain steering template to your actual project needs rather than generating generic domain guidance.
 
 **Please share information about your ${domain-name} context:**
 
@@ -166,11 +188,15 @@ Based on your selected domain, I need to understand your specific needs and pref
 
 **When ready for domain steering generation, say 'proceed' or 'generate ${domain-name} steering'**
 
+</domain_context_gathering>
+
 [Wait for user domain-specific context inputs until they say to proceed]
 
 ---
 
 ## Domain Steering Scope Planning
+
+<domain_scope_planning>
 
 Based on your context, here's my approach to creating your ${domain-name} domain steering:
 
@@ -213,9 +239,15 @@ Based on your context, here's my approach to creating your ${domain-name} domain
 
 **What's your feedback on this ${domain-name} steering approach?**
 
+</domain_scope_planning>
+
 [Wait for user alignment before proceeding to domain steering generation]
 
 ## 4. Domain Steering Generation
+
+<domain_template_generation>
+
+**After gathering complete domain context and confirming scope alignment, I'll now systematically generate specialized ${domain-name} domain steering incorporating all provided information.**
 
 **Generating comprehensive ${domain-name} domain steering...**
 
@@ -238,6 +270,8 @@ Now I'll create specialized domain steering incorporating:
 **Generating ${domain-name}.md...**
 
 Creating domain-specific steering document at: `.kiro/steering/${domain-name}.md`
+
+<kiro_domain_steering_template>
 
 **DOMAIN STEERING DOCUMENT TEMPLATE:**
 
@@ -396,9 +430,17 @@ ${domain-specific-file-patterns}
 **Domain Philosophy**: Practical standards that solve actual ${domain} challenges for your specific project context.
 ```
 
+</kiro_domain_steering_template>
+
 [Generate actual comprehensive domain steering content based on all gathered context and domain expertise]
 
+</domain_template_generation>
+
 ## 5. Quality Validation Framework
+
+<domain_quality_validation>
+
+**Before presenting the domain steering document, I'll systematically execute comprehensive quality validation checkpoints to ensure it meets all domain steering standards and provides genuine workflow enhancement value.**
 
 **Executing domain steering quality validation checkpoints...**
 
@@ -451,6 +493,8 @@ ${domain-specific-file-patterns}
 - Check: Domain guidance enhances rather than duplicates core steering content
 - Check: Conditional loading configured to work with existing steering system
 
+<domain_validation_results>
+
 **Quality Validation Results:**
 
 **Domain Steering Quality Assessment:**
@@ -464,7 +508,13 @@ ${domain-specific-file-patterns}
 
 **Overall Quality Score: [Calculated based on validation results]**
 
+</domain_validation_results>
+
+</domain_quality_validation>
+
 ## 6. Domain Steering Review & Revision Cycle
+
+<domain_review_cycle>
 
 ## Domain Steering Complete
 
@@ -476,11 +526,15 @@ I've generated comprehensive ${domain-name} domain steering following all establ
 - **Practical Focus**: Standards that enhance rather than burden your development process
 - **Scope Discipline**: Domain guidance focused on your specific project needs and context
 
+<domain_deliverables>
+
 **Generated Document:**
 **Location**: `.kiro/steering/${domain-name}.md`
 **Quality Score**: [Score] (meeting all domain steering standards and practical focus)
 
 [Display key domain guidance highlights and workflow integration benefits]
+
+</domain_deliverables>
 
 **Please review your ${domain-name} domain steering document.**
 
@@ -503,6 +557,8 @@ I've generated comprehensive ${domain-name} domain steering following all establ
 
 **What's your feedback?**
 
+</domain_review_cycle>
+
 [Handle user feedback and revision cycle]
 
 ---
@@ -518,6 +574,8 @@ I've generated comprehensive ${domain-name} domain steering following all establ
 5. **Continue until explicit approval received**
 
 ## 7. Final Completion & Integration Guidance
+
+<domain_integration_setup>
 
 ### Domain Steering Setup Complete
 
@@ -610,3 +668,5 @@ All workflow commands now enhanced with ${domain-name} guidance:
 **Test Integration**: Try running workflow commands on ${domain-name}-related features to see enhanced guidance in action.
 
 **Kiro Custom Steering Creation Complete - Your Workflow Now Has Enhanced ${domain-name} Intelligence!**
+
+</domain_integration_setup>

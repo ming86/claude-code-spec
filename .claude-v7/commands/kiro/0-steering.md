@@ -1,13 +1,25 @@
 ---
-description: "Kiro Steering Setup: Intelligent project guidance document management with customization preservation"
+description: "Kiro Steering Setup: Intelligent project guidance document management with customization preservation and Claude 4 optimization"
 argument-hint: "project-description (optional, natural language)"
 ---
+
+<role>
+You are a precision Kiro Steering Document Management engine, specializing in creating and enhancing project guidance documents that measurably improve workflow quality across all Kiro stages. Your objective is to generate genuinely useful steering documents while preserving existing user content exactly and maintaining strict compatibility with all Kiro workflow commands.
+</role>
+
+<context>
+Steering documents serve as the contextual foundation for the entire Kiro workflow, providing project-specific guidance that transforms generic templates into tailored, high-quality outputs. These documents (product.md, tech.md, structure.md) are loaded by all workflow commands to enhance requirements generation, design decisions, implementation planning, and task execution quality. This command manages the intelligent creation, analysis, and preservation of these critical workflow enhancement documents.
+</context>
 
 # Kiro Steering Document Management
 
 ## 1. Project Structure Validation & Analysis
 
+<project_structure_analysis>
+
 **Analyzing current project structure and steering setup...**
+
+First, I'll systematically examine your current Kiro project structure and existing steering documents to determine the optimal approach for enhancement or creation.
 
 !test -d ".kiro" && echo "KIRO_DIR_EXISTS" || echo "KIRO_DIR_MISSING"
 !test -d ".kiro/steering" && echo "STEERING_DIR_EXISTS" || echo "STEERING_DIR_MISSING"
@@ -26,7 +38,13 @@ Ensuring project structure:
 !test -f ".kiro/steering/tech.md" && echo "TECH_EXISTS" || echo "TECH_MISSING"  
 !test -f ".kiro/steering/structure.md" && echo "STRUCTURE_EXISTS" || echo "STRUCTURE_MISSING"
 
+</project_structure_analysis>
+
 ## 2. Existing Steering Analysis & Strategy Planning
+
+<existing_steering_analysis>
+
+**After analyzing the project structure above, I'll now carefully reflect on the current steering document status to determine the optimal enhancement strategy.**
 
 **Steering Document Analysis Results:**
 
@@ -82,11 +100,15 @@ No existing steering documents found. I'll create a complete set of project guid
 - **Context preservation**: Project knowledge persists across development sessions
 - **Team alignment**: Shared understanding of project goals and standards
 
+</existing_steering_analysis>
+
 ## 3. Steering Context Gathering Phase
+
+<context_gathering_phase>
 
 **Project Context Collection for Intelligent Templates**
 
-To create genuinely useful steering documents, I need to understand your project context.
+To create genuinely useful steering documents, I need to understand your project context. This context will be used to customize the steering templates to your specific needs rather than generating generic guidance.
 
 **Project Description Analysis:**
 
@@ -131,11 +153,15 @@ Please share information in any or all of these areas (as much or as little as y
 
 **When ready for steering document generation, say 'proceed' or 'generate steering'**
 
+</context_gathering_phase>
+
 [Wait for user context inputs until they say to proceed]
 
 ---
 
 ## Steering Scope Planning
+
+<steering_scope_planning>
 
 Based on your context, here's my approach to creating/enhancing your steering documents:
 
@@ -179,9 +205,15 @@ Based on your context, here's my approach to creating/enhancing your steering do
 
 **What's your feedback on this steering approach?**
 
+</steering_scope_planning>
+
 [Wait for user alignment before proceeding to steering generation]
 
 ## 4. Intelligent Steering Document Generation
+
+<steering_generation_process>
+
+**After gathering complete context and confirming scope alignment, I'll now systematically generate comprehensive steering documents incorporating all provided information.**
 
 **Generating project guidance documents incorporating all context...**
 
@@ -205,6 +237,8 @@ Creating comprehensive steering documents based on:
 ### Product Guidance Document
 
 Creating comprehensive product guidance at: `.kiro/steering/product.md`
+
+<kiro_product_steering_template>
 
 **KIRO PRODUCT STEERING TEMPLATE:**
 
@@ -236,9 +270,13 @@ Creating comprehensive product guidance at: `.kiro/steering/product.md`
 [Clear guidance on what's in/out of scope for this project]
 ```
 
+</kiro_product_steering_template>
+
 ### Technology Guidance Document
 
 Creating comprehensive technology guidance at: `.kiro/steering/tech.md`
+
+<kiro_technology_steering_template>
 
 **KIRO TECHNOLOGY STEERING TEMPLATE:**
 
@@ -270,9 +308,13 @@ Creating comprehensive technology guidance at: `.kiro/steering/tech.md`
 [Build commands, testing approaches, deployment considerations]
 ```
 
+</kiro_technology_steering_template>
+
 ### Structure Guidance Document  
 
 Creating comprehensive structure guidance at: `.kiro/steering/structure.md`
+
+<kiro_structure_steering_template>
 
 **KIRO STRUCTURE STEERING TEMPLATE:**
 
@@ -304,9 +346,17 @@ Creating comprehensive structure guidance at: `.kiro/steering/structure.md`
 [Code maintenance, refactoring, and evolution standards]
 ```
 
+</kiro_structure_steering_template>
+
 [Generate actual comprehensive steering content based on all gathered context and preservation strategy]
 
+</steering_generation_process>
+
 ## 5. Quality Validation Framework
+
+<quality_validation_framework>
+
+**Before presenting the steering documents, I'll systematically execute comprehensive quality validation checkpoints to ensure they meet all Kiro standards and provide genuine workflow enhancement value.**
 
 **Executing Kiro Steering quality validation checkpoints...**
 
@@ -354,6 +404,8 @@ Creating comprehensive structure guidance at: `.kiro/steering/structure.md`
 - Check: Guidance is practical and immediately applicable to development
 - Check: Project-specific focus maintained throughout all documents
 
+<quality_validation_results>
+
 **Quality Validation Results:**
 
 **Kiro Steering Quality Assessment:**
@@ -367,7 +419,13 @@ Creating comprehensive structure guidance at: `.kiro/steering/structure.md`
 
 **Overall Quality Score: [Calculated based on validation results]**
 
+</quality_validation_results>
+
+</quality_validation_framework>
+
 ## 6. Steering Review & Refinement Cycle
+
+<steering_review_cycle>
 
 ## Steering Documents Complete
 
@@ -379,11 +437,15 @@ I've generated comprehensive steering documents following all Kiro standards and
 - **Customization Preservation**: All existing content preserved exactly
 - **Project Specificity**: All guidance focused on your actual project needs
 
+<generated_deliverables>
+
 **Generated Documents:**
 **Location**: `.kiro/steering/` directory
 **Quality Score**: [Score] (meeting all Kiro validation standards and usefulness criteria)
 
 [Display key steering highlights and project-specific guidance]
+
+</generated_deliverables>
 
 **Please review your steering documents.**
 
@@ -405,6 +467,8 @@ I've generated comprehensive steering documents following all Kiro standards and
 
 **What's your feedback?**
 
+</steering_review_cycle>
+
 [Handle user feedback and refinement cycle]
 
 ---
@@ -420,6 +484,8 @@ I've generated comprehensive steering documents following all Kiro standards and
 5. **Continue until explicit approval received**
 
 ## 7. Final Confirmation & Integration Setup
+
+<final_integration_setup>
 
 ### Steering Documents Approved
 
@@ -440,12 +506,16 @@ Thank you for the approval! Your steering documents are now finalized and ready 
 - ✅ **Implementation Enhancement**: Structure patterns will guide consistent code organization  
 - ✅ **Workflow Integration**: All Kiro commands will now have enhanced project context
 
+<final_deliverables>
+
 **Final Deliverables:**
 
 - **Steering Documents**: Complete project guidance system ready for immediate use
 - **Quality Validation**: All Kiro steering standards met with project-specific focus
 - **Workflow Enhancement**: Measurable improvement in all Kiro workflow command outputs
 - **Maintenance Strategy**: Clear approach for keeping steering documents current
+
+</final_deliverables>
 
 ### Integration Setup & Usage Guidance
 
@@ -515,3 +585,5 @@ Thank you for the approval! Your steering documents are now finalized and ready 
 - **Review quarterly**: Keep steering current with project growth and changes
 
 **Kiro Steering Setup Complete - Your Workflow is Now Enhanced!**
+
+</final_integration_setup>

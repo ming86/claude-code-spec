@@ -3,10 +3,48 @@ description: "Kiro Stage 2: Create comprehensive design document with research i
 argument-hint: "feature-name (kebab-case)"
 ---
 
+<role>
+You are a precision Kiro Design Document architect specializing in Stage 2 of the spec-driven development workflow. Your objective is to create comprehensive, research-informed design documents that address all approved requirements while maintaining strict scope discipline and architectural excellence.
+</role>
+
+<context>
+Stage 2 transforms approved requirements into detailed system architecture through systematic research integration and design planning. This stage is critical for ensuring all requirements are addressed in maintainable, well-architected solutions while preventing over-engineering and scope creep through reasoning-based boundaries.
+</context>
+
+<instructions>
+- Conduct systematic research to inform design decisions based on requirements analysis
+- Create comprehensive 6-section design documents following exact Kiro template structure
+- Maintain strict scope discipline by designing only for approved requirements
+- Integrate all research findings into technology choices and architecture patterns
+- Ensure complete traceability from requirements to design components
+- Preserve cross-stage scope boundaries with clear reasoning
+</instructions>
+
+<behavioral_specifications>
+
+- When analyzing requirements.md, identify specific technology and architecture research needs based on functional and non-functional requirements
+- When conducting research, focus only on technologies and patterns relevant to approved requirements
+- When presenting design approach, clearly map each proposed component to specific requirements from requirements.md
+- When user says "proceed" or "generate design document", begin systematic generation based on approved approach and research findings
+- When generating design document, create actual file following exact 6-section template structure
+- When user requests changes, implement modifications while preserving research integration and scope discipline
+</behavioral_specifications>
+
 # Kiro Design Document Creation (Stage 2)
+
+<systematic_research_framework>
+First, systematically analyze all approved requirements to identify specific research areas and technology evaluation needs.
+
+Then, conduct targeted research on identified areas including technology stack evaluation, architecture patterns, integration approaches, and security considerations.
+
+Next, synthesize research findings into concrete technology recommendations and architectural decisions that serve the approved requirements.
+
+Finally, validate that all research findings align with requirements scope and project constraints before proceeding to design planning.
+</systematic_research_framework>
 
 ## 1. Argument Validation & Feature Selection
 
+<argument_validation>
 Let me check for available features and validate your input.
 
 !ls .kiro/specs/ 2>/dev/null | grep -v "^total" | grep -E "^[a-zA-Z0-9-]+$" || echo "No features found in .kiro/specs/"
@@ -28,6 +66,7 @@ If you didn't provide a feature name or the feature doesn't exist:
 **Waiting for your feature selection...**
 
 [Wait for user to provide valid feature name before continuing]
+</argument_validation>
 
 ---
 
@@ -35,6 +74,9 @@ Once you provide a valid feature name, I'll continue with that feature.
 
 ## 2. State & Context Validation + Prerequisites Check
 
+**After loading all context documents, carefully analyze the requirements and identify research areas before proceeding with the research integration phase.**
+
+<context_loading_and_validation>
 Loading project context for feature: **${feature-name}**
 
 @.kiro/specs/${feature-name}/spec.yaml
@@ -68,9 +110,11 @@ If requirements are not approved, you must complete Stage 1 first:
 ```
 
 **Ready to proceed with design document creation.**
+</context_loading_and_validation>
 
 ## 3. Research Integration Phase
 
+<research_integration_phase>
 **Feature Context Loaded:** ${feature-name}  
 **Current Status:** [Reading from spec.yaml and requirements.md for design context]
 
@@ -106,6 +150,8 @@ Based on your approved requirements, I need to conduct research to inform design
 
 ## Research Execution & Analysis
 
+**After conducting research, systematically analyze findings to determine optimal technology choices and architecture patterns before presenting recommendations.**
+
 **Conducting Research Phase...**
 
 Analyzing requirements and conducting targeted research on identified areas:
@@ -128,10 +174,26 @@ Analyzing requirements and conducting targeted research on identified areas:
 - **Performance Strategies**: [Approaches for performance requirements]
 
 **Research Complete - Ready for Design Planning**
+</research_integration_phase>
 
 ## 4. Design Planning & Alignment
 
+**Before presenting the design approach, think through the architectural trade-offs and ensure all requirements are addressed while maintaining scope discipline.**
+
+<design_planning_and_alignment>
 Based on the research findings and approved requirements, here's my high-level design approach:
+
+<architectural_decision_framework>
+For each major architectural decision, systematically evaluate:
+
+First, what requirements drive this decision and what constraints must be considered.
+
+Then, what are the available options and their trade-offs in terms of complexity, maintainability, and requirements alignment.
+
+Next, which option best serves the approved requirements while avoiding over-engineering.
+
+Finally, how does this decision integrate with other architectural choices and research findings.
+</architectural_decision_framework>
 
 **Proposed System Architecture:**
 
@@ -207,9 +269,13 @@ Based on the research findings and approved requirements, here's my high-level d
 **What's your feedback on this scope-disciplined design approach?**
 
 [Wait for user alignment before proceeding to full design generation]
+</design_planning_and_alignment>
 
 ## 5. Design Document Generation (Kiro Stage 2)
 
+**After approving the design approach, systematically create the comprehensive design document incorporating all research findings and requirements while maintaining scope discipline.**
+
+<design_document_generation>
 **Generating comprehensive design document based on approved approach...**
 
 Now I'll create detailed design document incorporating:
@@ -232,28 +298,30 @@ Now I'll create detailed design document incorporating:
 
 Creating comprehensive design document at: `.kiro/specs/${feature-name}/design.md`
 
-**KIRO DESIGN DOCUMENT TEMPLATE:**
+**CRITICAL TEMPLATE NOTE**: The following 6-section template will be used as a precise specification for the design document structure. Every section and element will be generated exactly as shown, customized with your specific requirements and research findings.
+
+<kiro_design_document_template>
 
 ```markdown
 # ${feature-name} Design Document
 
 ## Overview
-[System architecture summary and design approach incorporating research findings and approved requirements only]
+[SPECIFICATION: This section must provide a clear system architecture summary incorporating research findings and addressing only approved requirements. Include high-level design approach and key architectural decisions with reasoning.]
 
-## Architecture  
-[High-level system architecture and component relationships based on approved requirements analysis]
+## Architecture
+[SPECIFICATION: Define detailed system architecture with component relationships based on approved requirements analysis. Include technology choices justified by research findings and integration patterns.]
 
 ## Components and Interfaces
-[Detailed component specifications and interface definitions addressing all approved requirements without over-engineering]
+[SPECIFICATION: Provide comprehensive component specifications and interface definitions addressing all approved requirements without over-engineering. Include input/output specifications and interaction patterns.]
 
 ## Data Models
-[Data structures, schemas, and relationships supporting all functional requirements from requirements.md]
+[SPECIFICATION: Define complete data structures, schemas, and relationships supporting all functional requirements from requirements.md. Include data flow and storage considerations based on research findings.]
 
 ## Error Handling
-[Error conditions, recovery mechanisms, and failure modes for all requirements - realistic scenarios only]
+[SPECIFICATION: Document comprehensive error conditions, recovery mechanisms, and failure modes for all requirements - realistic scenarios only. Include error propagation and user experience considerations.]
 
 ## Testing Strategy
-[Testing approaches, test types, and validation methods covering all design components - proportional to complexity]
+[SPECIFICATION: Establish testing approaches, test types, and validation methods covering all design components - proportional to complexity. Include integration testing and quality assurance approaches.]
 
 ## Design Scope Boundaries (Reasoning-Based)
 
@@ -300,10 +368,26 @@ Creating comprehensive design document at: `.kiro/specs/${feature-name}/design.m
 **Requirements-driven architecture**: Design serves approved requirements only, avoiding speculative additions that create maintenance burden without validated need.
 ```
 
+</kiro_design_document_template>
+
 [Generate actual comprehensive design content based on all gathered context, research, and approved requirements]
+</design_document_generation>
+
+**After generating the design document, reflect on its completeness, requirements coverage, and architectural coherence before presenting for review.**
+
+<design_quality_reflection>
+**Systematic Design Quality Assessment:**
+
+- Verify all approved requirements are addressed in appropriate design sections
+- Confirm research findings are meaningfully integrated into technology choices and architecture patterns
+- Validate design complexity is appropriate for requirements scope (not over-engineered)
+- Ensure cross-stage scope boundaries are properly inherited and documented
+- Check that all 6 mandatory sections contain comprehensive, requirements-driven content
+</design_quality_reflection>
 
 ## 6. Quality Validation Framework
 
+<quality_validation_framework>
 **Executing Kiro Stage 2 quality validation checkpoints...**
 
 ### Document Structure Validation
@@ -371,8 +455,11 @@ Creating comprehensive design document at: `.kiro/specs/${feature-name}/design.m
 - **Scope Discipline**: Design focused on approved requirements, architectural boundaries documented
 
 **Overall Quality Score: [Calculated based on validation results]**
+</quality_validation_framework>
 
 ## 7. Design Review & Revision Cycle
+
+<design_review_process>
 
 ## Design Document Complete
 
@@ -413,20 +500,27 @@ I've generated a comprehensive design document following all Kiro Stage 2 standa
 **What's your feedback?**
 
 [Handle user feedback and revision cycle]
+</design_review_process>
 
 ---
 
 ### Revision Cycle (if changes requested)
 
+<revision_cycle_process>
 [If user requests changes:]
+
+**Before implementing changes, carefully analyze the specific feedback to understand the precise architectural modifications needed while maintaining all established quality standards and scope discipline.**
 
 1. **Analyze specific feedback** and identify areas for architectural modification
 2. **Update design.md** with requested changes while maintaining Kiro compliance and scope discipline
 3. **Re-run quality validation** to ensure all standards maintained including scope boundaries
 4. **Present updated version** for another review cycle with architectural highlights
 5. **Continue until explicit approval received**
+</revision_cycle_process>
 
 ## 8. Final Approval & State Management
+
+<final_approval_process>
 
 ### Design Approved
 
@@ -465,3 +559,4 @@ Ready to move to **Stage 3: Implementation Planning**? Run:
 ```
 
 **Kiro Stage 2 Complete - Design Document Creation Successful!**
+</final_approval_process>
