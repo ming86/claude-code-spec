@@ -101,7 +101,7 @@ Claude 4 represents a paradigm shift from **inference-heavy prompting** to **pre
 
 ### 5. Advanced Capability Integration
 
-**Philosophy**: Claude 4's enhanced capabilities (thinking, parallel processing, long context) should be explicitly leveraged rather than assumed.
+**Philosophy**: Claude 4's enhanced capabilities (thinking, long context) should be explicitly leveraged rather than assumed.
 
 **Guidelines**:
 
@@ -109,12 +109,6 @@ Claude 4 represents a paradigm shift from **inference-heavy prompting** to **pre
 
 ```
 After receiving tool results, carefully reflect on their quality and determine optimal next steps before proceeding. Use your thinking to plan and iterate based on this new information.
-```
-
-#### Parallel Tool Execution
-
-```
-For maximum efficiency, whenever you need to perform multiple independent operations, invoke all relevant tools simultaneously rather than sequentially.
 ```
 
 #### Long Context Optimization
@@ -348,7 +342,6 @@ Ground your response in specific quotes from the documents before providing anal
 
 - [ ] Add contextual motivation for key requirements
 - [ ] Leverage thinking capabilities for complex tasks
-- [ ] Enable parallel tool execution if applicable
 - [ ] Optimize long context placement if relevant
 - [ ] Include quality enforcement instructions
 
@@ -379,7 +372,7 @@ Ground your response in specific quotes from the documents before providing anal
 2. **Provide Context**: Explain why specific behaviors or constraints matter
 3. **Align Examples**: Ensure examples perfectly demonstrate desired patterns
 4. **Structure Hierarchically**: Organize from role → context → instructions → details
-5. **Leverage Capabilities**: Explicitly activate thinking, parallel processing, or long context features
+5. **Leverage Capabilities**: Explicitly activate thinking or long context features
 6. **Plan for Precision**: Design prompts that reward careful, systematic execution
 
 ## Advanced Integration Patterns
@@ -400,7 +393,6 @@ Ground your response in specific quotes from the documents before providing anal
 
 **Enhancement Patterns**:
 
-- Parallel execution instructions for independent operations
 - Quality reflection prompts for tool result analysis
 - Systematic planning prompts for multi-tool workflows
 
@@ -430,7 +422,7 @@ Treat Claude 4 prompting as precision engineering:
 
 - Consistent behavior across similar inputs with variations in detail
 - Appropriate use of context to enhance response quality  
-- Systematic activation of advanced capabilities (thinking, parallel processing)
+- Systematic activation of advanced capabilities (thinking)
 - Clear reasoning when explicitly prompted
 - High-quality outputs that match specified patterns precisely
 - Graceful handling of edge cases through explicit instruction coverage
