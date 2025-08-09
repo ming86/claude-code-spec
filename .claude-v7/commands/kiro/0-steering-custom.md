@@ -1,5 +1,5 @@
 ---
-description: "Kiro Domain-Specific Steering: Create specialized steering documents for enhanced workflow quality with Claude 4 optimization"
+description: "Kiro Domain-Specific Steering: Create specialized steering documents for enhanced workflow quality"
 argument-hint: "domain-name (api-standards, testing, security, performance, database, deployment)"
 ---
 

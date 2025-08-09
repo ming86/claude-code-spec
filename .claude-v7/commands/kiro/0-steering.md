@@ -1,5 +1,5 @@
 ---
-description: "Kiro Steering Setup: Intelligent project guidance document management with customization preservation and Claude 4 optimization"
+description: "Kiro Steering Setup: Intelligent project guidance document management with customization preservation"
 argument-hint: "project-description (optional, natural language)"
 ---
 
