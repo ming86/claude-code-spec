@@ -194,7 +194,76 @@ Design tools with clear, focused purposes.
 ✅ Separate tools: read_file, call_api, process_data
 ```
 
-### 8. Evidence-Based Optimization
+### 8. Direct Commands with Explanatory Reasoning
+
+**Philosophy**: Combine explicit behavioral specifications (for GPT-4.1's literal instruction-following) with clear reasoning (for understanding and consistent application).
+
+**Pattern Structure**:
+
+```
+[DIRECT COMMAND] + because/so that [EXPLANATORY REASONING]
+```
+
+**Effective Combined Approach**:
+
+```markdown
+✅ "Focus implementation on specified components only, because this allows concentrated effort on quality and depth rather than spreading across unvalidated features."
+
+✅ "You must validate all changes against existing project patterns, so that system coherence is maintained and integration issues are prevented."
+
+✅ "Avoid creating complex abstractions beyond current requirements, because complexity should solve actual problems rather than theoretical ones."
+```
+
+**Why This Combined Approach Works**:
+
+- **Explicit Instruction**: Clear behavioral specification for GPT-4.1's literal following
+- **Contextual Understanding**: Reasoning helps consistent application across similar situations
+- **Edge Case Guidance**: Understanding helps navigate ambiguous scenarios appropriately
+
+**Application Guidelines**:
+
+- **Lead with Direct Command**: Start with explicit behavioral specification
+- **Follow with Reasoning**: Explain the logic behind the constraint
+- **Connect to Outcomes**: Link the behavior to positive results or avoided problems
+- **Maintain Specificity**: Both command and reasoning should be concrete and actionable
+
+### 9. Educational Transparency
+
+**Philosophy**: Explaining methodology and decision-making process improves human-AI collaboration outcomes.
+
+**Implementation Approaches**:
+
+**Decision Framework Transparency**:
+
+```markdown
+"I'm evaluating this using [specific methodology] because [clear reasoning tied to context]"
+
+"Trade-offs considered:
+- Option A: [benefits and limitations]
+- Option B: [different benefits and constraints]
+Selected Option A because: [specific rationale]"
+```
+
+**Process Step Explanation**:
+
+```markdown
+"Before generating the analysis, I'll:
+1. [Step with reasoning]
+2. [Step with reasoning] 
+3. [Step with reasoning]
+
+This approach ensures [specific quality outcomes]"
+```
+
+**Benefits**:
+
+- **Trust Building**: Users understand AI decision-making process
+- **Learning Enhancement**: Users gain insights into effective methodology
+- **Improved Iteration**: Shared understanding enables better feedback and refinement
+
+**When to Apply**: Complex analysis, multi-step processes, or situations where user learning enhances collaboration quality.
+
+### 10. Evidence-Based Optimization
 
 **Philosophy**: Prompt engineering is an empirical discipline requiring systematic testing and iteration.
 
@@ -241,6 +310,8 @@ Design tools with clear, focused purposes.
 
 #### 2. XML (For Complex Nesting)
 
+**Basic Pattern**:
+
 ```xml
 <examples>
   <example type="abbreviation">
@@ -249,6 +320,38 @@ Design tools with clear, focused purposes.
   </example>
 </examples>
 ```
+
+**Advanced Template Patterns**:
+
+Beyond basic nesting, use XML for semantic precision with embedded processing instructions when template accuracy is critical.
+
+```xml
+<analysis_template>
+<specification>Generate exactly this structure with systematic evaluation</specification>
+
+```markdown
+# Technical Analysis Report
+
+## Assessment Results
+[SPECIFICATION: Systematic evaluation with specific findings and evidence]
+
+## Recommendations  
+[SPECIFICATION: Actionable improvements with implementation guidance and rationale]
+```
+
+</analysis_template>
+
+```
+
+**When to Use Advanced XML Templates**:
+- Complex document generation requiring precise structure
+- Templates where interpretation variations would reduce quality
+- Multi-section outputs needing consistent organization
+
+**Benefits**:
+- **Generation Precision**: SPECIFICATION tags eliminate structural interpretation errors
+- **Template Consistency**: Exact structure compliance across multiple generations
+- **Quality Control**: Embedded instructions guide content requirements
 
 #### 3. Document Formatting for Long Context
 

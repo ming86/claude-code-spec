@@ -52,7 +52,7 @@ Ask for the form name and fields if not provided.
 ```markdown
 ---
 mode: 'agent'
-tools: ['codebase', 'githubRepo', 'fetch', 'search']
+tools: ['codebase', 'fetch', 'search']
 model: Claude Sonnet 4
 description: 'Generate production-ready React form components following project standards'
 ---
@@ -72,9 +72,8 @@ You are a React component generator specializing in form creation using establis
 - Follow design system components referenced in project documentation
 
 ## Tool Usage Strategy
-- Research existing form patterns using #codebase before creating new ones
-- Check for similar components using #search to maintain consistency
-- Reference external templates using #githubRepo when applicable
+- Research existing form patterns using `search` tool and `codebase` semantic search tool before creating new ones
+- Check for similar components using `codebase` semantic search tool to maintain consistency
 
 # Reasoning Steps
 1. **Analyze Request**: Break down form requirements and identify missing information
@@ -101,7 +100,7 @@ Generate the following files with clear separation:
 `/create-react-form: name=UserProfile fields=firstName,lastName,email,phone`
 
 ## Example Planning Response
-"I'll create a UserProfile form component. Let me first research existing form patterns in your codebase using #codebase, then check your design system documentation..."
+"I'll create a UserProfile form component. Let me first research existing form patterns in your codebase using `codebase` tool, then check your design system documentation..."
 ```
 
 ### Key GPT-4.1 Principles Applied
@@ -163,11 +162,11 @@ You MUST plan extensively before each function call, and reflect extensively on 
 - Summarize changes made and verification steps taken
 
 # Tool Usage Guidelines
-- Use #codebase to understand project structure before making changes
-- Use #search to find existing patterns and avoid duplication
-- Use #problems to check for issues after making changes
-- Use #terminal for running tests, builds, and validation commands
-- Use #changes to review modifications before finalizing
+- Use `codebase` semantic search tool to understand project structure before making changes
+- Use `search` tool to find existing patterns and avoid duplication
+- Use `problems` tool to check for issues after making changes
+- Use `terminal` tool for running tests, builds, and validation commands
+- Use `changes` tool to review modifications before finalizing
 ```
 
 ### Planning Mode Example
@@ -175,7 +174,7 @@ You MUST plan extensively before each function call, and reflect extensively on 
 ```markdown
 ---
 description: Generate comprehensive implementation plans for features and refactoring tasks  
-tools: ['codebase', 'fetch', 'search', 'githubRepo', 'usages']
+tools: ['codebase', 'fetch', 'search', 'usages']
 model: Claude Sonnet 4
 ---
 # Planning Mode Instructions
@@ -238,6 +237,56 @@ Clear criteria for determining when the implementation is complete
 - **If current codebase is unclear**: Use tools extensively to understand before planning
 - **If implementation seems overly complex**: Suggest simpler alternatives or phased approaches
 ```
+
+### ChatMode System Message Integration
+
+**Key Technical Detail**: ChatMode content becomes part of the system message, providing persistent behavioral context across all interactions within that chat session.
+
+**Strategic Design Implications**:
+
+- **Core Methodology**: Include fundamental behavioral principles in ChatMode for always-active guidance
+- **Execution Details**: Use Prompt files for specific task workflows
+- **Flexible Architecture**: Three configuration patterns available based on complexity needs
+
+**Design Pattern Options**:
+
+**1. ChatMode Only (Simple Behavioral Context)**:
+
+```markdown
+# role-specific-expert.chatmode.md
+You are a code review specialist with expertise in security analysis.
+Apply systematic security review patterns to all code analysis requests.
+```
+
+*Use when: You need consistent behavioral context without complex workflows*
+
+**2. Prompt Only (Specific Task Execution)**:
+
+```markdown
+# specific-analysis-task.prompt.md
+Execute comprehensive security analysis following this systematic approach:
+1. [Detailed step-by-step process]
+2. [Specific validation criteria]
+3. [Output format requirements]
+```
+
+*Use when: You need detailed execution workflow without persistent behavioral context*
+
+**3. ChatMode + Prompt (Complex Workflows)**:
+
+```markdown
+# ChatMode: Core security principles always active
+# Prompt: Specific security review workflow with detailed steps
+```
+
+*Use when: You need both persistent behavioral context AND detailed execution workflows*
+
+**Benefits**:
+
+- **System Foundation**: Core methodology always active as persistent behavioral context (ChatMode)
+- **Task Precision**: Detailed execution steps for complex processes (Prompt)
+- **Flexible Architecture**: Choose the right combination for your specific use case
+- **Resource Efficiency**: Use only the complexity level your task requires
 
 ## Custom Instructions Enhancement
 
